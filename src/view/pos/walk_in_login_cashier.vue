@@ -4,6 +4,8 @@
             <div class="p4"> <p style="display: inline-block; font-size: 150px;">09:40</p><p class="p3" style="display: inline-block;">AM</p></div>
             <p class="p1">Monday, 06 Mar 2023</p>
         </ul>
+
+
         <div class="cotainer-fluid container3" style="margin-top: 16%;">
             <div class="row" style="width: 325px; height: 85px;">
                 <div class="col-4"><img src="imgs/Profile pict.png" alt=""></div>
