@@ -192,6 +192,7 @@
 </template>
 
 <style>
+
     .h1{
         font-family: Poppins;
         font-size: 20px;
