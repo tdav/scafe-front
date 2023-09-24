@@ -3,15 +3,15 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <div class="d-flex flex-column h-100">
 
-<div class="d-flex flex-column h-100">
-    
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">my sCafe</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -34,14 +34,13 @@ import HelloWorld from './components/HelloWorld.vue'
         </div>
       </nav>
     </header>
-       
 
 
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
-</div>
+    <div>
+      <router-view />
+    </div>
 
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
