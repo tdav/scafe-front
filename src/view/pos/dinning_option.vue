@@ -8,6 +8,7 @@
                             <img src="imgs/Vector 228.png" alt="">
                         </button>
                     </div>
+               
                     <div class="container-fluid p-0" style="width: 125px; display: inline-block;">
                         <div class="row" style="display: inline-block;">
                             <div class="col-4" style="display: inline-block;">
