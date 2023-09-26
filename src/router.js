@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/login.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
-import Dashboard from './view/pos/login_cashier_orm'
+import LoginCashierOrm from './view/pos/login_cashier_orm.vue'
+import GuestDetail from './view/reservation/guest_detail.vue'
 
 const routes = [
     {
@@ -15,9 +16,14 @@ const routes = [
         component: Dashboard
     },
     {
-        path: '/',
-        name: 'login_cashier_orm',
-        component: Dashboard
+        path: '/LoginCashierOrm',
+        name:'LoginCashierOrm',
+        component: LoginCashierOrm 
+    },
+    {
+        path: '/GuestDetail',
+        name: 'GuestDetail',
+        component: GuestDetail
     },
 ]
 
