@@ -13,7 +13,8 @@
                             <p><b>Order confirmation</b></p>
                             <p style="font-size: 12px; color: #828487;">Please confirm the order below to completed payment</p>
                         </div>
-                        <div class="p-2"style="height: 150px;">
+                        <div class="p-2" style="height: 150px;">
+
                             <hr class="m-0">
                             <p class="mx-1 pas">
                                 <p style="color: #828487; width: 180px; display: inline-block; float: left; font-size: 10px;">ITEM NAME</p>

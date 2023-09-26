@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/login.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
 import AddNote from './view/dashboard/add _note.vue'
-import AddNotee from './view/dashboard/add _notee.vue'
 import AdditonalOrder from './view/dashboard/additonal_order.vue'
 import DinningOption from './view/dashboard/dinning_option.vue'
 import OrderConfirmation from './view/dashboard/order_confirmation.vue'
@@ -11,7 +10,7 @@ import SelectTable from './view/dashboard/select_table.vue'
 import TipAmount from './view/dashboard/tip_amount.vue'
 import LoginCashierOrm from './view/pos/login_cashier_orm.vue'
 import LoginCashier from './view/pos/login_cashier.vue'
-import UpcomingOrders from './view/pos/UpcomingOrders.vue'
+import UpcomingOrders from './view/pos/upcoming_orders.vue'
 import WalkInAbsent from './view/pos/walk_in_absent.vue'
 import WalkInLoginCashier from './view/pos/walk_in_login_cashier.vue'
 
@@ -30,12 +29,7 @@ const routes = [
         path: '/AddNote',
         name: 'AddNote',
         component: AddNote
-    },
-    {
-        path: '/AddNotee',
-        name: 'AddNotee',
-        component: AddNotee
-    },
+    },   
     {
         path: '/AdditonalOrder',
         name: 'AdditonalOrder',

@@ -19,17 +19,24 @@ import HelloWorld from './components/HelloWorld.vue'
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+              
+              <li class="nav-item"> <a class="nav-link" href="/Login">Login</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/Dashboard">Dashboard</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/AddNote">AddNote</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/AdditonalOrder">AdditonalOrder</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/DinningOption">DinningOption</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/OrderConfirmation">OrderConfirmation</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/Payment">Payment</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/SelectTable">SelectTable</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/TipAmount">TipAmount</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/LoginCashierOrm">LoginCashierOrm</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/LoginCashier">LoginCashier</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/UpcomingOrders">UpcomingOrders</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/WalkInAbsent">WalkInAbsent</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/WalkInLoginCashier">WalkInLoginCashier</a></li>
+            
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
@@ -43,4 +50,5 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

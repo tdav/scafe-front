@@ -1,30 +1,29 @@
 <script>
-            const myModal = document.getElementById('myModal')
-            const myInput = document.getElementById('myInput')
+            // const myModal = document.getElementById('myModal')
+            // const myInput = document.getElementById('myInput')
 
-            myModal.addEventListener('shown.bs.modal', () => {
-                myInput.focus()
-            })
-</script>
-<script>
-            const exampleModal = document.getElementById('exampleModal')
-            if (exampleModal) {
-            exampleModal.addEventListener('show.bs.modal', event => {
-                // Button that triggered the modal
-                const button = event.relatedTarget
-                // Extract info from data-bs-* attributes
-                const recipient = button.getAttribute('data-bs-whatever')
-                // If necessary, you could initiate an Ajax request here
-                // and then do the updating in a callback.
+            // myModal.addEventListener('shown.bs.modal', () => {
+            //     myInput.focus()
+            // })
+ 
+            // const exampleModal = document.getElementById('exampleModal')
+            // if (exampleModal) {
+            // exampleModal.addEventListener('show.bs.modal', event => {
+            //     // Button that triggered the modal
+            //     const button = event.relatedTarget
+            //     // Extract info from data-bs-* attributes
+            //     const recipient = button.getAttribute('data-bs-whatever')
+            //     // If necessary, you could initiate an Ajax request here
+            //     // and then do the updating in a callback.
 
-                // Update the modal's content.
-                const modalTitle = exampleModal.querySelector('.modal-title')
-                const modalBodyInput = exampleModal.querySelector('.modal-body input')
+            //     // Update the modal's content.
+            //     const modalTitle = exampleModal.querySelector('.modal-title')
+            //     const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-                modalTitle.textContent = `New message to ${recipient}`
-                modalBodyInput.value = recipient
-            })
-            }
+            //     modalTitle.textContent = `New message to ${recipient}`
+            //     modalBodyInput.value = recipient
+            // })
+            // }
 </script>
 
 <template>
@@ -32,7 +31,7 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <button type="button" class="btn btn-primary" class="btp1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Dashboard</button>
+                    <button type="button" class="btn btn-primary btp1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Dashboard</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg mf-1" style="width: 450px;
                         height: 547px;
@@ -278,4 +277,4 @@
         border-radius: 58px;
         gap: 10px;
     }
-<style>
+</style>

@@ -1,10 +1,10 @@
 <script>
-            const myModal = document.getElementById('myModal')
-            const myInput = document.getElementById('myInput')
+            // const myModal = document.getElementById('myModal')
+            // const myInput = document.getElementById('myInput')
 
-            myModal.addEventListener('shown.bs.modal', () => {
-                myInput.focus()
-            })
+            // myModal.addEventListener('shown.bs.modal', () => {
+            //     myInput.focus()
+            // })
 </script>
 
 <template>
@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <button type="button" class="btn btn-primary" class="btp1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Reservation list</button>
+                    <button type="button" class="btn btn-primary btp1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Reservation list</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg  mf-1" style=" width: 575px; height: 364px; border-radius: 16px; gap: 24px;">
                             <div class="modal-content">
@@ -234,7 +234,7 @@
                                             <!--4-->
                                             <div class="row" style="padding: 10px;">
                                                 <div class="col-3">
-                                                    <button type="button" class="btn btn-primary bbp-1"style="width: 110px;
+                                                    <button type="button" class="btn btn-primary bbp-1" style="width: 110px;
                                                         height: 76px;
                                                         padding: 14px 23px 14px 23px;
                                                         border-radius: 160px;
