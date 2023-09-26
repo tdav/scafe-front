@@ -90,10 +90,10 @@
                 <div class="col-4">
                     <div class="container-fluid">
                         <div class="row">
-                            
+
                             <div class="col-12">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" class="fc1" placeholder="Enter your PIN" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <input type="text" class="form-control fc1" placeholder="Enter your PIN" aria-label="Recipient's username" aria-describedby="button-addon2">
                                 </div>
                             </div>
                         </div>

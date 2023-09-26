@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4">
-                <button type="button" class="btn btn-primary" class="btp1" data-bs-toggle="modal"
+                <button type="button" class="btn btn-primary btp1" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" data-bs-whatever="@mdo">Reservation list</button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -42,7 +42,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Sun<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Sun</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -59,7 +59,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Mon<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Mon</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -77,7 +77,7 @@
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <h5 class="h5-1"
-                                                                        style="margin-left: -8px; color: #FF7527;">Wed<h5>
+                                                                        style="margin-left: -8px; color: #FF7527;">Wed</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -94,7 +94,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Wed<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Wed</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -111,7 +111,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Thu<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Thu</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -128,7 +128,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Fri<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Fri</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -145,7 +145,7 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 class="h5-1" style="margin-left: -8px;">Set<h5>
+                                                                    <h5 class="h5-1" style="margin-left: -8px;">Set</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
