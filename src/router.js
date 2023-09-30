@@ -38,7 +38,6 @@ const routes = [
         name: 'WalkInLognCashier',
         Commenend: WalkInLognCashier
     },
-
     {
         path: '/loginCashier',
         name: 'loginCashier',
@@ -58,11 +57,6 @@ const routes = [
         path: '/DinningOption',
         name: 'DinningOption',
         Commenend: DinningOption
-    },
-    {
-        path: '/OrderConfirmation',
-        name: 'OrderConfirmation',
-        Commenend: WalkInLognCashier
     },
     {
         path: '/OrderConfirmation',
