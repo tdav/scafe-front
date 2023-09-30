@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/login.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
+import PosWalkInAbsent from './view/pos/walk_in_absent.vue'
+import WalkInLognCashier from './view/pos/login_cashier_orm.vue'
+import loginCashier from './view/pos/login_cashier.vue'
 import AddNote from './view/dashboard/add _note.vue'
 import AdditonalOrder from './view/dashboard/additonal_order.vue'
 import DinningOption from './view/dashboard/dinning_option.vue'
@@ -26,65 +29,87 @@ const routes = [
         component: Dashboard
     },
     {
+        path: '/PosWalkInAbsent',
+        name: 'PosWalkInAbsent',
+        Commenend: PosWalkInAbsent
+    },
+    {
+        path: '/WalkInLognCashier',
+        name: 'WalkInLognCashier',
+        Commenend: WalkInLognCashier
+    },
+
+    {
+        path: '/loginCashier',
+        name: 'loginCashier',
+        Commenend: loginCashier
+    },
+    {
         path: '/AddNote',
         name: 'AddNote',
-        component: AddNote
-    },   
+        Commenend: AddNote
+    },
     {
         path: '/AdditonalOrder',
         name: 'AdditonalOrder',
-        component: AdditonalOrder
+        Commenend: AdditonalOrder
     },
     {
         path: '/DinningOption',
         name: 'DinningOption',
-        component: DinningOption
+        Commenend: DinningOption
     },
     {
         path: '/OrderConfirmation',
         name: 'OrderConfirmation',
-        component: OrderConfirmation
+        Commenend: WalkInLognCashier
+    },
+    {
+        path: '/OrderConfirmation',
+        name: 'OrderConfirmation',
+        Commenend: OrderConfirmation
     },
     {
         path: '/Payment',
         name: 'Payment',
-        component: Payment
+        Commenend: Payment
     },
     {
         path: '/SelectTable',
         name: 'SelectTable',
-        component: SelectTable
+        Commenend: SelectTable
     },
     {
         path: '/TipAmount',
         name: 'TipAmount',
-        component: TipAmount
+        Commenend: TipAmount
     },
     {
         path: '/LoginCashierOrm',
         name: 'LoginCashierOrm',
-        component: LoginCashierOrm
+        Commenend: LoginCashierOrm
     },
     {
         path: '/LoginCashier',
         name: 'LoginCashier',
-        component: LoginCashier
+        Commenend: LoginCashier
     },
     {
         path: '/UpcomingOrders',
         name: 'UpcomingOrders',
-        component: UpcomingOrders
+        Commenend: UpcomingOrders
     },
     {
         path: '/WalkInAbsent',
         name: 'WalkInAbsent',
-        component: WalkInAbsent
+        Commenend: WalkInAbsent
     },
     {
         path: '/WalkInLoginCashier',
         name: 'WalkInLoginCashier',
-        component: WalkInLoginCashier
+        Commenend: WalkInLoginCashier
     },
+
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })

@@ -277,7 +277,6 @@
         border-radius: 30px;
         display: inline-block;
         float: right;
-
     }
 
     .p5{
@@ -296,7 +295,6 @@
         border-radius: 30px;
         display: inline-block;
         float: right;
-
     }
 
     .p4{

@@ -1,6 +1,6 @@
 <template>
     <div>
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                 tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -118,8 +118,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
                 tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -238,5 +238,6 @@
             </div>
         
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add to order</button>
+        </div>
     </div>
-</div></template>
+</template>

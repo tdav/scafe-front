@@ -1,5 +1,6 @@
 <template>
-    <div class="pos_walk_in_absent container4">
+    <div>
+        <div class="pos_walk_in_absent container4">
         <ul class="nav nav-tabs border border-0" style="justify-content: center;">
             <li class="nav-item">
               <img src="imgs/Oval1.png" class="nav-link Oval" aria-current="page">
@@ -35,11 +36,12 @@
                 <a href="POS_walk_in_login_cashier.html" class="p1 m-2" style="color: rgb(255, 124, 77); ">Login</a>
             </button>
         </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-        .pos_walk_in_absent {
+    .pos_walk_in_absent {
         width: 844px;
         height: 164px;
     }
