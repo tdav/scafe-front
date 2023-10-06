@@ -1,21 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/login.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
-import PosWalkInAbsent from './view/pos/walk_in_absent.vue'
-import WalkInLognCashier from './view/pos/login_cashier_orm.vue'
-import loginCashier from './view/pos/login_cashier.vue'
-import AddNote from './view/dashboard/add _note.vue'
-import AdditonalOrder from './view/dashboard/additonal_order.vue'
-import DinningOption from './view/dashboard/dinning_option.vue'
-import OrderConfirmation from './view/dashboard/order_confirmation.vue'
-import Payment from './view/dashboard/payment.vue'
-import SelectTable from './view/dashboard/select_table.vue'
-import TipAmount from './view/dashboard/tip_amount.vue'
-import LoginCashierOrm from './view/pos/login_cashier_orm.vue'
-import LoginCashier from './view/pos/login_cashier.vue'
-import UpcomingOrders from './view/pos/upcoming_orders.vue'
-import WalkInAbsent from './view/pos/walk_in_absent.vue'
-import WalkInLoginCashier from './view/pos/walk_in_login_cashier.vue'
+import PosWalkInAbsent from './view/pos/PosWalkInAbsent.vue'
+import loginCashier from './view/pos/LoginCashier.vue'
+import AddNote from './view/dashboard/AddNote.vue'
+import DinningOption from './view/dashboard/DinningOption.vue'
+import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
+import Payment from './view/dashboard/Payment.vue'
+import SelectTable from './view/dashboard/SelectTable.vue'
+import TipAmount from './view/dashboard/TipAmount.vue'
+import UpcomingOrders from './view/pos/UpcomingOrders.vue'
+import NewReservation from './view/reservation/NewReservation.vue'
+import GuestDetail from './view/reservation/GuestDetail.vue'
+import List from './view/reservation/List.vue'
 
 const routes = [
     {
@@ -47,11 +44,6 @@ const routes = [
         path: '/AddNote',
         name: 'AddNote',
         Commenend: AddNote
-    },
-    {
-        path: '/AdditonalOrder',
-        name: 'AdditonalOrder',
-        Commenend: AdditonalOrder
     },
     {
         path: '/DinningOption',
@@ -94,14 +86,24 @@ const routes = [
         Commenend: UpcomingOrders
     },
     {
-        path: '/WalkInAbsent',
-        name: 'WalkInAbsent',
-        Commenend: WalkInAbsent
-    },
-    {
         path: '/WalkInLoginCashier',
         name: 'WalkInLoginCashier',
         Commenend: WalkInLoginCashier
+    },
+    {
+        path: '/NewReservation',
+        name: 'NewReservation',
+        Component: NewReservation
+    },
+    {
+        path: '/GuestDetail',
+        name: 'GuestDetail',
+        component: GuestDetail
+    },
+    {
+        path: '/List',
+        name: 'List',
+        component: List
     },
 
 ]

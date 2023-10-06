@@ -37,6 +37,7 @@ import HelloWorld from './components/HelloWorld.vue'
               <li class="nav-item"> <a class="nav-link" href="UpcomingOrders">UpcomingOrders</a></li>
               <li class="nav-item"> <a class="nav-link" href="WalkInAbsent">WalkInAbsent</a></li>
               <li class="nav-item"> <a class="nav-link" href="WalkInLoginCashier">WalkInLoginCashier</a></li>
+              <li class="nav-item"> <a class="nav-link" href="NewReservation">NewReservation</a></li>
             
             </ul>
             
