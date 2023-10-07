@@ -17,6 +17,7 @@ import LoginCashierOrm from './view/pos/LoginCashierOrm.vue'
 
 import List from './view/reservation/List.vue'
 
+
 const routes = [
     {
         path: '/',
