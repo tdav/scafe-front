@@ -12,7 +12,7 @@
             <li class="nav-item"> <a class="nav-link" href="PosWalkInAbsent">PosWalkInAbsent</a></li>
             <div class='dashboard-nav-dropdown'>
               <li class="nav-item"> <a class="nav-link" href="OrderConfirmation">OrderConfirmation</a></li>
-              <li class="nav-item"> <a class="nav-link" href="Payment">to'lovlar</a></li>
+              <li class="nav-item"> <a class="nav-link" href="Payment">To'lovlar</a></li>
               <li class="nav-item"> <a class="nav-link" href="SelectTable">SelectTable</a></li>
               <li class="nav-item"> <a class="nav-link" href="TipAmount">TipAmount</a></li>
             </div>
