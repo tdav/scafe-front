@@ -16,7 +16,6 @@ import WalkInLoginCashier from './view/pos/WalkInLoginCashier.vue'
 import LoginCashierOrm from './view/pos/LoginCashierOrm.vue'
 
 import List from './view/reservation/List.vue'
-// 1111111111111
 
 const routes = [
     {
