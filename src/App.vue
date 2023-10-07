@@ -10,21 +10,13 @@
             <li class="nav-item"> <a class="nav-link" href="/Login">Login</a></li>
             <li class="nav-item"> <a class="nav-link" href="/Dashboard">Dashboard</a></li>
             <li class="nav-item"> <a class="nav-link" href="PosWalkInAbsent">PosWalkInAbsent</a></li>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
-                    class="fas fa-photo-video"></i> Media </a>
-                <div class='dashboard-nav-dropdown-menu'>
-                    <li class="nav-item"> <a class="nav-link" href="loginCashier">loginCashier</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="AddNote">AddNote</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="AdditonalOrder">AdditonalOrder</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="DinningOption">DinningOption</a></li>
-                </div>
-            </div>
             <div class='dashboard-nav-dropdown'>
               <li class="nav-item"> <a class="nav-link" href="OrderConfirmation">OrderConfirmation</a></li>
-              <li class="nav-item"> <a class="nav-link" href="Payment">Payment</a></li>
+              <li class="nav-item"> <a class="nav-link" href="Payment">to'lovlar</a></li>
               <li class="nav-item"> <a class="nav-link" href="SelectTable">SelectTable</a></li>
               <li class="nav-item"> <a class="nav-link" href="TipAmount">TipAmount</a></li>
             </div>
+
             <div class='dashboard-nav-dropdown'>
               <li class="nav-item"> <a class="nav-link" href="LoginCashierOrm">LoginCashierOrm</a></li>
               <li class="nav-item"> <a class="nav-link" href="LoginCashier">LoginCashier</a></li>
