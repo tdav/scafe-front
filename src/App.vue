@@ -23,7 +23,6 @@ import HelloWorld from './components/HelloWorld.vue'
               <li class="nav-item"> <a class="nav-link" href="/Login">Login</a></li>
               <li class="nav-item"> <a class="nav-link" href="/Dashboard">Dashboard</a></li>
               <li class="nav-item"> <a class="nav-link" href="PosWalkInAbsent">PosWalkInAbsent</a></li>
-              <li class="nav-item"> <a class="nav-link" href="WalkInLognCashier">WalkInLognCashier</a></li>
               <li class="nav-item"> <a class="nav-link" href="loginCashier">loginCashier</a></li>
               <li class="nav-item"> <a class="nav-link" href="AddNote">AddNote</a></li>
               <li class="nav-item"> <a class="nav-link" href="AdditonalOrder">AdditonalOrder</a></li>

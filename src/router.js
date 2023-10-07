@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/login.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
 import PosWalkInAbsent from './view/pos/PosWalkInAbsent.vue'
-import loginCashier from './view/pos/LoginCashier.vue'
+import LoginCashier from './view/pos/LoginCashier.vue'
 import AddNote from './view/dashboard/AddNote.vue'
 import DinningOption from './view/dashboard/DinningOption.vue'
 import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
@@ -12,6 +12,9 @@ import TipAmount from './view/dashboard/TipAmount.vue'
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 import NewReservation from './view/reservation/NewReservation.vue'
 import GuestDetail from './view/reservation/GuestDetail.vue'
+import WalkInLoginCashier from './view/pos/WalkInLoginCashier.vue'
+import LoginCashierOrm from './view/pos/LoginCashierOrm.vue'
+
 import List from './view/reservation/List.vue'
 
 const routes = [
@@ -31,15 +34,11 @@ const routes = [
         Commenend: PosWalkInAbsent
     },
     {
-        path: '/WalkInLognCashier',
-        name: 'WalkInLognCashier',
-        Commenend: WalkInLognCashier
+        path: '/WalkInLoginCashier',
+        name: 'WalkInLoginCashier',
+        Commenend: WalkInLoginCashier
     },
-    {
-        path: '/loginCashier',
-        name: 'loginCashier',
-        Commenend: loginCashier
-    },
+     
     {
         path: '/AddNote',
         name: 'AddNote',

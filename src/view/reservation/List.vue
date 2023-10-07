@@ -474,7 +474,7 @@
 
 }
 </style>
-
+<!-- 
 <script>
 
 const myModal = document.getElementById('myModal')
@@ -503,4 +503,4 @@ if (exampleModal) {
         modalBodyInput.value = recipient
     })
 }
-</script>
+</script> -->
