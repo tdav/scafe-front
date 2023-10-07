@@ -31,6 +31,10 @@
               <li class="nav-item"> <a class="nav-link" href="UpcomingOrders">UpcomingOrders</a></li>
               <li class="nav-item"> <a class="nav-link" href="WalkInAbsent">WalkInAbsent</a></li>
             </div>
+            <div class='dashboard-nav-dropdown'>
+              <li class="nav-item"> <a class="nav-link" href="WalkInLoginCashier">WalkInLoginCashier</a></li>
+              <li class="nav-item"> <a class="nav-link" href="NewReservation">NewReservation</a></li>
+            </div>
         </nav>
     </div>
     <div class='dashboard-app'>
