@@ -1,6 +1,6 @@
 <template >
     <div>
-        
+        history list
     </div>
 </template>
 
