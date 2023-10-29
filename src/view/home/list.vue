@@ -1,9 +1,25 @@
 <template >
     <div>
-
-        Home List
-
-</div>
+        <button class="btn btn-body">
+            <img src="../../assets/imgs/btn img/" alt="">
+            <h3 class="h3-1">Coffee</h3>
+        </button>
+        <button class="btn btn-body">
+            <h3 class="h3-1">Beverages</h3>
+        </button>
+        <button class="btn btn-body">
+            <h3 class="h3-1">Food</h3>
+        </button>
+        <button class="btn btn-body">
+            <h3 class="h3-1">Appetizer</h3>
+        </button>
+        <button class="btn btn-body">
+            <h3 class="h3-1">Bread</h3>
+        </button>
+        <button class="btn btn-body">
+            <h3 class="h3-1">Snack</h3>
+        </button>
+    </div>
 </template>
 
 
@@ -11,6 +27,16 @@
 </script>
 
 
-<style>
+<style scoped>
 
+.h3-1{
+    color: #828487;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+      
 </style>

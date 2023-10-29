@@ -1,9 +1,7 @@
 <template >
     <div>
-
-        My History
-
-</div>
+        
+    </div>
 </template>
 
 
