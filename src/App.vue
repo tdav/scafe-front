@@ -60,6 +60,7 @@ setInterval(updateTime, 1000);{}
 
 
 <style>
+
 .Nav_button-div{
     width: 50px;
     border-right: solid 1px;  
