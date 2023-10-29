@@ -9,7 +9,7 @@
                 <img src="../../assets/imgs/btn/beverages.png" alt="">
                 <h3 class="h3-1">Beverages</h3>
             </button> <br>
-            <button class="btn btn-body btn-1">
+            <button class="btn btn-body btn-1" active v-on="">
                 <img src="../../assets/imgs/btn/breakfast.png" alt="">
                 <h3 class="h3-1">Food</h3>
             </button> <br>
@@ -17,7 +17,7 @@
                 <img src="../../assets/imgs/btn/pasta.png" alt="">
                 <h3 class="h3-1">Appetizer</h3>
             </button> <br>
-            <button class="btn btn-body btn-1 active">
+            <button class="btn btn-body btn-1">
                 <img src="../../assets/imgs/btn/lasagna.png" alt="">
                 <h3 class="h3-1">Bread</h3>
             </button> <br>
