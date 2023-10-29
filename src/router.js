@@ -14,96 +14,114 @@ import NewReservation from './view/reservation/NewReservation.vue'
 import GuestDetail from './view/reservation/GuestDetail.vue'
 import WalkInLoginCashier from './view/pos/WalkInLoginCashier.vue'
 import LoginCashierOrm from './view/pos/LoginCashierOrm.vue'
-
 import List from './view/reservation/List.vue'
+
+import HomeList from './view/home/list.vue'
+import Order from './view/Order/order_list.vue'
+import History from './view/History/list.vue'
 
 const routes = [
     {
         path: '/',
-        name: 'Login',
-        component: Login
+        name: 'Home',
+        component: HomeList
     },
+
+
+
     {
-        path: '/Dashboard',
-        name: 'Dashboard',
-        component: Dashboard
+        path: '/order',
+        name: 'Order',
+        component: Order
     },
+
     {
-        path: '/PosWalkInAbsent',
-        name: 'PosWalkInAbsent',
-        Commenend: PosWalkInAbsent
+        path: '/history',
+        name: 'History',
+        component: History
     },
-    {
-        path: '/WalkInLoginCashier',
-        name: 'WalkInLoginCashier',
-        Commenend: WalkInLoginCashier
-    },
+
+    // {
+    //     path: '/Dashboard',
+    //     name: 'Dashboard',
+    //     component: Dashboard
+    // },
+    // {
+    //     path: '/PosWalkInAbsent',
+    //     name: 'PosWalkInAbsent',
+    //     Commenend: PosWalkInAbsent
+    // },
+    // {
+    //     path: '/WalkInLoginCashier',
+    //     name: 'WalkInLoginCashier',
+    //     Commenend: WalkInLoginCashier
+    // },
      
-    {
-        path: '/AddNote',
-        name: 'AddNote',
-        Commenend: AddNote
-    },
-    {
-        path: '/DinningOption',
-        name: 'DinningOption',
-        Commenend: DinningOption
-    },
-    {
-        path: '/OrderConfirmation',
-        name: 'OrderConfirmation',
-        Commenend: OrderConfirmation
-    },
-    {
-        path: '/Payment',
-        name: 'Payment',
-        Commenend: Payment
-    },
-    {
-        path: '/SelectTable',
-        name: 'SelectTable',
-        Commenend: SelectTable
-    },
-    {
-        path: '/TipAmount',
-        name: 'TipAmount',
-        Commenend: TipAmount
-    },
-    {
-        path: '/LoginCashierOrm',
-        name: 'LoginCashierOrm',
-        Commenend: LoginCashierOrm
-    },
-    {
-        path: '/LoginCashier',
-        name: 'LoginCashier',
-        Commenend: LoginCashier
-    },
-    {
-        path: '/UpcomingOrders',
-        name: 'UpcomingOrders',
-        Commenend: UpcomingOrders
-    },
-    {
-        path: '/WalkInLoginCashier',
-        name: 'WalkInLoginCashier',
-        Commenend: WalkInLoginCashier
-    },
-    {
-        path: '/NewReservation',
-        name: 'NewReservation',
-        Component: NewReservation
-    },
-    {
-        path: '/GuestDetail',
-        name: 'GuestDetail',
-        component: GuestDetail
-    },
-    {
-        path: '/List',
-        name: 'List',
-        component: List
-    },
+    // {
+    //     path: '/AddNote',
+    //     name: 'AddNote',
+    //     Commenend: AddNote
+    // },
+    // {
+    //     path: '/DinningOption',
+    //     name: 'DinningOption',
+    //     Commenend: DinningOption
+    // },
+    // {
+    //     path: '/OrderConfirmation',
+    //     name: 'OrderConfirmation',
+    //     Commenend: OrderConfirmation
+    // },
+    // {
+    //     path: '/Payment',
+    //     name: 'Payment',
+    //     Commenend: Payment
+    // },
+    // {
+    //     path: '/SelectTable',
+    //     name: 'SelectTable',
+    //     Commenend: SelectTable
+    // },
+    // {
+    //     path: '/TipAmount',
+    //     name: 'TipAmount',
+    //     Commenend: TipAmount
+    // },
+    // {
+    //     path: '/LoginCashierOrm',
+    //     name: 'LoginCashierOrm',
+    //     Commenend: LoginCashierOrm
+    // },
+    // {
+    //     path: '/LoginCashier',
+    //     name: 'LoginCashier',
+    //     Commenend: LoginCashier
+    // },
+    // {
+    //     path: '/UpcomingOrders',
+    //     name: 'UpcomingOrders',
+    //     Commenend: UpcomingOrders
+    // },
+    // {
+    //     path: '/WalkInLoginCashier',
+    //     name: 'WalkInLoginCashier',
+    //     Commenend: WalkInLoginCashier
+    // },
+    // {
+    //     path: '/NewReservation',
+    //     name: 'NewReservation',
+    //     Component: NewReservation
+    // },
+    // {
+    //     path: '/GuestDetail',
+    //     name: 'GuestDetail',
+    //     component: GuestDetail
+    // },
+    // {
+    //     path: '/List',
+    //     name: 'List',
+    //     component: List
+    // },
 
 ]
 
