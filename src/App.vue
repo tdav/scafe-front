@@ -1,6 +1,7 @@
 <template >
     <div>
         <div class="Nav_div1 p-3 border border-button">
+            <!--chap menyu-->
             <div class="Nav_inline_divlar Nav_button-div">
                 <button class="Nav_button border border-right">
                     <img class="Nav_imgs-arrow-left" src="./assets/imgs/Nav_arrow-left.png" alt="">
@@ -13,23 +14,25 @@
                 <div class="Nav_inline_divlar">
                 </div>
             </div>
+            <!--/chap menyu-->
+            <!--asosiy menyu-->
             <router-link to="/">Home</router-link>
             <router-link to="/order">Order</router-link>
             <router-link to="/History">History</router-link>  
             <router-link to="/Bill">Bill</router-link>
             <button class="Nav_inline_divlar">Dinning Option</button>
-
-
-    <div class="clock Nav_inline_divlar">
-      <div class="time">
-        <span class="hours"></span>
-        <span class="separator m-0 mt-1">:</span>
-        <span class="minutes"></span>
-        <span class="separator m-0  mt-1">:</span>
-        <span class="seconds"></span>
-      </div>
-    </div>
-
+            <!--/asosiy menyu-->
+            <!--soat-->
+            <div class="clock Nav_inline_divlar">
+                <div class="time">
+                    <span class="hours"></span>
+                    <span class="separator m-0 mt-1">:</span>
+                    <span class="minutes"></span>
+                    <span class="separator m-0  mt-1">:</span>
+                    <span class="seconds"></span>
+                </div>
+            </div>
+            <!--/soat-->
             <input type="date" value="2023-02-26">
             <img class="rotate" src="./assets/imgs/Nav_Profile.png" alt="rasm">
         </div>
@@ -39,6 +42,7 @@
 
 
 <script>
+//soat
 function updateTime() {
   const date = new Date();
   const hours = date.getHours().toString().padStart(2, '0');
@@ -51,6 +55,7 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);{}
+///soat
 </script>
 
 
