@@ -24,6 +24,9 @@
             <img src="../../assets/imgs/btn/misc.png" alt="">
             <h3 class="h3-1">Snack</h3>
         </button>
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+ 
+        </div>
     </div>
 </template>
 
