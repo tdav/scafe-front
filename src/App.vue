@@ -1,12 +1,10 @@
 <template >
     <div>
         <div class="Nav_div1 p-3 border border-button">
-            <div class="Nav_inline_divlar">
-                <div class="Nav_inline_divlar Nav_widht border border-right">
-                    <button class="Nav_button border border-right">
-                        <img class="Nav_imgs-arrow-left" src="./assets/imgs/Nav_arrow-left.png" alt="">
-                    </button>
-                </div>
+            <div class="Nav_inline_divlar Nav_button-div">
+                <button class="Nav_button border border-right">
+                    <img class="Nav_imgs-arrow-left" src="./assets/imgs/Nav_arrow-left.png" alt="">
+                </button>
             </div>
             <router-link to="/">Home</router-link>
             <router-link to="/order">Order</router-link>
@@ -26,8 +24,13 @@
 
 
 <style>
+.Nav_button-div{
+    width: 50px;
+    background-color: aqua;
+}
+
 .Nav_widht{
-    height: 36px;
+    height: 46px;
     width: 46px;
 }
 
@@ -44,10 +47,11 @@
     background-color: white;
     border-style: solid;
     border-width: 1px;
+    float: left ;
 }
 
 .Nav_inline_divlar{
-    display: inline;
+    display: inline-block;
 }
 
 .Nav_div1{
