@@ -6,6 +6,14 @@
                     <img class="Nav_imgs-arrow-left" src="./assets/imgs/Nav_arrow-left.png" alt="">
                 </button>
             </div>
+            <div class="Nav_inline_divlar">
+                <div class="Nav_inline_divlar">
+                    <img src="" alt="">
+                </div>
+                <div class="Nav_inline_divlar">
+
+                </div>
+            </div>
             <router-link to="/">Home</router-link>
             <router-link to="/order">Order</router-link>
             <router-link to="/History">History</router-link>  
@@ -26,7 +34,7 @@
 <style>
 .Nav_button-div{
     width: 50px;
-    background-color: aqua;
+    border-right: solid 1px;  
 }
 
 .Nav_widht{
