@@ -11,7 +11,6 @@
                     <img src="./assets/imgs/Nav_Vector.png" alt="">
                 </div>
                 <div class="Nav_inline_divlar">
-
                 </div>
             </div>
             <router-link to="/">Home</router-link>
