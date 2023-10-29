@@ -19,6 +19,7 @@ import List from './view/reservation/List.vue'
 import HomeList from './view/home/list.vue'
 import Order from './view/Order/order_list.vue'
 import History from './view/History/list.vue'
+import Bill from './view/Bill/list.vue'
 
 const routes = [
     {
@@ -39,6 +40,11 @@ const routes = [
         path: '/history',
         name: 'History',
         component: History
+    },
+    {
+        path:'/Bill',
+        name:  'Bill',
+        component: Bill
     },
 
     // {
