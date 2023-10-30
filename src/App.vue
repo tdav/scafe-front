@@ -1,48 +1,61 @@
 <template >
-    <div>
-        <div class="Nav_div1 p-3 border border-button">
-            <!--chap menyu-->
-            <div class="Nav_inline_divlar Nav_button-div">
-                <button class="Nav_button border border-right">
-                    <img class="Nav_imgs-arrow-left" src="./assets/imgs/Nav_arrow-left.png" alt="">
-                </button>
-            </div>
-            <div class="Nav_inline_divlar">
-                <div class="Nav_inline_divlar">
-                    <img src="./assets/imgs/Nav_Vector.png" alt="">
-                </div>
-                <div class="Nav_inline_divlar">
-                </div>
-            </div>
-            <!--/chap menyu-->
-            <!--asosiy menyu-->
-            <router-link to="/">Home</router-link>
-            <router-link to="/order">Order</router-link>
-            <router-link to="/History">History</router-link>  
-            <router-link to="/Bill">Bill</router-link>
-            <button class="Nav_inline_divlar">Dinning Option</button>
-            <!--/asosiy menyu-->
-            <!--soat-->
-            <div class="clock Nav_inline_divlar">
-                <div class="time">
-                    <span class="hours"></span>
-                    <span class="separator m-0 mt-1">:</span>
-                    <span class="minutes"></span>
-                    <span class="separator m-0  mt-1">:</span>
-                    <span class="seconds"></span>
+    <div class="Nav_div1 border border-button p-3" style="padding: 0px;">
+        <!--chap menyu-->
+        <div class="Nav_container-fluir2 Nav_div2">
+            <div class="container-fluid Nav_inline_divlar h-100">
+                <div class="row h-100">
+                    <div class="col-4 " style="border-right: 1px solid ; height: 46px;">
+                        <button type="button" class="Nav_button-div mt-1">
+                            <img src="./assets/imgs/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
+                        </button>
+                    </div>
+                    <div class="col-8">
+                        <div class="container-fluid">
+                            <div class="row " style="float: left;">
+                                <b class="Nav_bold-style">Walk-In</b><br>
+                            </div>
+                            <div class="row " style="text-align: ; width: 131px;">
+                                <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--/soat-->
-            <input type="date" value="2023-02-26">
-            <img class="rotate" src="./assets/imgs/Nav_Profile.png" alt="rasm">
         </div>
-        <router-view></router-view>
+        <!--/chap menyu-->
+        <!--asosiy menyu-->
+        <img src="./assets/imgs/nav/Nav_home.png" class="me-1" alt="">
+        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/" >Home</router-link>
+        <img src="./assets/imgs/nav/Nav_note.png" class="me-1"  alt="">
+        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/order" >Order</router-link>
+        <img src="./assets/imgs/nav/Nav_clock.png" class="me-1"  alt="">
+        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/History" >History</router-link>  
+        <img src="./assets/imgs/nav/Nav_receipt.png" class="me-1"  alt="">
+        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/Bill" >Bill</router-link>
+        <button class="Nav_inline_divlar Nav_button-Dinning-Option">Dinning Option</button>
+        <!--/asosiy menyu-->
+        <!--soat-->
+        <div class="Nav_inline_divlar Nav_cass_date me-3">
+            <div class="clock Nav_inline_divlar" style="font-size: 9px;">
+                <div class="time">
+                    <span class="hours m-0"></span>
+                    <span class="separator m-0 mt-1">:</span>
+                    <span class="minutes m-0"></span>
+                    <span class="separator m-0  mt-1">:</span>
+                    <span class="seconds  m-0"></span>
+                </div>
+            </div>
+            <input class="Nav_date" type="date" value="2023-02-26">
+        </div>
+        <img class="rotate" src="./assets/imgs/nav/Nav_Profile.png" alt="rasm">
     </div>
+    <router-view></router-view>
 </template>
 
 
 <script>
 //soat
+
 function updateTime() {
   const date = new Date();
   const hours = date.getHours().toString().padStart(2, '0');
@@ -56,14 +69,116 @@ function updateTime() {
 
 setInterval(updateTime, 1000);{}
 ///soat
+
+
+import { ref, onMounted } from 'vue'
+
+let setActive = ref(false)
+
+function myFilter  ()  {
+    setActive.value =! setActive.value;
+    console.log(setActive);
+};
+
 </script>
 
 
 <style>
+/*Nav*/
+.my-active {
+    color: #FFAB18 !important;
+    gap: 8px !important;
+    width: 77px;
+    height: 78px;
+    padding: 8px, 6px, 8px, 6px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.btn-1:active {
+    color: #FFAB18;
+    gap: 8px;
+    width: 77px;
+    height: 78px;
+    padding: 8px, 6px, 8px, 6px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.Nav_bold-style{
+    text-align: start;
+}
+
+.Nav_Coca_coffeetalk-style{
+    text-align: start;
+    color: #828487;
+    font-size: 10px;
+    text-align: start;
+}
+
+.router-link{
+    text-decoration: none;
+    color: #828487;
+}
+
+.Nav_cass_date{
+    background-color:#F8F9FD;
+    border-radius: 30px;
+    height: 36px;
+    width: 225px;
+}
+
+.Nav_date{
+    background-color: #F8F9FD;
+    border: 0px; 
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.Nav_div2{
+    float: left;
+}
+
+.Nav_container-fluir2{
+    display: inline-block;
+    width: 317px;
+    height: 46px;
+}
+
+.Nav_chap-menu-div{
+    float: left;
+}
+
+.Nav-container-fluit{
+    width: 317px;
+    height: 76px;
+}
+
+.Nav_ADNOC-Al-Dar-Sharj{
+    font-size: 14px;
+}
 
 .Nav_button-div{
-    width: 50px;
-    border-right: solid 1px;  
+    height: 36px;
+    width: 36px;
+    border-radius: 50px;
+    border: solid 1px;
+}
+
+.Nav_button-Dinning-Option{
+    color: #ff6a00;
+    background-color: #FFF5EE;
+    border: none;
+    border-radius: 30px;
 }
 
 .clock 
@@ -115,7 +230,7 @@ setInterval(updateTime, 1000);{}
 
 .Nav_div1{
     height: 78px;
-    background-color: antiquewhite;
     text-align: right;
 }
+/*/Nav*/
 </style>
