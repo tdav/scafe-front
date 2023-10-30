@@ -62,6 +62,7 @@ function myFilter5  ()  {
 
 
 <style scoped>
+
 .h3-1 {
     text-align: center;
     color: #828487;
@@ -85,7 +86,7 @@ function myFilter5  ()  {
 }
 
 .btn-1:active {
-    background-color: #FFAB18;
+    background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
     margin: 10px;
     margin-left: 20px;
     border-radius: 8px;
@@ -98,8 +99,8 @@ function myFilter5  ()  {
 }
 
 
-.my-active {
-    background-color: #FFAB18 !important;
+.my-active
+    {background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
     margin: 10px;
     margin-left: 20px;
     border-radius: 8px;
