@@ -1,27 +1,27 @@
 <template >
     <div class="col-1 bg-body border-end" style="width: 125px; border-width: 1px; border-color: #E4E4E4;">
         <div>
-            <button class="btn btn-body btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter">
+            <button class="btn btn-body btn-1" :class="setActive1 ? 'my-active' : '' " @click="myFilter1">
                 <img src="../../assets/imgs/btn/offers.png" alt="">
                 <h3 class="h3-1">Coffee</h3>
             </button>
 
-            <button class="btn btn-body btn-1 ">
+            <button class="btn btn-body btn-1" :class="setActive2 ? 'my-active' : '' " @click="myFilter2">
                 <img src="../../assets/imgs/btn/beverages.png" alt="">
                 <h3 class="h3-1">Beverages</h3>
             </button> <br>
 
-            <button class="btn btn-body btn-1">
+            <button class="btn btn-body btn-1" :class="setActive3 ? 'my-active' : '' " @click="myFilter3">
                 <img src="../../assets/imgs/btn/pasta.png" alt="">
                 <h3 class="h3-1">Appetizer</h3>
             </button> <br>
 
-            <button class="btn btn-body btn-1">
+            <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : '' " @click="myFilter4">
                 <img src="../../assets/imgs/btn/lasagna.png" alt="">
                 <h3 class="h3-1">Bread</h3>
             </button> <br>
 
-            <button class="btn btn-body btn-1">
+            <button class="btn btn-body btn-1" :class="setActive5 ? 'my-active' : '' " @click="myFilter5">
                 <img src="../../assets/imgs/btn/misc.png" alt="">
                 <h3 class="h3-1">Snack</h3>
             </button>
@@ -33,11 +33,29 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-let setActive = ref(false)
+let setActive1 = ref(false)
+function myFilter1  ()  {
+    setActive1.value =! setActive1.value;
+};
 
-function myFilter  ()  {
-    setActive.value =! setActive.value;
-    console.log(setActive);
+let setActive2 = ref(false)
+function myFilter2  ()  {
+    setActive2.value =! setActive2.value;
+};
+
+let setActive3 = ref(false)
+function myFilter3  ()  {
+    setActive3.value =! setActive3.value;
+};
+
+let setActive4 = ref(false)
+function myFilter4  ()  {
+    setActive4.value =! setActive4.value;
+};
+
+let setActive5 = ref(false)
+function myFilter5  ()  {
+    setActive5.value =! setActive5.value;
 };
 
 </script>
