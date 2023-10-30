@@ -5,7 +5,7 @@
             <div class="container-fluid Nav_inline_divlar h-100">
                 <div class="row h-100">
                     <div class="col-4 " style="border-right: 1px solid ; height: 46px;">
-                        <button type="button" class="Nav_button-div mt-1">
+                        <button type="button" class="Nav_button-div Nav_button-divHover mt-1">
                             <img src="./assets/imgs/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
                         </button>
                     </div>
@@ -95,6 +95,10 @@ function myFilter  ()  {
     gap: 8px;
 }
 
+.Nav_button-divHover:hover{
+    background-color: #c9c9c9;
+}
+
 .btn-1:active {
     color: #FFAB18;
     gap: 8px;
@@ -131,11 +135,11 @@ function myFilter  ()  {
 .Nav_date{
     background-color: #F8F9FD;
     border: 0px; 
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     width: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
@@ -179,6 +183,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #FFF5EE;
     border: none;
     border-radius: 30px;
+    margin-right: 1rem;
 }
 
 .clock 
