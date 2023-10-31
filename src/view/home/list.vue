@@ -1,30 +1,39 @@
 <template >
-    <div class="col-1 bg-body border-end" style="width: 125px; border-width: 1px; border-color: #E4E4E4;">
-        <div>
-            <button class="btn btn-body btn-1" :class="setActive1 ? 'my-active' : '' " @click="myFilter1">
-                <img src="../../assets/imgs/btn/offers.png" alt="">
-                <h3 class="h3-1">Coffee</h3>
-            </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 bg-body border-end" style=" border-width: 1px; border-color: #E4E4E4;">
+                <div>
+                    <button class="btn btn-body btn-1" :class="setActive1 ? 'my-active' : '' " @click="myFilter1">
+                        <img src="../../assets/imgs/btn/offers.png" alt="">
+                        <h3 class="h3-1">Coffee</h3>
+                    </button>
 
-            <button class="btn btn-body btn-1" :class="setActive2 ? 'my-active' : '' " @click="myFilter2">
-                <img src="../../assets/imgs/btn/beverages.png" alt="">
-                <h3 class="h3-1">Beverages</h3>
-            </button> <br>
+                    <button class="btn btn-body btn-1" :class="setActive2 ? 'my-active' : '' " @click="myFilter2">
+                        <img src="../../assets/imgs/btn/beverages.png" alt="">
+                        <h3 class="h3-1">Beverages</h3>
+                    </button> <br>
 
-            <button class="btn btn-body btn-1" :class="setActive3 ? 'my-active' : '' " @click="myFilter3">
-                <img src="../../assets/imgs/btn/pasta.png" alt="">
-                <h3 class="h3-1">Appetizer</h3>
-            </button> <br>
+                    <button class="btn btn-body btn-1" :class="setActive3 ? 'my-active' : '' " @click="myFilter3">
+                        <img src="../../assets/imgs/btn/pasta.png" alt="">
+                        <h3 class="h3-1">Appetizer</h3>
+                    </button> <br>
 
-            <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : '' " @click="myFilter4">
-                <img src="../../assets/imgs/btn/lasagna.png" alt="">
-                <h3 class="h3-1">Bread</h3>
-            </button> <br>
+                    <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : '' " @click="myFilter4">
+                        <img src="../../assets/imgs/btn/lasagna.png" alt="">
+                        <h3 class="h3-1">Bread</h3>
+                    </button> <br>
 
-            <button class="btn btn-body btn-1" :class="setActive5 ? 'my-active' : '' " @click="myFilter5">
-                <img src="../../assets/imgs/btn/misc.png" alt="">
-                <h3 class="h3-1">Snack</h3>
-            </button>
+                    <button class="btn btn-body btn-1" :class="setActive5 ? 'my-active' : '' " @click="myFilter5">
+                        <img src="../../assets/imgs/btn/misc.png" alt="">
+                        <h3 class="h3-1">Snack</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="col-8" style="height: 490px;">
+            </div>
+            <div class="col-3" style="height: 490px;">
+                
+            </div>
         </div>
     </div>
 </template>
@@ -58,6 +67,9 @@ function myFilter5  ()  {
     setActive5.value =! setActive5.value;
 };
 
+
+
+
 </script>
 
 
@@ -76,7 +88,7 @@ function myFilter5  ()  {
 
 .btn-1 {
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 20px;
     width: 77px;
     height: 78px;
@@ -88,7 +100,7 @@ function myFilter5  ()  {
 .btn-1:active {
     background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 8px;
     gap: 8px;
     width: 77px;
@@ -102,7 +114,7 @@ function myFilter5  ()  {
 .my-active
     {background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 8px;
     gap: 8px !important;
     width: 77px;

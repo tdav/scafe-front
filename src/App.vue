@@ -4,18 +4,27 @@
         <div class="Nav_container-fluir2 Nav_div2">
             <div class="container-fluid Nav_inline_divlar h-100">
                 <div class="row h-100">
-                    <div class="col-4 " style="border-right: 1px solid ; height: 46px;">
-                        <button type="button" class="Nav_button-div Nav_button-divHover mt-1">
+                    <div class="col-3" style="border-right: 1px solid ; height: 46px;">
+                        <button type="button" class="Nav_button-div Nav_button-divHover mt-1 me-4">
                             <img src="./assets/imgs/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
                         </button>
                     </div>
                     <div class="col-8">
                         <div class="container-fluid">
-                            <div class="row " style="float: left;">
-                                <b class="Nav_bold-style">Walk-In</b><br>
-                            </div>
-                            <div class="row " style="text-align: ; width: 131px;">
-                                <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./assets/imgs/nav/Nav_Vector.png" style="height: 40px; width: 40px;" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <div class="container-flud">
+                                        <div class="row " style="float: left;">
+                                            <b class="Nav_bold-style">Walk-In</b><br>
+                                        </div>
+                                        <div class="row " style="text-align: ; width: 131px;">
+                                            <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,7 +105,7 @@ function myFilter  ()  {
 }
 
 .Nav_button-divHover:hover{
-    background-color: #c9c9c9;
+    background-color: #f0f0f0;
 }
 
 .btn-1:active {
@@ -116,7 +125,7 @@ function myFilter  ()  {
 .Nav_Coca_coffeetalk-style{
     text-align: start;
     color: #828487;
-    font-size: 10px;
+    font-size: 14px;
     text-align: start;
 }
 
@@ -176,6 +185,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 36px;
     border-radius: 50px;
     border: solid 1px;
+    background-color: white;
 }
 
 .Nav_button-Dinning-Option{
