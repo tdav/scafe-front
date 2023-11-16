@@ -29,10 +29,84 @@
                     </button>
                 </div>
             </div>
-            <div class="col-8" style="height: 490px;">
-            </div>
-            <div class="col-3" style="height: 490px;">
-                
+            <div class="col-11 p-0" style="height: 490px; background-color: #fafafa; overflow: auto;">
+                <div class="eat1">
+                    <div class="eat1-1 border border-1">
+
+                    </div>          
+                    <div class="eat1-2 container-fluid">
+                        <div class="row h-100">
+                            <div class="col-6 border border-1 pt-4">
+                                <img style="height: 24px; width: 24px;" src="../../assets/imgs/btn/search.png" alt="">
+                                <input class="srech" id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" placeholder="Search menu..." aria-expanded="false" aria-live="polite">
+                            </div>
+                            <div class="col-6 border border-1 p-3">
+                                <div class="eat_2_button1  border border-1"></div>
+                                <div class="eat_2_button2  border border-1"></div>
+                                <div class="eat_2_button3  border border-1"></div>
+                                <div class="eat_2_button4  border border-1"></div>
+                                <div class="eat_2_button5  border border-1"></div>
+                            </div>
+                        </div>
+                    </div>              
+                    <!--1-qator-->
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mw-1 mt-2">
+
+                    </div>
+                    <!--2-qator-->
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mw-1 mt-2">
+
+                    </div>
+                    <!--3-qator-->
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mx-1 mt-2">
+
+                    </div>
+                    <div class="eat1-3 mw-1 mt-2">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -74,6 +148,87 @@ function myFilter5  ()  {
 
 
 <style scoped>
+
+.eat1-3{
+    width: 199px;
+    height: 230px;
+    padding: 12px, 8px, 16px, 8px;
+    border-radius: 16px;
+    gap: 12px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+.srech{
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 395px;
+    height: 24px;
+    border: none;
+}
+
+.eat_2_button1{
+    width: 50px;
+    height: 36px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 40px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.eat_2_button2{
+    width: 89px;
+    height: 36px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 40px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.eat_2_button3{
+    width: 89px;
+    height: 36px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 40px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.eat_2_button4{
+    width: 70px;
+    height: 36px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 40px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.eat_2_button5{
+    width: 99px;
+    height: 36px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+.eat1-1{
+    height: 36px;
+    background-color: white;
+}
+.eat1-2{
+    background-color: white;
+}
+
+.eat1{
+    width: 100%;
+    height: 100px;
+    top: 78px;
+    left: 125px;
+}
 
 .h3-1 {
     text-align: center;
