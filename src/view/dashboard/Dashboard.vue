@@ -44,7 +44,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-12">
-                                                <button class="btn btn-primary bbp-1" style="background-color: #F8F9FD;
+                                                <div class="btn btn-primary bbp-1" style="background-color: #F8F9FD;
                                                     width: 372px;
                                                     height: 44px;
                                                     padding: 4px;
@@ -52,24 +52,22 @@
                                                     <div class="container-fluid">
                                                         <div class="row">
                                                             <div class="col-6">
-                                                                <button class="btn btn-primary bbp-2"
-                                                                    style=" border-radius: 40px;  background-color: #FFFFFF; border-radius: 40px; border-width: 0px; width: 152px; height: 36px; padding: 8px 16px 8px 16px; border-radius: 40px; gap: 10px; margin-left: -370px;">
+                                                                <button class="btn btn-primary bbp-2" style=" border-radius: 40px;  background-color: #FFFFFF; border-radius: 40px; border-width: 0px; width: 152px; height: 36px; padding: 8px 16px 8px 16px; border-radius: 40px; gap: 10px; margin-left: -15px;">
                                                                     <h6 class="h6-1">
                                                                         Buy
                                                                     </h6>
                                                                 </button>
                                                             </div>
                                                             <div class="col-6">
-                                                                <button class="btn btn-primary bbp-3"
-                                                                    style="background-color: #F8F9FD; border-width: 0px;  border-radius: 40px;">
-                                                                    <h6 class="h6-2">
-                                                                        Reservation
-                                                                    </h6>
+                                                                <button class="btn btn-primary bbp-3" style="background-color: #F8F9FD; border-width: 0px;  border-radius: 40px;">
+                                                                        <h6 class="h6-2">
+                                                                            Reservation
+                                                                        </h6>
                                                                 </button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </button>
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-10">
