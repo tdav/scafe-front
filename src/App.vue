@@ -18,7 +18,7 @@
                                 <div class="col-8">
                                     <div class="container-flud">
                                         <div class="row " style="float: left;">
-                                            <b class="Nav_bold-style">Walk-In</b><br>
+                                          <b class="Nav_bold-style">Walk-In</b><br>
                                         </div>
                                         <div class="row " style="text-align: ; width: 131px;">
                                             <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
