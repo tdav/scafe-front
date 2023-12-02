@@ -37,9 +37,9 @@
                     <div class=" container-fluid eat1-2">
                         <div class="row h-100">
 
-                            <div class="input-box">
+                            <div class="wrapper">
                                 <input type="text" class="form-control">
-                                <i class="fa fa-search"></i>
+                                <!-- <i class="fa fa-search"></i> -->
                             </div>
 
                             <!-- <div class="col-6 border border-1 pt-4">
@@ -153,6 +153,9 @@ function myFilter5() {
 </script>
 
 <style scoped>
+
+.wrapper { position: relative; }
+
 .eat1-3-1 {
     width: 173px;
     height: 138px;
