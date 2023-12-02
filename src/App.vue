@@ -58,7 +58,10 @@
         </div>
         <img class="rotate" src="./assets/imgs/nav/Nav_Profile.png" alt="rasm">
     </div>
+
     <router-view></router-view>
+
+    
 </template>
 
 

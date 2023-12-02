@@ -1,5 +1,5 @@
 <template >
-    <div>
+    <div style="background-color: blue;">
         Bill list
     </div>
 </template>
