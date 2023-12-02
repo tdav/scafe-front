@@ -138,7 +138,7 @@ function myFilter  ()  {
     background-color:#F8F9FD;
     border-radius: 30px;
     height: 36px;
-    width: 225px;
+    width: 241px;
 }
 
 .Nav_date{

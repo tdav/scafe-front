@@ -13,9 +13,9 @@
                         <h3 class="h3-1">Beverages</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setActive3 ? 'my-active' : '' " @click="myFilter3">
-                        <img src="../../assets/imgs/btn/pasta.png" alt="">
-                        <h3 class="h3-1">Appetizer</h3>
+                    <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : '' " @click="myFilter4">
+                        <img src="../../assets/imgs/btn/lasagna.png" alt="">
+                        <h3 class="h3-1">Bread</h3>
                     </button> <br>
 
                     <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : '' " @click="myFilter4">
@@ -40,7 +40,13 @@
 
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
 let setActive1 = ref(false)
 function myFilter1  ()  {
