@@ -34,7 +34,7 @@
                     <div class="eat1-1 border border-1">
 
                     </div>          
-                    <div class="eat1-2 container-fluid">
+                    <div class=" container-fluid eat1-2">
                         <div class="row h-100">
                             <div class="col-6 border border-1 pt-4">
                                 <img style="height: 24px; width: 24px;" src="../../assets/imgs/btn/search.png" alt="">
@@ -51,60 +51,60 @@
                     </div>              
                     <!--1-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image (1).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image (2).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image4.png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-
+                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (8).png" alt="">
                     </div>
                     <!--2-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (2).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (3).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (4).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (5).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (6).png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (7).png" alt="">
                     </div>
                     <!--3-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (8).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (6).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (3).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Image (1).png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (8).png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-
+                        <img  class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder (3).png" alt="">
                     </div>
                 </div>
             </div>
@@ -148,6 +148,11 @@ function myFilter5  ()  {
 
 
 <style scoped>
+
+.eat1-3-1{
+    width: 173px;
+    height: 138px;
+}
 
 .eat1-3{
     width: 199px;
