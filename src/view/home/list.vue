@@ -233,7 +233,7 @@ function myFilter5  ()  {
     height: 100px;
     top: 78px;
     left: 125px;
-}
+} 
 
 .h3-1 {
     text-align: center;
