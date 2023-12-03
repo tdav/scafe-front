@@ -38,7 +38,7 @@
                     <div class=" container-fluid eat1-2">
                         <div class="row h-100">
 
-                            <div class="wrapper">
+                            <div class="wrapper p-0">
                                 <input type="text" class="form-control">
                                 <!-- <i class="fa fa-search"></i> -->
                             </div>                          
@@ -54,84 +54,175 @@
                     <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(2)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(3)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Image2.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(4)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(5)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Image4.png">
                     </div>
-                    <div class="eat1-3 mw-1 mt-2">
+                    <div class="eat1-3 mw-1 mt-2" @click="mySelectEts(6)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
                     <!--2-qator-->
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(7)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder2.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(8)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(9)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder4.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(10)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder5.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(11)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png">
                     </div>
-                    <div class="eat1-3 mw-1 mt-2">
+                    <div class="eat1-3 mw-1 mt-2" @click="mySelectEts(12)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder7.png">
                     </div>
                     <!--3-qator-->
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(13)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(14)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(15)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(16)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
                     </div>
-                    <div class="eat1-3 mx-1 mt-2">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(17)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
-                    <div class="eat1-3 mw-1 mt-2">
+                    <div class="eat1-3 mw-1 mt-2" @click="mySelectEts(18)">
                         <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
 
                 </div>
             </div>
 
-            <div class="col-2" v-if="isShowPanel" style="background-color: aqua;">
+            <div class="col-2 p-0"  v-if="isShowPanel" style="margin-top: 74px; background-color: aqua;">
 
                 
-                    <h3 class="h3-1">{{ etsList }}</h3>
+                    <h3 class="h3-1 ">{{ etsList }}</h3>
                     <div class="container">
                         <div class="row">
-                            <div class="eat1-3 mx-1 mt-2" v-if="etsList.filter(x=>x==1).length>0" >
-                                <img class="eat1-3-1 m-3" src="../../assets/images/Image.png">
+                            <div v-if="etsList.filter(x=>x==1).length>0" class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Image.png">
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==2).length>0" class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Image1.png">
+                            </div>
+                        </div>
 
                         <div class="row">
-                            <div class="eat1-3 mx-1 mt-2" v-if="etsList.filter(x=>x==2).length>0" >
-                                <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
+                            <div v-if="etsList.filter(x=>x==3).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Image2.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==4).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==5).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Image4.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==6).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==7).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder2.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==8).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==9).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder4.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==10).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder5.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==11).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder6.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==12).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder7.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==13).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==14).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder6.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==15).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==16).length>0" class="p-0" >
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Image1.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==17).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div v-if="etsList.filter(x=>x==18).length>0"  class="p-0">
+                                <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
                             </div>
                         </div>
 
                     </div>
-                
-
             </div>
-
-
         </div>
     </div>
 </template>
@@ -139,15 +230,6 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-
-
-let setItem = ref(0)
-
-function mySetSelect(i) {
-    this.setItem = i
-
-    this.isShowPanel = i == 5
-};
 
 let etsList = ref([])
 let isShowPanel = ref(false)
@@ -166,6 +248,11 @@ function mySelectEts(i) {
 </script>
 
 <style scoped>
+
+.eat1-3-11{
+    height: 74px;
+    width: 74px;
+}
 .wrapper {
     position: relative;
 }
