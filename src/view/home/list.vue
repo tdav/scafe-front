@@ -3,33 +3,34 @@
         <div class="row">
             <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4;">
                 <div>
-                    <button class="btn btn-body btn-1" :class="setActive1 ? 'my-active' : ''" @click="myFilter1">
-                        <img src="../../assets/images/btn/offers.png" alt="">
+                    <button class="btn btn-body btn-1" :class="setItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
+                        <img src="../../assets/images/btn/offers.png">
                         <h3 class="h3-1">Coffee</h3>
                     </button>
 
-                    <button class="btn btn-body btn-1" :class="setActive2 ? 'my-active' : ''" @click="myFilter2">
-                        <img src="../../assets/images/btn/beverages.png" alt="">
+                    <button class="btn btn-body btn-1" :class="setItem == 2 ? 'my-active' : ''" @click="mySetSelect(2)">
+                        <img src="../../assets/images/btn/beverages.png">
                         <h3 class="h3-1">Beverages</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : ''" @click="myFilter3">
-                        <img src="../../assets/images/btn/lasagna.png" alt="">
+                    <button class="btn btn-body btn-1" :class="setItem == 3 ? 'my-active' : ''" @click="mySetSelect(3)">
+                        <img src="../../assets/images/btn/lasagna.png">
                         <h3 class="h3-1">Bread</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : ''" @click="myFilter4">
-                        <img src="../../assets/images/btn/pasta.png" alt="">
+                    <button class="btn btn-body btn-1" :class="setItem == 4 ? 'my-active' : ''" @click="mySetSelect(4)">
+                        <img src="../../assets/images/btn/pasta.png">
                         <h3 class="h3-1">Appetizer</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setActive5 ? 'my-active' : ''" @click="myFilter5">
-                        <img src="../../assets/images/btn/misc.png" alt="">
+                    <button class="btn btn-body btn-1" :class="setItem == 5 ? 'my-active' : ''" @click="mySetSelect(5)">
+                        <img src="../../assets/images/btn/misc.png">
                         <h3 class="h3-1">Snack</h3>
                     </button>
                 </div>
             </div>
-            <div class="col-11 p-0" style="background-color: #fafafa;">
+
+            <div class="p-0" :class="!isShowPanel ? 'col-11' : 'col-9'" style="background-color: #fafafa;">
                 <div class="eat1">
                     <div class="eat1-1 border border-1">
 
@@ -40,80 +41,97 @@
                             <div class="wrapper">
                                 <input type="text" class="form-control">
                                 <!-- <i class="fa fa-search"></i> -->
-                            </div>
-
-                            <!-- <div class="col-6 border border-1 pt-4">
-                                <img style="height: 24px; width: 24px;" src="../../assets/imgs/btn/search.png" alt="">
-                                <input class="srech" id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" placeholder="Search menu..." aria-expanded="false" aria-live="polite">
-                            </div> -->
-                            <!-- <div class="col-6 border border-1 p-3">
-                                <div class="eat_2_button1  border border-1"></div>
-                                <div class="eat_2_button2  border border-1"></div>
-                                <div class="eat_2_button3  border border-1"></div>
-                                <div class="eat_2_button4  border border-1"></div>
-                                <div class="eat_2_button5  border border-1"></div>
-                            </div> -->
+                            </div>                          
                         </div>
                     </div>
+
+
                     <!--1-qator-->
-                    <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Image.png" alt="">
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(1)">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image.png">
+                    </div>
+
+                    <div class="eat1-3 mx-1 mt-2" @click="mySelectEts(2)">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image2.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Image2.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder.png" alt="">
-                    </div>
-                    <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Image4.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image4.png">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
                     <!--2-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder2.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder2.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder4.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder4.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder5.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder5.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder7.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder7.png">
                     </div>
                     <!--3-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png">
                     </div>
+
                 </div>
             </div>
+
+            <div class="col-2" v-if="isShowPanel" style="background-color: aqua;">
+
+                
+                    <h3 class="h3-1">{{ etsList }}</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="eat1-3 mx-1 mt-2" v-if="etsList.filter(x=>x==1).length>0" >
+                                <img class="eat1-3-1 m-3" src="../../assets/images/Image.png">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="eat1-3 mx-1 mt-2" v-if="etsList.filter(x=>x==2).length>0" >
+                                <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png">
+                            </div>
+                        </div>
+
+                    </div>
+                
+
+            </div>
+
+
         </div>
     </div>
 </template>
@@ -122,30 +140,25 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-let setActive1 = ref(false)
-function myFilter1() {
-    setActive1.value = !setActive1.value;
+
+let setItem = ref(0)
+
+function mySetSelect(i) {
+    this.setItem = i
+
+    this.isShowPanel = i == 5
 };
 
-let setActive2 = ref(false)
-function myFilter2() {
-    setActive2.value = !setActive2.value;
-};
+let etsList = ref([])
+let isShowPanel = ref(false)
 
-let setActive3 = ref(false)
-function myFilter3() {
-    setActive3.value = !setActive3.value;
-};
+function mySelectEts(i) { 
+    
+    this.etsList.push(i)
+    
+    this.isShowPanel = this.etsList.length>0
+}
 
-let setActive4 = ref(false)
-function myFilter4() {
-    setActive4.value = !setActive4.value;
-};
-
-let setActive5 = ref(false)
-function myFilter5() {
-    setActive5.value = !setActive5.value;
-};
 
 
 
@@ -153,8 +166,9 @@ function myFilter5() {
 </script>
 
 <style scoped>
-
-.wrapper { position: relative; }
+.wrapper {
+    position: relative;
+}
 
 .eat1-3-1 {
     width: 173px;

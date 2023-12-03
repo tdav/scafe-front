@@ -34,13 +34,13 @@
         <!--/chap menyu-->
         <!--asosiy menyu-->
         <img src="./assets/images/nav/Nav_home.png" class="me-1" alt="">
-        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/" >Home</router-link>
+        <router-link class="router-link me-3 btn-1"  to="/" >Home</router-link>
         <img src="./assets/images/nav/Nav_note.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/order" >Order</router-link>
+        <router-link class="router-link me-3 btn-1"  to="/order" >Order</router-link>
         <img src="./assets/images/nav/Nav_clock.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/History" >History</router-link>  
+        <router-link class="router-link me-3 btn-1"  to="/History" >History</router-link>  
         <img src="./assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/Bill" >Bill</router-link>
+        <router-link class="router-link me-3 btn-1"  to="/Bill" >Bill</router-link>
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">Dinning Option</button>
         <!--/asosiy menyu-->
         <!--soat-->
@@ -83,14 +83,14 @@ setInterval(updateTime, 1000);{}
 ///soat
 
 
-import { ref, onMounted } from 'vue'
+// import { ref, onMounted } from 'vue'
 
-let setActive = ref(false)
+// let setActive = ref(false)
 
-function myFilter  ()  {
-    setActive.value =! setActive.value;
-    console.log(setActive);
-};
+// function myFilter  ()  {
+//     setActive.value =! setActive.value;
+//     console.log(setActive);
+// };
 
 </script>
 

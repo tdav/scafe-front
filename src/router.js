@@ -27,15 +27,11 @@ const routes = [
         name: 'Home',
         component: HomeList
     },
-
-
-
     {
         path: '/order',
         name: 'Order',
         component: Order
     },
-
     {
         path: '/history',
         name: 'History',
