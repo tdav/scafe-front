@@ -115,7 +115,9 @@
                 <h3 class="h3-1 ">{{ etsQtyList }}</h3>
 
 
-                <div class="container">
+                <div style="overflow: auto; height: 350px; width: 100;">
+                
+                    <div class="container">
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 1).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image.png">
@@ -263,6 +265,8 @@
                         </div>
                     </div>
 
+
+                </div>
                 </div>
             </div>
         </div>
