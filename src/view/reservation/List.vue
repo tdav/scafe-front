@@ -24,7 +24,7 @@
 
                                             </div>
                                             <div class="col-1">
-                                                <img src="./Images/chevron-down.png" alt="" class="img-1">
+                                                <img src="./imgs/chevron-down.png" alt="" class="img-1">
                                             </div>
                                         </div>
                                         <div class="row">
