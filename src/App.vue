@@ -6,14 +6,14 @@
                 <div class="row h-100">
                     <div class="col-3" style="border-right: 1px solid ; height: 46px;">
                         <button type="button" class="Nav_button-div Nav_button-divHover mt-1 me-4">
-                            <img src="./assets/imgs/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
+                            <img src="./assets/images/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
                         </button>
                     </div>
                     <div class="col-8">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="./assets/imgs/nav/Nav_Vector.png" style="height: 40px; width: 40px;" alt="">
+                                    <img src="./assets/images/nav/Nav_Vector.png" style="height: 40px; width: 40px;" alt="">
                                 </div>
                                 <div class="col-8">
                                     <div class="container-flud">
@@ -33,13 +33,13 @@
         </div>
         <!--/chap menyu-->
         <!--asosiy menyu-->
-        <img src="./assets/imgs/nav/Nav_home.png" class="me-1" alt="">
+        <img src="./assets/images/nav/Nav_home.png" class="me-1" alt="">
         <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/" >Home</router-link>
-        <img src="./assets/imgs/nav/Nav_note.png" class="me-1"  alt="">
+        <img src="./assets/images/nav/Nav_note.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/order" >Order</router-link>
-        <img src="./assets/imgs/nav/Nav_clock.png" class="me-1"  alt="">
+        <img src="./assets/images/nav/Nav_clock.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/History" >History</router-link>  
-        <img src="./assets/imgs/nav/Nav_receipt.png" class="me-1"  alt="">
+        <img src="./assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1" :class="setActive ? 'my-active' : '' " @click="myFilter" to="/Bill" >Bill</router-link>
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">Dinning Option</button>
         <!--/asosiy menyu-->
@@ -56,7 +56,7 @@
             </div>
             <input class="Nav_date" type="date" value="2023-02-26">
         </div>
-        <img class="rotate" src="./assets/imgs/nav/Nav_Profile.png" alt="rasm">
+        <img class="rotate" src="./assets/images/nav/Nav_Profile.png" alt="rasm">
     </div>
 
     <router-view></router-view>

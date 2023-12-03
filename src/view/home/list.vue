@@ -4,27 +4,27 @@
             <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4;">
                 <div>
                     <button class="btn btn-body btn-1" :class="setActive1 ? 'my-active' : ''" @click="myFilter1">
-                        <img src="../../assets/imgs/btn/offers.png" alt="">
+                        <img src="../../assets/images/btn/offers.png" alt="">
                         <h3 class="h3-1">Coffee</h3>
                     </button>
 
                     <button class="btn btn-body btn-1" :class="setActive2 ? 'my-active' : ''" @click="myFilter2">
-                        <img src="../../assets/imgs/btn/beverages.png" alt="">
+                        <img src="../../assets/images/btn/beverages.png" alt="">
                         <h3 class="h3-1">Beverages</h3>
                     </button> <br>
 
                     <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : ''" @click="myFilter3">
-                        <img src="../../assets/imgs/btn/lasagna.png" alt="">
+                        <img src="../../assets/images/btn/lasagna.png" alt="">
                         <h3 class="h3-1">Bread</h3>
                     </button> <br>
 
                     <button class="btn btn-body btn-1" :class="setActive4 ? 'my-active' : ''" @click="myFilter4">
-                        <img src="../../assets/imgs/btn/pasta.png" alt="">
+                        <img src="../../assets/images/btn/pasta.png" alt="">
                         <h3 class="h3-1">Appetizer</h3>
                     </button> <br>
 
                     <button class="btn btn-body btn-1" :class="setActive5 ? 'my-active' : ''" @click="myFilter5">
-                        <img src="../../assets/imgs/btn/misc.png" alt="">
+                        <img src="../../assets/images/btn/misc.png" alt="">
                         <h3 class="h3-1">Snack</h3>
                     </button>
                 </div>
@@ -57,60 +57,60 @@
                     </div>
                     <!--1-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image1.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image2.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image2.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image4.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image4.png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
                     </div>
                     <!--2-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder2.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder2.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder4.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder4.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder5.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder5.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder6.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder7.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder7.png" alt="">
                     </div>
                     <!--3-qator-->
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder6.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder6.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Image1.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Image1.png" alt="">
                     </div>
                     <div class="eat1-3 mx-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder8.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder8.png" alt="">
                     </div>
                     <div class="eat1-3 mw-1 mt-2">
-                        <img class="eat1-3-1 m-3" src="../../assets/imgs/Placeholder3.png" alt="">
+                        <img class="eat1-3-1 m-3" src="../../assets/images/Placeholder3.png" alt="">
                     </div>
                 </div>
             </div>
