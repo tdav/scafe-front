@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="col-3 p-0 border border-1" v-if="isShowPanel" style="margin-top:; background-color: white;">
+            <div class="col-3 p-0 border borderder-1" v-if="isShowPanel" style="margin-top:; background-color: white;">
 
                 <div style="overflow: auto; height: 350px; width: 100;">
                 
