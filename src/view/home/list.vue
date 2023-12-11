@@ -125,9 +125,10 @@
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 2).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image1.png">
+                            <button @click="EtsPlus(2)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
                             <button @click="EtsMinus(2)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                                 <!--<h5 style="display: inline-block;" class="h3-1 ">{{ etsQtyList }}</h5>-->
-                            <button @click="EtsPlus(2)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+
                         </div>
                     </div>
 
@@ -135,104 +136,117 @@
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 3).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image2.png">
-                            <button @click="EtsMinus(3)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(3)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(3)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 4).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder.png">
-                            <button @click="EtsMinus(4)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(4)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(4)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 5).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image4.png">
-                            <button @click="EtsMinus(5)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(5)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(5)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 6).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
-                            <button @click="EtsMinus(6)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(6)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(6)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 7).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder2.png">
-                            <button @click="EtsMinus(7)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(7)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(7)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 8).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
-                            <button @click="EtsMinus(8)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(8)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(8)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 9).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder4.png">
-                            <button @click="EtsMinus(9)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(9)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(9)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 10).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder5.png">
-                            <button @click="EtsMinus(10)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(10)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(10)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 11).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder6.png">
-                            <button @click="EtsMinus(11)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(11)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(11)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 12).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder7.png">
-                            <button @click="EtsMinus(12)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(12)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(12)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 13).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
-                            <button @click="EtsMinus(13)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(13)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(13)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 14).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder6.png">
-                            <button @click="EtsMinus(14)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(14)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(14)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 15).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
-                            <button @click="EtsMinus(15)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(15)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(15)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
@@ -240,24 +254,27 @@
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 16).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image1.png">
-                            <button @click="EtsMinus(16)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(16)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(16)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 17).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder8.png">
-                            <button @click="EtsMinus(17)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(17)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(17)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 18).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Placeholder3.png">
-                            <button @click="EtsMinus(18)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(18)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(18)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                        
                         </div>
                     </div>
 
