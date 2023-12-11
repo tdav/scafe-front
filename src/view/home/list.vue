@@ -119,7 +119,6 @@
                             <button @click="EtsPlus(1)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right; background-color: #19191c;">+</button>
                             <button @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right; background-color: #E4E4E4">-</button>
                             <button v-on:click="age++" @click="EtsPlus(1)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
-                            <h5 style="display: inline-block;">{{age}}1</h5>
                             <button v-on:click="age--" @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                         </div>
                     </div>
