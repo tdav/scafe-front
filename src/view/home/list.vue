@@ -116,8 +116,8 @@
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 1).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image.png">
-                            <button @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                             <button @click="EtsPlus(1)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <button @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                         </div>
                     </div>
 
