@@ -116,8 +116,9 @@
                     <div class="row">
                         <div v-if="etsList.filter(x => x == 1).length > 0" class="p-0">
                             <img class="eat1-3-11 m-3" src="../../assets/images/Image.png">
-                            <button @click="EtsPlus(1)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
-                            <button @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
+                            <button v-on:click="age++" @click="EtsPlus(1)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">+</button>
+                            <h5 style="display: inline-block;">{{age}}1</h5>
+                            <button v-on:click="age--" @click="EtsMinus(1)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right;">-</button>
                         </div>
                     </div>
 
@@ -293,7 +294,6 @@ import { ref, onMounted } from 'vue';
 let etsList = ref([])
 let etsQtyList = ref([])
 let isShowPanel = ref(false)
-
 function mySelectEts(i) {
 
     this.etsList.push(i)
