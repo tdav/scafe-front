@@ -44,7 +44,7 @@
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">
         
             <div class="dropdown">
-                <DinningOption isShow="dinningOptionIsShow"></DinningOption>
+                <DinningOption v-model.isShow="dinningOptionIsShow"></DinningOption>
             </div>
 
         </button>
@@ -73,7 +73,7 @@
 import { ref } from 'vue';
 import DinningOption from './components/DinningOption.vue';
 
-const dinningOptionIsShow = ref(false);
+let dinningOptionIsShow = ref(false);
 
 function updateTime() {
     const date = new Date();
