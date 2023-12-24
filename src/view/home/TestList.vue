@@ -29,15 +29,17 @@
                     </button>
                 </div>
             </div>
+            
+            <div  class="p-0" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color: #fafafa;">
+                <ul>
+                    <li v-for="it in foodData" :key="it.id" class="li">
+                        <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name"
+                            v-model:fdescription="it.description" v-model:price="it.price">
+                        </Food>
+                    </li>
+                </ul>
+            </div>
 
-
-            <ul>
-                <li v-for="it in foodData" :key="it.id">
-                    <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name"
-                        v-model:fdescription="it.description">
-                    </Food>
-                </li>
-            </ul>
         </div>
     </div>
 </template>
@@ -56,6 +58,10 @@ import Food from '../../components/Food.vue';
     color: white;
 }
 
+.li{
+    display: inline-block;
+}
+
 .eat1-3-11 {
     height: 74px;
     width: 74px;
@@ -71,7 +77,7 @@ import Food from '../../components/Food.vue';
 }
 
 .eat1-3{
-    height: 230px;
+    height: 275px;
     padding: 12px, 8px, 16px, 8px;
     border-radius: 16px;
     gap: 12px;

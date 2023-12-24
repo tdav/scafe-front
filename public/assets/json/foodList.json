@@ -2,54 +2,64 @@
     {
         "id": 1,
         "name": "Мол гушти",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image.png"
+        "description": "sdsdmnsdmns",
+        "img": "/assets/images/Image.png",
+        "price":90000
     },
     {
         "id": 2,
-        "name": "f2",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image1.png"
+        "name": "qozon kabob",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Image1.png",
+        "price":90000
     }, {
         "id": 3,
-        "name": "f3",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image2.png"
+        "name": "Xitoy taomi",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Image2.png",
+        "price":90000
     }, {
         "id": 4,
-        "name": "f5",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder.png"
+        "name": "Lag'mon sho'rva",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder.png",
+        "price":90000
     }, {
         "id": 5,
-        "name": "f5",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image4.png"
+        "name": "sho'rva",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Image4.png",
+        "price":90000
     }, {
         "id": 6,
-        "name": "f6",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder8.png"
+        "name": "Ko'kat so'rva",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder8.png",
+        "price":90000
     }, {
         "id": 7,
-        "name": "f7",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder2.png"
+        "name": "Thumli ovqat",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder2.png",
+        "price":90000
     }, {
         "id": 8,
-        "name": "f8",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder3.png"
+        "name": "Baliq go'shtli osh",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder3.png",
+        "price":90000
     }, {
         "id": 9,
-        "name": "f9",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder4.png"
+        "name": "Baliq go'shtli salat",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder4.png",
+        "price":90000
     }, {
         "id": 10,
-        "name": "f10",
-        "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder5.png"
+        "name": "Gruch go'ja",
+        "description": "iudsbciashcbi",
+        "img": "/assets/images/Placeholder5.png",
+        "price":90000
     }
 
 ]

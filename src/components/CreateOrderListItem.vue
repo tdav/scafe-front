@@ -7,7 +7,7 @@
                 <p class="parag  m-0">+</p>
             </button>
 
-            <button @click="EtsMinus(13)" style="my-btn-minus">
+            <button @click="EtsMinus(13)" class="my-btn-minus">
                 <p class="parag  m-0">-</p>
             </button>
 
