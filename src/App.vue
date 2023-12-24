@@ -44,7 +44,7 @@
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">
         
             <div class="dropdown">
-                <DinningOption v-model.isShow="dinningOptionIsShow"></DinningOption>
+                <DinningOption isShow="dinningOptionIsShow"></DinningOption>
             </div>
 
         </button>

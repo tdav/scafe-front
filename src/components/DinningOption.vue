@@ -64,13 +64,25 @@
 
 <script setup>
 
-import { defineProps } from 'vue';
+import { defineProps, onMounted  } from 'vue';
 
-const props = defineProps(['isShow'])
+const props = defineProps(
+    {
+        isShow: {
+            type: Boolean,
+            required:true,
 
-function onClick()
-{
-    props.isShow!=props.isShow;
+        }
+    })
+
+onMounted(() => {
+    console.log(props);
+})
+
+function onClick() {
+    console.log(props);
+    
+    props.isShow != props.isShow;
 }
 
 </script>
