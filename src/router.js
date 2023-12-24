@@ -20,10 +20,16 @@ import HomeList from './view/home/list.vue'
 import Order from './view/Order/order_list.vue'
 import History from './view/History/list.vue'
 import Bill from './view/Bill/list.vue'
+import TestList from './view/home/TestList.vue'
 
 const routes = [
     {
         path: '/',
+        name: 'TestList',
+        component: TestList
+    },
+    {
+        path: '/home',
         name: 'Home',
         component: HomeList
     },
