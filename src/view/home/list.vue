@@ -306,7 +306,6 @@ function mySelectEts(i) {
     else {
         this.etsQtyList[i]++
     }
-
 }
 
 function EtsPlus(i) {
