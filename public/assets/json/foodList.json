@@ -3,53 +3,53 @@
         "id": 1,
         "name": "Мол гушти",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Image.png"
+        "img": "/assets/images/Image.png"
     },
     {
         "id": 2,
         "name": "f2",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Image1.png"
+        "img": "/assets/images/Image1.png"
     }, {
         "id": 3,
         "name": "f3",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Image2.png"
+        "img": "/assets/images/Image2.png"
     }, {
         "id": 4,
         "name": "f5",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder.png"
+        "img": "/assets/images/Placeholder.png"
     }, {
         "id": 5,
         "name": "f5",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Image4.png"
+        "img": "/assets/images/Image4.png"
     }, {
         "id": 6,
         "name": "f6",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder8.png"
+        "img": "/assets/images/Placeholder8.png"
     }, {
         "id": 7,
         "name": "f7",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder2.png"
+        "img": "/assets/images/Placeholder2.png"
     }, {
         "id": 8,
         "name": "f8",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder3.png"
+        "img": "/assets/images/Placeholder3.png"
     }, {
         "id": 9,
         "name": "f9",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder4.png"
+        "img": "/assets/images/Placeholder4.png"
     }, {
         "id": 10,
         "name": "f10",
         "description": "sjdhjsh sjdj",
-        "img": "/public/assets/images/Placeholder5.png"
+        "img": "/assets/images/Placeholder5.png"
     }
 
 ]

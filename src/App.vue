@@ -33,7 +33,7 @@
         </div>
         <!--/chap menyu-->
         <!--asosiy menyu-->
-        <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
+        <img src="../src/assets/images/nav/Nav_home.png" class="me-1" alt="">
         <router-link class="router-link me-3 btn-1"  to="/" >Home</router-link>
         <img src="../public/assets/images/nav/Nav_note.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1"  to="/order" >Order</router-link>
