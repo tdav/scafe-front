@@ -1,6 +1,4 @@
-<template >
-
-    
+<template >    
     <div class="eat1-3 col-2 mx-1 mt-2" style="border: 1px;">
         <img class="eat1-3-1 mt-2 ms-1" :src="fimg">
         <p>{{ fname }}</p>
