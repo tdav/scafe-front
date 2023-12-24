@@ -1,7 +1,7 @@
 <template >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4;">
+            <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4; text-align: center;">
                 <div>
                     <button class="btn btn-body btn-1 " :class="setItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
                         <img src="../../../public/assets/images/btn/offers.png">
