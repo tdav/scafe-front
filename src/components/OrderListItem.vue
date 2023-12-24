@@ -4,7 +4,7 @@
         <img class="eat1-3-11 mt-2 ms-1" :src="fimg">
         <p> {{ fname }}</p>
         <p>Price {{ fprice }}</p>
-        <p>Qty {{ count}}</p>
+        <p>Qty {{ count }}</p>
         <p>Total {{ jamiSumma }}</p>
 
         <button @click="EtsPlus()" class="my-btn-plus">
@@ -20,27 +20,33 @@
 
 
 <script setup>
-import { ref, defineProps } from 'vue';
-const props = defineProps(['fid', 'fname', 'fimg', 'fprice'])
+import { ref, defineProps, onMounted } from 'vue';
+
+const props = defineProps(['fname', 'fprice', 'fimg'])
+
+onMounted(() => {
+    //console.log(props);   
+})
+
 
 let count = ref(0);
 let jamiSumma = ref(0);
 
 
 function EtsPlus() {
-    count++;
-    jamiSumma = fprice * count;
+    this.count++;
+    this.jamiSumma = props.fprice * this.count;
 }
 
 function EtsMinus() {
-    count--;
-    jamiSumma = fprice * count;
+    this.count--;
+    this.jamiSumma = props.fprice * this.count;
 }
 
 </script>
 
 
-<style lang="scss" >
+<style >
 .my-btn-plus {
     border-radius: 50px;
     margin-top: 30px;

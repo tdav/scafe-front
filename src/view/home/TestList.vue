@@ -3,58 +3,92 @@
         <div class="row">
             <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4; text-align: center;">
                 <div>
-                    <button class="btn btn-body btn-1 " :class="setItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
+                    <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
+                        @click="mySetSelect(1)">
                         <img src="../../../public/assets/images/btn/offers.png">
                         <h3 class="h3-1">Coffee</h3>
                     </button>
 
-                    <button class="btn btn-body btn-1" :class="setItem == 2 ? 'my-active' : ''" @click="mySetSelect(2)">
+                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 2 ? 'my-active' : ''"
+                        @click="mySetSelect(2)">
                         <img src="../../../public/assets/images/btn/beverages.png">
                         <h3 class="h3-1">Beverages</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setItem == 3 ? 'my-active' : ''" @click="mySetSelect(3)">
+                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 3 ? 'my-active' : ''"
+                        @click="mySetSelect(3)">
                         <img src="../../../public/assets/images/btn/lasagna.png">
                         <h3 class="h3-1">Bread</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setItem == 4 ? 'my-active' : ''" @click="mySetSelect(4)">
+                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 4 ? 'my-active' : ''"
+                        @click="mySetSelect(4)">
                         <img src="../../../public/assets/images/btn/pasta.png">
                         <h3 class="h3-1">Appetizer</h3>
                     </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setItem == 5 ? 'my-active' : ''" @click="mySetSelect(5)">
+                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 5 ? 'my-active' : ''"
+                        @click="mySetSelect(5)">
                         <img src="../../../public/assets/images/btn/misc.png">
                         <h3 class="h3-1">Snack</h3>
                     </button>
                 </div>
             </div>
             <div class="ps-4" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color: #fafafa;">
-                <div v-for="it in foodData" :key="it.id" class="col-2">
-                    <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name"
-                        v-model:fdescription="it.description" v-model:price="it.price">
-                    </Food>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div v-for="it in foodData" :key="it.id" class="col">
+                            <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name" @click="CreateOrder(it)"
+                                v-model:fdescription="it.description" v-model:price="it.price">
+                            </Food>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-3" v-if="isShowPanel">
+                <div v-for="it in etsList" :key="it.id" class="col">
+                    <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>                   
+                </div>
+            </div>
+
+
         </div>
     </div>
 </template>
 
 
 <script setup>
+import { ref, onMounted } from 'vue';
+import OrderListItem from '../../components/OrderListItem.vue';
 import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
+let isShowPanel = ref(false)
+let setSelectMenuItem = ref(1)
+let etsList = ref([])
+
+
+function mySetSelect(i) {
+    this.setSelectMenuItem = i
+}
+
+
+function CreateOrder(item) {
+    isShowPanel.value = true;
+
+    etsList.value.push(item);
+}
 
 
 </script>
 
 
 <style scoped>
-.parag{
+.parag {
     color: white;
 }
 
-.li{
+.li {
     display: inline-block;
 }
 
@@ -72,7 +106,7 @@ import Food from '../../components/Food.vue';
     height: 138px;
 }
 
-.eat1-3{
+.eat1-3 {
     height: 275px;
     padding: 12px, 8px, 16px, 8px;
     border-radius: 16px;

@@ -33,7 +33,7 @@
         </div>
         <!--/chap menyu-->
         <!--asosiy menyu-->
-        <img src="../src/assets/images/nav/Nav_home.png" class="me-1" alt="">
+        <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
         <router-link class="router-link me-3 btn-1"  to="/" >Home</router-link>
         <img src="../assets/images/nav/Nav_note.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1"  to="/order" >Order</router-link>
@@ -42,7 +42,7 @@
         <img src="../assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1"  to="/Bill" >Bill</router-link>
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">
-        <DinningOption isShow="dinningOptionIsShow"></DinningOption>
+        <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
         </button>
         <!--/asosiy menyu-->
         <!--soat-->
@@ -72,7 +72,6 @@ import { ref } from 'vue';
 import DinningOption from './components/DinningOption.vue';
 
 let dinningOptionIsShow = ref(false);
-let isShowPanel = ref(false)
 
 
 function updateTime() {

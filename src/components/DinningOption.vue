@@ -6,8 +6,6 @@
     </a>
 
     <div v-if="isShow">
-
-
         <ul class="dropdown-menu show p-2" aria-labelledby="aa" data-popper-placement="bottom-start"
             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 40px);">
             <li><a href="">
@@ -64,28 +62,17 @@
 
 <script setup>
 
-import { defineProps, onMounted  } from 'vue';
+import { defineProps, onMounted } from 'vue';
 
-const props = defineProps(
-    {
-        isShow: {
-            type: Boolean,
-            required:true,
-
-        }
-    })
+const props = defineProps(['isShow'])
 
 onMounted(() => {
-    console.log(props);
+    //console.log(props);
 })
 
 function onClick() {
-    console.log(props);
-    
     props.isShow != props.isShow;
 }
 
 </script>
-
-
-<style lang="css"></style>
+ 
