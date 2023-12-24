@@ -42,7 +42,7 @@
         <img src="../assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
         <router-link class="router-link me-3 btn-1"  to="/Bill" >Bill</router-link>
         <button class="Nav_inline_divlar Nav_button-Dinning-Option">
-        <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
+            <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
         </button>
         <!--/asosiy menyu-->
         <!--soat-->

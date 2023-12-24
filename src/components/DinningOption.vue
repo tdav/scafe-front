@@ -60,14 +60,14 @@
     </div>
 </template>
 
-<script setup>
+<script>
 
 import { defineProps, onMounted } from 'vue';
 
-const props = defineProps(['isShow'])
+let props = defineProps(['isShow'])
 
 onMounted(() => {
-    //console.log(props);
+    console.log(props);
 })
 
 function onClick() {
