@@ -92,7 +92,7 @@
             </div>
             <input class="Nav_date" type="date" value="2023-02-26">
         </div>
-        <img class="rotate" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
+        <img class="rotate" src="./assets/images/nav/Nav_Profile.png" alt="rasm">
     </div>
 
     <router-view></router-view>

@@ -24,7 +24,7 @@
 
                                             </div>
                                             <div class="col-1">
-                                                <img src="../../assets/images/chevron-down.png" alt="" class="img-1">
+                                                <img src="../../../assets/images/chevron-down.png" alt="" class="img-1">
                                             </div>
                                         </div>
                                         <div class="row">
@@ -34,7 +34,7 @@
                                                     style=" width: 56px; background-color: #FFFFFF; border-color: #E4E4E4; height: 64px;">
                                                     <button type="button" class="btn btn-danger"
                                                         style="background-color: #FFFFFF; border-color: #E4E4E4; height: 56px; width: 64px; border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
-                                                        <img src="../../assets/images/calendar.png" alt="calendar"
+                                                        <img src="../../../assets/images/calendar.png" alt="calendar"
                                                             style="margin-top: -7px;">
                                                     </button>
                                                     <button type="button" class="btn btn-warning"
