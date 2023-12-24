@@ -71,7 +71,7 @@
                     <div class="eat1-3 col-2 mw-1 mt-2" @click="mySelectEts(6)">
                         <img class="eat1-3-1 mt-2 ms-1" src="../../assets/images/Placeholder8.png">
                     </div>
-                    <!--2-qator-->
+                    <!--2-qator--> 
                     <div class="eat1-3 col-2 mx-1 mt-2" @click="mySelectEts(7)">
                         <img class="eat1-3-1 mt-2 ms-1" src="../../assets/images/Placeholder2.png">
                     </div>
