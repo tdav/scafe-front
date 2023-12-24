@@ -1,13 +1,14 @@
 <template >
     <div class="row">
         <div v-if="etsList.filter(x => x == 13).length > 0" class="p-0">
-            <img class="eat1-3-11 mt-2 ms-1" src="../../assets/images/Placeholder8.png">
+            // Error
+            <img class="eat1-3-11 mt-2 ms-1" src="../../../assets/images/Placeholder8.png">
 
             <button @click="EtsPlus(13)" class="my-btn-plus">
                 <p class="parag  m-0">+</p>
             </button>
 
-            <button @click="EtsMinus(13)" style="my-btn-minus">
+            <button @click="EtsMinus(13)" class="my-btn-minus">
                 <p class="parag  m-0">-</p>
             </button>
 
