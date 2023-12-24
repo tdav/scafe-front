@@ -29,13 +29,11 @@
                     </button>
                 </div>
             </div>
-            <div class="containerfluid">
-                <div class="ps-4 row" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color: #fafafa;">
-                    <div v-for="it in foodData" :key="it.id" class="col-2">
-                        <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name"
-                            v-model:fdescription="it.description" v-model:price="it.price">
-                        </Food>
-                    </div>
+            <div class="ps-4" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color: #fafafa;">
+                <div v-for="it in foodData" :key="it.id" class="col-2">
+                    <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name"
+                        v-model:fdescription="it.description" v-model:price="it.price">
+                    </Food>
                 </div>
             </div>
         </div>
