@@ -3,53 +3,63 @@
         "id": 1,
         "name": "Мол гушти",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image.png"
+        "img": "/assets/images/Image.png",
+        "price":90000
     },
     {
         "id": 2,
-        "name": "f2",
+        "name": "Qozon kabob",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image1.png"
+        "img": "/assets/images/Image1.png",
+        "price":90000
     }, {
         "id": 3,
-        "name": "f3",
+        "name": "Xitoy taomi",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image2.png"
+        "img": "/assets/images/Image2.png",
+        "price":90000
     }, {
         "id": 4,
-        "name": "f5",
+        "name": "Lag'mon so'rva",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder.png"
+        "img": "/assets/images/Placeholder.png",
+        "price":90000
     }, {
         "id": 5,
-        "name": "f5",
+        "name": "Sho'rva",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Image4.png"
+        "img": "/assets/images/Image4.png",
+        "price":90000
     }, {
         "id": 6,
-        "name": "f6",
+        "name": "Karam sho'rva",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder8.png"
+        "img": "/assets/images/Placeholder8.png",
+        "price":90000
     }, {
         "id": 7,
-        "name": "f7",
+        "name": "Tuxum ovqat",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder2.png"
+        "img": "/assets/images/Placeholder2.png",
+        "price":90000
     }, {
         "id": 8,
-        "name": "f8",
+        "name": "Baliq go'shtli osh",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder3.png"
+        "img": "/assets/images/Placeholder3.png",
+        "price":90000
     }, {
         "id": 9,
-        "name": "f9",
+        "name": "Baliq go'shtli salat",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder4.png"
+        "img": "/assets/images/Placeholder4.png",
+        "price":90000
     }, {
         "id": 10,
-        "name": "f10",
+        "name": "Gruchgo'ja",
         "description": "sjdhjsh sjdj",
-        "img": "/assets/images/Placeholder5.png"
+        "img": "/assets/images/Placeholder5.png",
+        "price":90000
     }
 
 ]
