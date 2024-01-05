@@ -166,7 +166,6 @@
                             <img class="eat1-3-11 mt-2 ms-1" src="../../assets/images/Image4.png">
                             <button @click="EtsPlus(5)" style="border-radius: 50px;  margin-top: 30px;  border: none;height: 36px; width: 36px; float: right; background-color: #19191c;"><p class="parag  m-0">+</p></button>
                             <button @click="EtsMinus(5)" style="border-radius: 50px; margin-top: 30px;  border: none;height: 36px; width: 36px; float: right; background-color: #E4E4E4">-</button>
-
                         </div>
                     </div>
 
