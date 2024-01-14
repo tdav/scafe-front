@@ -45,9 +45,17 @@ function EtsPlus() {
 }
 
 function EtsMinus() {
-    this.count--;
-    this.jamiSumma = props.fprice * this.count;
+    if (this.count > 0) {
+        this.count--;
+        this.jamiSumma = props.fprice * this.count;
+    } else {
+        return;
+    }
 }
+
+
+
+
 
 </script>
 
