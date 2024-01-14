@@ -4,8 +4,8 @@
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="fimg" style="height: 80px; width: 80px; display: inline-block;">
             <div class="col-6 p-0">
                 <p class="ms-1" style="margin: 0px; font-size: 20px;"> {{ fname }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Qty {{ count }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Price {{ fprice }}</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">dona: {{ count }}</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">narxi: {{ fprice }}</p>
                 <p class="ms-3" style="margin: 0px; font-size: 15px;">Total: {{ jamiSumma }} so'm</p>
             </div>
             <div class="col-3 p-0">
