@@ -116,9 +116,9 @@
                 </div>
             </div>
 
-            <div class="col-3 p-0 border borderder-1" v-if="isShowPanel" style="margin-top:; background-color: white;">
+            <div class="col-3 p-0 border borderder-1" v-if="isShowPanel" style="background-color: white;">
                 <h2></h2>
-                <div style="overflow: auto; height: 350px; width: 70px;">
+                <div style=" height: 350px; width: 70px;">
                 
                     <div class="container">
                     <div class="row">
@@ -309,6 +309,7 @@ function mySelectEts(i) {
     else {
         this.etsQtyList[i]++
     }
+
 }
 
 function EtsPlus(i) {
@@ -318,8 +319,6 @@ function EtsPlus(i) {
 function EtsMinus(i) {
         this.etsQtyList[i]--
 }
-
-
 
 </script>
 

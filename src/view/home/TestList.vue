@@ -1,7 +1,7 @@
 <template >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #E4E4E4; text-align: center;">
+            <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #ffffff; text-align: center;">
                 <div>
                     <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                         @click="mySetSelect(1)">
@@ -34,7 +34,7 @@
                     </button>
                 </div>
             </div>
-            <div class="ps-4" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color: #fafafa;">
+            <div class="p-0" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color:rgb(250, 250, 250);">
                 <div class="container-fluid">
                     <div class="row">
                         <div v-for="it in foodData" :key="it.id" class="col">
@@ -74,6 +74,14 @@ function mySetSelect(i) {
 
 
 function CreateOrder(item) {
+    
+    for (let i = 0; i < etsList.value.length; i++) {
+        const element = etsList.value[i];
+        
+        if (element.name == item.name) return;
+
+    }
+    
     isShowPanel.value = true;
     etsList.value.push(item);
 }
