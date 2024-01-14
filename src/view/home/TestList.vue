@@ -75,7 +75,6 @@ function mySetSelect(i) {
 
 function CreateOrder(item) {
     isShowPanel.value = true;
-
     etsList.value.push(item);
 }
 
