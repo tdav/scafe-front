@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "name": "Мол гушти",
+        "name": "Cteyk",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image.png",
         "price":90000
     },
     {
         "id": 2,
-        "name": "Qozon kabob",
+        "name": "Baku",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image1.png",
         "price":90000
     }, {
         "id": 3,
-        "name": "Xitoy taomi",
+        "name": "Lapshoy",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image2.png",
         "price":90000
@@ -60,6 +60,17 @@
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder5.png",
         "price":90000
+    },{
+        "id": 11,
+        "name": "kechonka",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder6.png",
+        "price":90000
+    },{
+        "id": 12,
+        "name": "go'shtli sho'rva",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder7.png",
+        "price":90000
     }
-
 ]
