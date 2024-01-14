@@ -118,7 +118,7 @@
 
             <div class="col-3 p-0 border borderder-1" v-if="isShowPanel" style="margin-top:; background-color: white;">
                 <h2></h2>
-                <div style="overflow: auto; height: 350px; width: 100;">
+                <div style="overflow: auto; height: 350px; width: 70px;">
                 
                     <div class="container">
                     <div class="row">
