@@ -4,9 +4,9 @@
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="fimg" style="height: 80px; width: 80px; display: inline-block;">
             <div class="col-6 p-0">
                 <p class="ms-1" style="margin: 0px; font-size: 20px;"> {{ fname }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Dona: {{ count }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Narxi: {{ fprice }}</p>
-                <p class="ms-3" style="margin: 0px; font-size: 15px;">Totol: {{ jamiSumma }} so'm</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">dona: {{ count }}</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">narxi: {{ fprice }}</p>
+                <p class="ms-3" style="margin: 0px; font-size: 15px;">Total: {{ jamiSumma }} so'm</p>
             </div>
             <div class="col-3 p-0">
                 <div style="margin-top: 30px;">
@@ -50,6 +50,7 @@ function EtsMinus() {
         this.jamiSumma = props.fprice * this.count;
     } else {
         return;
+        console.log("Panel ishlamasi bo'lmagan, count 0.");
     }
 }
 
