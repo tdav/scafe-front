@@ -1,7 +1,7 @@
 <template >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 bg-body border-end" style="border-width: 1px; border-color: #ffffff; text-align: center;">
+            <div class="col-1 bg-body border-end variant">
                 <div>
                     <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                         @click="mySetSelect(1)">
@@ -34,10 +34,10 @@
                     </button>
                 </div>
             </div>
-            <div class="p-0" :class="!isShowPanel ? 'col-11' : 'col-8'" style="background-color:rgb(250, 250, 250);">
+            <div class="p-0 menu" :class="!isShowPanel ? 'col-11' : 'col-8'">
                 <div class="container-fluid">
                     <div class="row">
-                        <div v-for="it in foodData" :key="it.id" class="col">
+                        <div v-for="it in foodData" :key="it.id" class="" :class="!isShowPanel ? 'col-2' : 'col-3'">
                             <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name" @click="CreateOrder(it)"
                                 v-model:fdescription="it.description" v-model:price="it.price">
                             </Food>
@@ -45,14 +45,11 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-3" v-if="isShowPanel">
-                <div v-for="it in etsList" :key="it.id" class="col">
+            <div class="col-3 zakaz" v-if="isShowPanel">
+                <div v-for="it in etsList" :key="it.id" class="col p-0">
                     <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>                   
                 </div>
             </div>
-
-
         </div>
     </div>
 </template>
@@ -91,6 +88,27 @@ function CreateOrder(item) {
 
 
 <style scoped>
+
+.variant{
+    border-width: 1px;
+    border-color: #ffffff;  
+    text-align: center;
+    margin-top: 3%;
+}
+
+.menu{
+    background-color:rgb(250, 250, 250);  
+    max-height: 580px; 
+    overflow-y: auto; 
+    scrollbar-width: thin;
+}
+
+.zakaz{
+    max-height: 580px; 
+    overflow-y: auto; 
+    scrollbar-width: thin;
+}
+
 .parag {
     color: white;
 }

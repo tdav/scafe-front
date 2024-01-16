@@ -1,8 +1,8 @@
 <template >
     <div class="container-fluid">
-        <div class="row">
-            <div class="eat1-3 mx-2 px-2 mt-2" style="border: 1px; ">
-                <img class="eat1-3-1 mt-2" :src="fimg">
+        <div class="row" style=" margin: 0 auto;">
+            <div class="eat1-3 mx-2 px-2 mt-2" style="border: 1px;">
+                <img class="eat1-3-1 mt-2" :src="fimg" style="width: 165px;">
                 <p>{{ fname }}</p>
                 <p>{{ fdescription }}</p>
                 <p>{{ price }}sum</p>
