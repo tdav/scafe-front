@@ -5,7 +5,7 @@
                 <img class="eat1-3-1 mt-2" :src="fimg" style="width: 165px;">
                 <p>{{ fname }}</p>
                 <p>{{ fdescription }}</p>
-                <p>{{ price }}sum</p>
+                <p>{{ jamiSumma }}sum</p>
             </div>
         </div>
     </div>
@@ -18,6 +18,5 @@
 import { defineProps } from 'vue';
 
 const props = defineProps(['fid', 'fname', 'fdescription', 'fimg', 'price'])
-
 
 </script>

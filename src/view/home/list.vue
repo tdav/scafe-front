@@ -301,7 +301,7 @@ let isShowPanel = ref(false)
 function mySelectEts(i) {
 
     this.etsList.push(i)
-    this.isShowPanel = this.etsList.length > 0
+    this.isShowPanel =this.etsList.length > 0
  
 
     if (this.etsQtyList.length ==i)
