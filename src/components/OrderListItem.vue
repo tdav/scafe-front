@@ -45,6 +45,9 @@ function EtsPlus() {
 }
 
 function EtsMinus() {
+ 
+    
+
     if (this.count > 0) {
         this.count--;
         this.jamiSumma = props.fprice * this.count;

@@ -46,10 +46,29 @@
                 </div>
             </div>
             <div class="col-3 zakaz" v-if="isShowPanel">
-                <div v-for="it in etsList" :key="it.id" class="col p-0">
-                    <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>                   
+                
+            <div class="container-fluid">
+                <div class="row" style="height: 416px;">
+                    <div class="container-fluid">
+                        <div v-for="it in etsList" :key="it.id" class="row p-1">
+                            <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem> 
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div>
+                        <b>
+                            <p class="pt-2 m-0 ps-0">TAXI narhi: 15000 so'm</p>
+                            <p class="p-0">Jami narhi: {{ jamiSumma }} so'm</p>                    
+                        </b>
+                    </div>
+                    <div class="dib p-0">
+                        <button class="butt">Rad etish</button>
+                        <button class="butt ms-2">Sotib olish</button>
+                    </div> 
+                </div>  
+            </div> 
+            </div>               
         </div>
     </div>
 </template>
@@ -70,18 +89,24 @@ function mySetSelect(i) {
 }
 
 
+
+
 function CreateOrder(item) {
-    
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
         
-        if (element.name == item.name) return;
-
+        if (element.name == item.name) {
+            // Agar element topilgan bo'lsa, ishni to'xtatish uchun return qilish
+            return;
+        }
     }
     
+    // Element topilmagan bo'lsa, boshqa harakatlar bajarish
     isShowPanel.value = true;
     etsList.value.push(item);
 }
+
+
 
 
 </script>
