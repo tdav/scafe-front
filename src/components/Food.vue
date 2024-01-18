@@ -5,7 +5,7 @@
                 <img class="eat1-3-1 mt-2" :src="fimg" style="width: 165px;">
                 <p>{{ fname }}</p>
                 <p>{{ fdescription }}</p>
-                <p>{{ jamiSumma }}sum</p>
+                <p>{{ fprice }}sum</p>
             </div>
         </div>
     </div>
@@ -15,8 +15,33 @@
 
 
 
-import { defineProps } from 'vue';
+// import { defineProps } from 'vue';
 
-const props = defineProps(['fid', 'fname', 'fdescription', 'fimg', 'price'])
+const props = defineProps(['fid', 'fname', 'fdescription', 'fimg', 'fprice'])
 
+
+
+import { ref, defineProps, onMounted } from 'vue';
+
+// const props = defineProps(['fname', 'fprice', 'fimg'])
+
+
+let count = ref(0);
+let jamiSumma = ref(0);
+
+
+function EtsPlus() {
+    this.count++;
+    this.jamiSumma = props.fprice * this.count;
+}
+
+function EtsMinus() {
+    if (this.count > 0) {
+        this.count--;
+        this.jamiSumma = props.fprice * this.count;
+    } else {
+        return;
+    }
+}
+//
 </script>
