@@ -1,7 +1,7 @@
 <template >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 bg-body border-end variant">
+            <div class="col-1 bg-body variant">
                 <div>
                     <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                         @click="mySetSelect(1)">
@@ -45,9 +45,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 zakaz" v-if="isShowPanel">
-                <div v-for="it in etsList" :key="it.id" class="col p-0">
-                    <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>                   
+            <div class="col-3" v-if="isShowPanel">
+                <div class="container-fluid p-0" style="height: 10px;">
+                    <div class="row zakaz p-0" style="height: 416px;">
+                        <div v-for="it in etsList" :key="it.id" class="row p-0 mt-1" style="height: 100px; margin-left: 12px; width: 93%;">
+                            <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>              
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <b>
+                                <p class="pt-2 m-0 ps-0">TAXI narhi: 15000 so'm</p>
+                                <p class="p-0">Jami narhi: {{ jamiSumma }} so'm</p>
+                                               
+                            </b>
+                        </div>
+                        <div class="dib p-0">
+                            <button class="butt">Rad etish</button>
+                            <button class="butt ms-2">Sotib olish</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,6 +80,7 @@ import Food from '../../components/Food.vue';
 let isShowPanel = ref(false)
 let setSelectMenuItem = ref(1)
 let etsList = ref([])
+
 
 
 function mySetSelect(i) {
@@ -84,27 +102,63 @@ function CreateOrder(item) {
 }
 
 
+//
+
+let count = ref(0);
+let jamiSumma = ref(0);
+
+
+function EtsPlus() {
+    this.count++;
+    this.jamiSumma = props.fprice * this.count;
+}
+
+function EtsMinus() {
+    if (this.count > 0) {
+        this.count--;
+        this.jamiSumma = props.fprice * this.count;
+    } else {
+        return;
+    }
+}
+//
+
 </script>
 
 
 <style scoped>
+.dib{
+    text-align: center;
+}
+
+
+.butt{
+    border:  none;
+    background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
+    color: white; 
+    border-radius: 20px;
+    height: 50px;
+    width: 160px;
+}
+
 
 .variant{
     border-width: 1px;
     border-color: #ffffff;  
     text-align: center;
     margin-top: 3%;
-}
+    }
 
 .menu{
     background-color:rgb(250, 250, 250);  
-    max-height: 580px; 
-    overflow-y: auto; 
-    scrollbar-width: thin;
+    max-height: 570px; 
+    overflow-y: auto;
+    background-color: #f7f7f7;
 }
 
-.zakaz{
-    max-height: 580px; 
+    .zakaz{
+    height: 300px;
+    max-height: 416px; 
     overflow-y: auto; 
     scrollbar-width: thin;
 }
