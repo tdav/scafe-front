@@ -48,8 +48,10 @@
             <div class="col-3" v-if="isShowPanel">
                 <div class="container-fluid p-0" style="height: 10px;">
                     <div class="row zakaz p-0" style="height: 416px;">
-                        <div v-for="it in etsList" :key="it.id" class="row p-0 mt-1" style="height: 100px; margin-left: 12px; width: 93%;">
-                            <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>              
+                        <div class="container-fluid p-0">
+                            <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
+                                <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>              
+                            </div>
                         </div>
                     </div>
                     <div class="row">
