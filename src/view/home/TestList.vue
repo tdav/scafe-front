@@ -57,12 +57,13 @@
                     <div class="row">
                         <div>
                             <b>
-                                <p class="pt-2 m-0 ps-0">TAXI narhi: 15000 so'm</p>
-                                <p class="p-0">Jami narhi: {{ jamiSumma }} so'm</p>
+                                <p class="pt-2 m-0 ps-0">Taxi (10%): 1,3 $</p>
+                                <p class="p-0">Total: {{ jamiSumma }} so'm</p>
                                                
                             </b>
                         </div>
                         <div class="dib p-0">
+                            <button class="butt">Rad etish</button>
                             <button class="butt ms-2">Sotib olish</button>
                         </div>
                     </div>
@@ -145,7 +146,7 @@ function EtsMinus() {
     color: white; 
     border-radius: 20px;
     height: 50px;
-    width: 160px;
+    width: 310px;
 }
 
 
