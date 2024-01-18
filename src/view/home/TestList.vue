@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" >
+                    <div class="row">
                         <div>
                             <b>
                                 <p class="pt-2 m-0 ps-0">Taxi (10%): 1,3 $</p>
