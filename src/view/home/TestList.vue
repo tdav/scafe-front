@@ -63,7 +63,6 @@
                             </b>
                         </div>
                         <div class="dib p-0">
-                            <button class="butt">Rad etish</button>
                             <button class="butt ms-2">Sotib olish</button>
                         </div>
                     </div>

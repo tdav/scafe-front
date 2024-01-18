@@ -53,7 +53,6 @@ function EtsMinus() {
         this.jamiSumma = props.fprice * this.count;
     } else {
         return;
-        console.log("Panel ishlamasi bo'lmagan, count 0.");
     }
 }
 

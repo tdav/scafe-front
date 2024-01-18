@@ -5,7 +5,7 @@
                 <img class="eat1-3-1 mt-2" :src="fimg" style="width: 165px;">
                 <p>{{ fname }}</p>
                 <p>{{ fdescription }}</p>
-                <p>{{ jamiSumma }}sum</p>
+                <p>{{ price }}sum</p>
             </div>
         </div>
     </div>
