@@ -57,7 +57,7 @@
                     <div class="row">
                         <div>
                             <b>
-                                <p class="pt-2 m-0 ps-0">Taxi (10%): 1,3 $</p>
+                                <p class="pt-2 m-0 ps-0">Taxi (10%): {{ tax }} $</p>
                                 <p class="p-0">Total: {{ jamiSumma }} so'm</p>
                                                
                             </b>
@@ -78,6 +78,7 @@ import { ref, onMounted } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
+
 let isShowPanel = ref(false)
 let setSelectMenuItem = ref(1)
 let etsList = ref([])
@@ -87,10 +88,7 @@ let etsList = ref([])
 function mySetSelect(i) {
     this.setSelectMenuItem = i
 }
-
-
-
-
+ 
 function CreateOrder(item) {
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
@@ -105,30 +103,43 @@ function CreateOrder(item) {
     isShowPanel.value = true;
     etsList.value.push(item);
 }
-
-
-
-
-//
+  
 
 let count = ref(0);
 let jamiSumma = ref(0);
+let tax = ref(0);
 
 
 function EtsPlus() {
     this.count++;
-    this.jamiSumma = props.fprice * this.count;
+    Calc()
 }
 
 function EtsMinus() {
-    if (this.count > 0) {
+    if (this.count > 0) 
+    {
         this.count--;
-        this.jamiSumma = props.fprice * this.count;
+
+        Calc();
+
     } else {
         return;
     }
 }
-//
+
+
+function Calc(){
+
+    this.jamiSumma=0
+
+    for (let i = 0; i < etsList.value.length; i++) {
+        const element = etsList.value[i];
+        
+        this.jamiSumma = this.jamiSumma + props.fprice * this.count;
+    }
+
+    this.tax = this.jamiSumma + (this.jamiSumma * 0.1)
+}
 
 </script>
 
