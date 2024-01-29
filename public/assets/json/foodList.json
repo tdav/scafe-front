@@ -4,83 +4,95 @@
         "name": "Cteyk",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image.png",
-        "price":3000
+        "price": 3000,
+        "count": 1
     },
     {
         "id": 2,
         "name": "Baku",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image1.png",
-        "price":16000
-    }, 
+        "price": 16000,
+        "count": 1
+    },
     {
         "id": 3,
         "name": "Lapshoy",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image2.png",
-        "price":37000
-    }, 
+        "price": 37000,
+        "count": 1
+    },
     {
         "id": 4,
         "name": "Lag'mon so'rva",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder.png",
-        "price":28000
-    }, 
+        "price": 28000,
+        "count": 1
+    },
     {
         "id": 5,
         "name": "Sho'rva",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image4.png",
-        "price":27000
-    }, 
+        "price": 27000,
+        "count": 1
+    },
     {
         "id": 6,
         "name": "Karam sho'rva",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder8.png",
-        "price":14000
-    }, 
+        "price": 14000,
+        "count": 1
+    },
     {
         "id": 7,
         "name": "Tuxum ovqat",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder2.png",
-        "price":31500
-    }, 
+        "price": 31500,
+        "count": 1
+    },
     {
         "id": 8,
         "name": "Baliq go'shtli osh",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder3.png",
-        "price":39000
-    }, 
+        "price": 39000,
+        "count": 1
+    },
     {
         "id": 9,
         "name": "Baliq go'shtli salat",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder4.png",
-        "price":40000
-    }, 
+        "price": 40000,
+        "count": 1
+    },
     {
         "id": 10,
         "name": "Gruchgo'ja",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder5.png",
-        "price":20000
+        "price": 20000,
+        "count": 1
     },
     {
         "id": 11,
         "name": "kechonka",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder6.png",
-        "price":39000
+        "price": 39000,
+        "count": 1
     },
     {
         "id": 12,
         "name": "go'shtli sho'rva",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Placeholder7.png",
-        "price":9000
+        "price": 9000,
+        "count": 1
     }
-]   
+]

@@ -16,23 +16,18 @@ import WalkInLoginCashier from './view/pos/WalkInLoginCashier.vue'
 import LoginCashierOrm from './view/pos/LoginCashierOrm.vue'
 import List from './view/reservation/List.vue'
 
-import HomeList from './view/home/list.vue'
 import Order from './view/Order/order_list.vue'
 import History from './view/History/list.vue'
 import Bill from './view/Bill/list.vue'
-import TestList from './view/home/TestList.vue'
+import FoodList from './view/home/FoodList.vue'
 
 const routes = [
     {
         path: '/',
-        name: 'TestList',
-        component: TestList
+        name: 'FoodList',
+        component: FoodList
     },
-    {
-        path: '/home',
-        name: 'Home',
-        component: HomeList
-    },
+    
     {
         path: '/order',
         name: 'Order',

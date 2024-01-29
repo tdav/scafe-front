@@ -28,29 +28,28 @@
 <script setup>
 import { ref, defineProps, onMounted } from 'vue';
 
-const props = defineProps(['fname', 'fprice', 'fimg'])
+const props = defineProps(['fname', 'fprice', 'fimg', 'count'])
+ 
 
-onMounted(() => {
-    //console.log(props);   
-})
-
-
-let count = ref(0);
 let jamiSumma = ref(0);
 
 
+onMounted(() => {
+    jamiSumma.value = props.fprice * props.count;
+})
+
 function EtsPlus() {
-    this.count++;
-    this.jamiSumma = props.fprice * this.count;
+    debugger
+    props.count = props.count + 1 ;
+    jamiSumma.value = props.fprice * props.count;
 }
 
-function EtsMinus() {
- 
+function EtsMinus() { 
     
 
-    if (this.count > 0) {
-        this.count--;
-        this.jamiSumma = props.fprice * this.count;
+    if (props.count > 0) {
+        props.count--;
+        this.jamiSumma = props.fprice * props.count;
     } else {
         return;
     }

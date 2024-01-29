@@ -50,15 +50,15 @@
                     <div class="row zakaz p-0" style="height: 416px;">
                         <div class="container-fluid p-0">
                             <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
-                                <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img"></OrderListItem>              
+                                <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img" v-bind:count="it.count"></OrderListItem>              
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div>
                             <b>
-                                <p class="pt-2 m-0 ps-0">Taxi (10%): {{ tax }} $</p>
-                                <p class="p-0">Total: {{ jamiSumma }} so'm</p>
+                                <p class="pt-2 m-0 ps-0">Taxi (10%): {{ tax }} so`m</p>
+                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>
                                                
                             </b>
                         </div>
@@ -81,8 +81,10 @@ import Food from '../../components/Food.vue';
 
 let isShowPanel = ref(false)
 let setSelectMenuItem = ref(1)
-let etsList = ref([])
+let etsList = ref([]);
 
+let jamiSumma = ref(0);
+let tax = ref(0);
 
 
 function mySetSelect(i) {
@@ -102,17 +104,13 @@ function CreateOrder(item) {
     // Element topilmagan bo'lsa, boshqa harakatlar bajarish
     isShowPanel.value = true;
     etsList.value.push(item);
+
+    JamiSummaHisobla();
 }
-  
-
-let count = ref(0);
-let jamiSumma = ref(0);
-let tax = ref(0);
-
-
+   
 function EtsPlus() {
     this.count++;
-    Calc()
+    JamiSummaHisobla()
 }
 
 function EtsMinus() {
@@ -120,7 +118,7 @@ function EtsMinus() {
     {
         this.count--;
 
-        Calc();
+        JamiSummaHisobla();
 
     } else {
         return;
@@ -128,17 +126,17 @@ function EtsMinus() {
 }
 
 
-function Calc(){
+function JamiSummaHisobla(){
 
-    this.jamiSumma=0
+    jamiSumma.value=0
 
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
         
-        this.jamiSumma = this.jamiSumma + props.fprice * this.count;
+        jamiSumma.value = jamiSumma.value + element.price * element.count;
     }
 
-    this.tax = this.jamiSumma + (this.jamiSumma * 0.1)
+    tax.value = jamiSumma.value - (jamiSumma.value * 0.1)
 }
 
 </script>
