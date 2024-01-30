@@ -1,22 +1,28 @@
 <template >
     <div class="container-fluid p-0">
         <div class="row mb-1 mt-1 rro">
-            <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="fimg" style="height: 80px; width: 80px; display: inline-block;">
+
+            <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.img"
+                style="height: 80px; width: 80px; display: inline-block;">
+
             <div class="col-6 p-0">
-                <p class="ms-1" style="margin: 0px; font-size: 20px;"> {{ fname }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Dona: {{ count }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Narxi: {{ fprice }}</p>
+                <p class="ms-1" style="margin: 0px; font-size: 20px;"> {{ props.foodData.name }}</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Dona: {{ props.foodData.count }}</p>
+                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Narxi: {{ props.foodData.price }}</p>
                 <p class="ms-3" style="margin: 0px; font-size: 15px;">Totol: {{ jamiSumma }} so'm</p>
             </div>
+
             <div class="col-3 p-0">
                 <div style="margin-top: 30px;">
-                <button @click="EtsPlus()" class="my-btn-plus m-0" style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
-                    <p class="parag  m-0">+</p>
-                </button>
-                
-                <button @click="EtsMinus()" class="my-btn-minus m-0 ms-2" style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
-                    <p class="parag  m-0">-</p>
-                </button>
+                    <button @click="EtsPlus()" class="my-btn-plus m-0"
+                        style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
+                        <p class="parag  m-0">+</p>
+                    </button>
+
+                    <button @click="EtsMinus()" class="my-btn-minus m-0 ms-2"
+                        style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
+                        <p class="parag  m-0">-</p>
+                    </button>
                 </div>
 
             </div>
@@ -26,51 +32,59 @@
 
 
 <script setup>
-import { ref, defineProps, onMounted } from 'vue';
+import { ref, defineProps, defineEmits, onMounted } from 'vue';
 
-const props = defineProps(['fname', 'fprice', 'fimg', 'count'])
- 
+const props = defineProps( { 
+    foodData: {
+        type:Object,
+        required:true,
+    }
+});
+
 
 let jamiSumma = ref(0);
 
+const emit = defineEmits(['onChangeCount'])
 
 onMounted(() => {
-    jamiSumma.value = props.fprice * props.count;
+    jamiSumma.value = props.foodData.price * props.foodData.count;
 })
 
 function EtsPlus() {
-    debugger
-    props.count = props.count + 1 ;
-    jamiSumma.value = props.fprice * props.count;
+
+    props.foodData.count = props.foodData.count + 1;
+    jamiSumma.value = props.foodData.price * props.foodData.count;
+
+    emit('onChangeCount', props.foodData)
 }
 
-function EtsMinus() { 
-    
+function EtsMinus() {
 
-    if (props.count > 0) {
-        props.count--;
-        this.jamiSumma = props.fprice * props.count;
+    if (props.foodData.count > 0) {
+        props.foodData.count--;
+        this.jamiSumma = props.foodData.price * props.foodData.count;
+
+        emit('onChangeCount', props.foodData)
     } else {
         return;
     }
+
 }
-
-
-
 
 
 </script>
 
 
 <style >
-.rro{
-    height: 100px; 
+.rro {
+    height: 100px;
     background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
 }
 
-.pp1{
+.pp1 {
     color: white;
 }
+
 .my-btn-plus {
     border-radius: 50px;
     margin-top: 30px;

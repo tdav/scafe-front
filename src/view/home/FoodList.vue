@@ -38,9 +38,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div v-for="it in foodData" :key="it.id" class="" :class="!isShowPanel ? 'col-2' : 'col-3'">
-                            <Food v-model:fid="it.id" v-model:fimg="it.img" v-model:fname="it.name" @click="CreateOrder(it)"
-                                v-model:fdescription="it.description" v-model:price="it.price">
-                            </Food>
+                            <Food :foodData="it" @click="CreateOrder(it)"></Food>
                         </div>
                     </div>
                 </div>
@@ -50,7 +48,7 @@
                     <div class="row zakaz p-0" style="height: 416px;">
                         <div class="container-fluid p-0">
                             <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
-                                <OrderListItem  v-bind:fname="it.name" v-bind:fprice="it.price" v-bind:fimg="it.img" v-bind:count="it.count"></OrderListItem>              
+                                <OrderListItem  :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>              
                             </div>
                         </div>
                     </div>
@@ -74,7 +72,7 @@
 
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
@@ -104,6 +102,18 @@ function CreateOrder(item) {
     // Element topilmagan bo'lsa, boshqa harakatlar bajarish
     isShowPanel.value = true;
     etsList.value.push(item);
+
+    JamiSummaHisobla();
+}
+
+function onMyChangeCount(food){
+
+    for (let i = 0; i < etsList.value.length; i++) {
+        const element = etsList.value[i];
+        
+       if (element.id == food.id)
+        element.count = food.count;
+    }
 
     JamiSummaHisobla();
 }

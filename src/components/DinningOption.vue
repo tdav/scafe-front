@@ -60,7 +60,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 
 import { defineProps, onMounted } from 'vue';
 

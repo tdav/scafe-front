@@ -31,6 +31,7 @@
                 </div>
             </div>
         </div>
+
         <!--/chap menyu-->
         <!--asosiy menyu-->
         <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
@@ -86,18 +87,7 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);{}
-///soat
-
-
-// import { ref, onMounted } from 'vue'
-
-// let setActive = ref(false)
-
-// function myFilter  ()  {
-//     setActive.value =! setActive.value;
-//     console.log(setActive);
-// };
-
+ 
 </script>
 
 
