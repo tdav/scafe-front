@@ -68,12 +68,9 @@ function EtsMinus() {
     } else {
         return;
     }
-
 }
 
-
 </script>
-
 
 <style >
 .rro {

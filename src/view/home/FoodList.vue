@@ -55,9 +55,8 @@
                     <div class="row">
                         <div>
                             <b>
-                                <p class="pt-2 m-0 ps-0">Taxi (10%): {{ tax }} so`m</p>
-                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>
-                                               
+                                <p class="pt-2 m-0 ps-0">Tax (10%): {{ tax }} so`m</p>
+                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>                                               
                             </b>
                         </div>
                         <div class="dib p-0">
@@ -146,7 +145,7 @@ function JamiSummaHisobla(){
         jamiSumma.value = jamiSumma.value + element.price * element.count;
     }
 
-    tax.value = jamiSumma.value - (jamiSumma.value * 0.1)
+    tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
 }
 
 </script>
