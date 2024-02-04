@@ -48,9 +48,6 @@
                     <div class="col-2 p-0">
                         <!--soat-->
                         
-                        <div>
-                            <p>The current date is: {{ formattedDate }}</p>
-                        </div>
                         <div class="dropdown drop">
                             <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;"
                             :class="setSelectMenuItem == 1 ? 'my-active' : ''"
@@ -61,7 +58,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                             </ul>
-                            </div>
+                        </div>
 
                         </div>
                     <!--/asosiy menyu-->
@@ -88,33 +85,7 @@ function mySetSelect(i) {
     this.setSelectMenuItem = i
 }
 
-function updateTime() {
-  this.myDateTime.value = new Date()
-}
-
-setInterval(updateTime, 1000);{}
-
-const formattedDate = ref('');
-
-function updateDate() {
-  const currentDateTime = new Date();
-  const day = String(currentDateTime.getDate()).padStart(2, '0');
-  const month = String(currentDateTime.getMonth() + 1).padStart(2, '0'); // JavaScript da oy 0-11 oraliqda indekslangan
-  const year = currentDateTime.getFullYear();
-
-  formattedDate.value = `${day}/${month}/${year}`;
-}
-
-onMounted(() => {
-  // Boshlashda bir marta ko'rsatish
-  updateDate();
-
-  // Har sekundda bir yangilash
-  setInterval(updateDate, 1000);
-});
-
 </script>
-
 
 <style>
 
