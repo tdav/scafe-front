@@ -4,12 +4,12 @@
         <div class="Nav_container-fluir2 Nav_div2">
             <div class="container-fluid Nav_inline_divlar h-100">
                 <div class="row h-100">
-                    <div class="col-3" style="border-right: 1px solid ; height: 46px;">
+                    <div class="col-4" style="border-right: 1px solid ; height: 46px;">
                         <button type="button" class="Nav_button-div Nav_button-divHover mt-1 me-4">
                             <img src="../assets/images/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
                         </button>
                     </div>
-                    <div class="col-8">
+                    <div class="col-7">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-4">
@@ -124,7 +124,7 @@ setInterval(updateTime, 1000);{}
 .Nav_Coca_coffeetalk-style{
     text-align: start;
     color: #828487;
-    font-size: 14px;
+    font-size: 13px;
     text-align: start;
 }
 
