@@ -46,17 +46,21 @@
             <div class="col-3" v-if="isShowPanel">
                 <div class="container-fluid p-0" style="height: 10px;">
                     <div class="row zakaz p-0" style="height: 416px;">
-                        <div class="container-fluid p-0">
-                            <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
-                                <OrderListItem  :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>              
+                        <div class="col-12">
+                            <div class="container-fluid p-0">
+                                <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
+                                    <OrderListItem  :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>              
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div>
+                        <div class="col-12">
                             <b>
+                                <p class="p-0">Sub Total: {{ jamiSumma }} so`m</p> 
                                 <p class="pt-2 m-0 ps-0">Tax (10%): {{ tax }} so`m</p>
-                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>                                               
+                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>
+                                                                              
                             </b>
                         </div>
                         <div class="dib p-0">
@@ -143,6 +147,7 @@ function JamiSummaHisobla(){
         const element = etsList.value[i];
         
         jamiSumma.value = jamiSumma.value + element.price * element.count;
+        jamiSumma.value = jamiSumma.value + tax.value;
     }
 
     tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
@@ -181,7 +186,7 @@ function JamiSummaHisobla(){
     background-color: #f7f7f7;
 }
 
-    .zakaz{
+.zakaz{
     height: 300px;
     max-height: 416px; 
     overflow-y: auto; 
