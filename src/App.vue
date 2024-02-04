@@ -1,15 +1,15 @@
 <template >
-    <div class="Nav_div1 border border-button p-3" style="padding: 0px;">
+    <div class="border-button p-3" style="padding: 0px;">
         <!--chap menyu-->
-        <div class="Nav_container-fluir2 Nav_div2">
-            <div class="container-fluid Nav_inline_divlar h-100">
-                <div class="row h-100">
-                    <div class="col-4" style="border-right: 1px solid ; height: 46px;">
-                        <button type="button" class="Nav_button-div Nav_button-divHover mt-1 me-4">
-                            <img src="../assets/images/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-1 p-0" style="border-right: 1px solid ; text-align: center; height: 46px;">
+                        <button type="button" class="mt-1" style="border-radius: 35px; border: none; width:40px; height: 40px;">
+                            <img src="../assets/images/nav/Nav_arrow-left.png" alt="">
                         </button>
                     </div>
-                    <div class="col-7">
+                    <div class="col-2">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-4">
@@ -20,7 +20,7 @@
                                         <div class="row " style="float: left;">
                                           <b class="Nav_bold-style">Walk-In</b><br>
                                         </div>
-                                        <div class="row " style="text-align: ; width: 131px;">
+                                        <div class="row " style="width: 131px; font-size: 12px;">
                                             <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
                                         </div>
                                     </div>
@@ -28,38 +28,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-7">
+                        <div class="mt-1" style="width: 499px; float: right;">
+                            <!--/chap menyu-->
+                            <!--asosiy menyu-->
+                            <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
+                            <router-link class="router-link me-3 btn-1"  to="/" >Home</router-link>
+                            <img src="../assets/images/nav/Nav_note.png" class="me-1"  alt="">
+                            <router-link class="router-link me-3 btn-1"  to="/order" >Order</router-link>
+                            <img src="../assets/images/nav/Nav_clock.png" class="me-1"  alt="">
+                            <router-link class="router-link me-3 btn-1"  to="/History" >History</router-link>  
+                            <img src="../assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
+                            <router-link class="router-link me-3 btn-1"  to="/Bill" >Bill</router-link>
+                            <button style="border: none; background-color: white;">
+                                <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-2 p-0">
+                        <!--soat-->
+                        <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
+                        <div class="me-2 mt-2" style="display: inline-block; background-color: #F8F9FD; height: 30px; border-radius: 15px; float: right;">
+                            <div class="mt-1 disd tim" style="width: 60px;">
+                                <div class="time" style="width: 60px;">
+                                    <span class="hours m-0"></span>
+                                    <span class="separator m-0 mt-1">:</span>
+                                    <span class="minutes m-0"></span>
+                                    <span class="separator m-0  mt-1">:</span>
+                                    <span class="seconds  m-0"></span>
+                                </div>
+                            </div>
+                            <input class="mt-1" type="date" value="2023-02-26" style="width: 110px; font-size: 12px;">
+                        </div>
+                    </div>
+                    <!--/asosiy menyu-->
                 </div>
             </div>
         </div>
-
-        <!--/chap menyu-->
-        <!--asosiy menyu-->
-        <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
-        <router-link class="router-link me-3 btn-1"  to="/" >Home</router-link>
-        <img src="../assets/images/nav/Nav_note.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1"  to="/order" >Order</router-link>
-        <img src="../assets/images/nav/Nav_clock.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1"  to="/History" >History</router-link>  
-        <img src="../assets/images/nav/Nav_receipt.png" class="me-1"  alt="">
-        <router-link class="router-link me-3 btn-1"  to="/Bill" >Bill</router-link>
-        <button class="Nav_inline_divlar Nav_button-Dinning-Option">
-            <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
-        </button>
-        <!--/asosiy menyu-->
-        <!--soat-->
-        <div class="Nav_inline_divlar Nav_cass_date me-3">
-            <div class="clock Nav_inline_divlar" style="font-size: 9px;">
-                <div class="time">
-                    <span class="hours m-0"></span>
-                    <span class="separator m-0 mt-1">:</span>
-                    <span class="minutes m-0"></span>
-                    <span class="separator m-0  mt-1">:</span>
-                    <span class="seconds  m-0"></span>
-                </div>
-            </div>
-            <input class="Nav_date" type="date" value="2023-02-26">
-        </div>
-        <img class="rotate" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
     </div>
 
     <router-view></router-view>
@@ -92,6 +97,24 @@ setInterval(updateTime, 1000);{}
 
 
 <style>
+.dis{
+    display: inline-block;
+    width: 210px;
+    background-color: #F8F9FD;
+    border-radius: 40px;
+    height: 36px;
+    width: 215px;
+}
+
+.disd{
+    display: inline-block;
+}
+
+.tim{
+    height: 15px;
+    width: 30px;
+    font-size: 14px;
+}
 /* Nav
 .my-active {
     color: #FFAB18 !important;
