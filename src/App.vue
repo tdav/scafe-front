@@ -92,7 +92,7 @@ setInterval(updateTime, 1000);{}
 
 
 <style>
-/*Nav*/
+/* Nav
 .my-active {
     color: #FFAB18 !important;
     gap: 8px !important;
@@ -245,6 +245,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .Nav_div1{
     height: 78px;
     text-align: right;
-}
+} */
 /*/Nav*/
 </style>
