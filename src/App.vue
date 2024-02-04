@@ -48,15 +48,18 @@
                     <div class="col-2 p-0">
                         <!--soat-->
                         
-                        
-                        <div class="dropdown">
-                            <button class="btn btn-#fff" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <p>The current date is: {{ formattedDate }}</p>
+                        </div>
+                        <div class="dropdown drop">
+                            <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;"
+                            :class="setSelectMenuItem == 1 ? 'my-active' : ''"
+                            @click="mySetSelect(1)"
+                            >
                                 <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                             </div>
 
@@ -76,20 +79,45 @@
 <script setup>
 import { ref } from 'vue';
 import DinningOption from './components/DinningOption.vue';
+import { ref, onMounted } from 'vue';
 
 let dinningOptionIsShow = ref(false);
 let myDateTime = ref(new Date())
+
+function mySetSelect(i) {
+    this.setSelectMenuItem = i
+}
 
 function updateTime() {
   this.myDateTime.value = new Date()
 }
 
 setInterval(updateTime, 1000);{}
- 
+
+const formattedDate = ref('');
+
+function updateDate() {
+  const currentDateTime = new Date();
+  const day = String(currentDateTime.getDate()).padStart(2, '0');
+  const month = String(currentDateTime.getMonth() + 1).padStart(2, '0'); // JavaScript da oy 0-11 oraliqda indekslangan
+  const year = currentDateTime.getFullYear();
+
+  formattedDate.value = `${day}/${month}/${year}`;
+}
+
+onMounted(() => {
+  // Boshlashda bir marta ko'rsatish
+  updateDate();
+
+  // Har sekundda bir yangilash
+  setInterval(updateDate, 1000);
+});
+
 </script>
 
 
 <style>
+
 .dis{
     display: inline-block;
     width: 210px;
@@ -107,6 +135,14 @@ setInterval(updateTime, 1000);{}
     height: 15px;
     width: 30px;
     font-size: 14px;
+}
+
+.active:active {
+    border-color: #ffffff;
+}
+
+.drop {
+    margin-left: 170px;
 }
 /* Nav
 .my-active {
