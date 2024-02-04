@@ -4,6 +4,8 @@
         "name": "Cteyk",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image.png",
+        "footType":"Coffee",
+
         "price": 3000,
         "count": 1
     },
@@ -12,6 +14,7 @@
         "name": "Baku",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image1.png",
+        "footType":"Beverages",
         "price": 16000,
         "count": 1
     },
@@ -20,6 +23,7 @@
         "name": "Lapshoy",
         "description": "sjdhjsh sjdj",
         "img": "/assets/images/Image2.png",
+        "footType":"Bread", 
         "price": 37000,
         "count": 1
     },

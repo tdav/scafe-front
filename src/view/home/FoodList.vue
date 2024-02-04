@@ -1,6 +1,6 @@
 <template >
     <div class="container-fluid">
-        <div class="row">
+        <div class="row h-100">
             <div class="col-1 bg-body variant">
                 <div>
                     <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
@@ -55,14 +55,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12">
+                        
                             <b>
-                                <p class="p-0">Sub Total: {{ jamiSumma }} so`m</p> 
                                 <p class="pt-2 m-0 ps-0">Tax (10%): {{ tax }} so`m</p>
-                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>
-                                                                              
+                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>                                  
                             </b>
-                        </div>
+                        
                         <div class="dib p-0">
                             <button class="butt ms-2">Sotib olish</button>
                         </div>
@@ -147,7 +145,6 @@ function JamiSummaHisobla(){
         const element = etsList.value[i];
         
         jamiSumma.value = jamiSumma.value + element.price * element.count;
-        jamiSumma.value = jamiSumma.value + tax.value;
     }
 
     tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
@@ -157,7 +154,7 @@ function JamiSummaHisobla(){
 
 
 <style scoped>
-.dib{
+.dib {
     text-align: center;
 }
 
@@ -181,14 +178,14 @@ function JamiSummaHisobla(){
 
 .menu{
     background-color:rgb(250, 250, 250);  
-    max-height: 570px; 
+    /* max-height: 645px;  */
     overflow-y: auto;
     background-color: #f7f7f7;
 }
 
 .zakaz{
     height: 300px;
-    max-height: 416px; 
+    max-height: 417px; 
     overflow-y: auto; 
     scrollbar-width: thin;
 }
