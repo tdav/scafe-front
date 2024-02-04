@@ -9,6 +9,7 @@
                             <img src="../assets/images/nav/Nav_arrow-left.png" class="Nav_imgs-arrow-left" alt="">
                         </button>
                     </div>
+                    
                     <div class="col-7">
                         <div class="container-fluid">
                             <div class="row">
