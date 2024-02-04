@@ -47,20 +47,20 @@
                     </div>
                     <div class="col-2 p-0">
                         <!--soat-->
-                        <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
-                        <div class="me-2 mt-2" style="display: inline-block; background-color: #F8F9FD; height: 30px; border-radius: 15px; float: right;">
-                            <div class="mt-1 disd tim" style="width: 60px;">
-                                <div class="time" style="width: 60px;">
-                                    <span class="hours m-0"></span>
-                                    <span class="separator m-0 mt-1">:</span>
-                                    <span class="minutes m-0"></span>
-                                    <span class="separator m-0  mt-1">:</span>
-                                    <span class="seconds  m-0"></span>
-                                </div>
+                        
+                        
+                        <div class="dropdown">
+                            <button class="btn btn-#fff" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                             </div>
-                            <input class="mt-1" type="date" value="2023-02-26" style="width: 110px; font-size: 12px;">
+
                         </div>
-                    </div>
                     <!--/asosiy menyu-->
                 </div>
             </div>
@@ -78,17 +78,10 @@ import { ref } from 'vue';
 import DinningOption from './components/DinningOption.vue';
 
 let dinningOptionIsShow = ref(false);
-
+let myDateTime = ref(new Date())
 
 function updateTime() {
-  const date = new Date();
-  const hours = date.getHours().toString().padStart(2, '0');
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  const seconds = date.getSeconds().toString().padStart(2, '0');
-
-  document.querySelector('.hours').textContent = hours;
-  document.querySelector('.minutes').textContent = minutes;
-  document.querySelector('.seconds').textContent = seconds;
+  this.myDateTime.value = new Date()
 }
 
 setInterval(updateTime, 1000);{}
@@ -270,4 +263,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: right;
 } */
 /*/Nav*/
+
+.btn-#fff {
+    border-color: #ffffff;
+}
 </style>

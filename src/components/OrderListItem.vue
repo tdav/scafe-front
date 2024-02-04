@@ -12,7 +12,7 @@
                 <p class="ms-3" style="margin: 0px; font-size: 15px;">Totol: {{ jamiSumma }} so'm</p>
             </div>
 
-            <div class="col-2 p-0">
+            <div class="col-3 p-0">
                 <div style="margin-top: 30px;">
                     <button @click="EtsPlus()" class="my-btn-plus m-0"
                         style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
