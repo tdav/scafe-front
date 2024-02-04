@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-1 bg-body variant">
-                <div>
+            
                     <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                         @click="mySetSelect(1)">
                         <img src="../../../public/assets/images/btn/offers.png">
@@ -32,9 +32,8 @@
                         <img src="../../../public/assets/images/btn/misc.png">
                         <h3 class="h3-1">Snack</h3>
                     </button>
-                </div>
             </div>
-            <div class="p-0 menu" :class="!isShowPanel ? 'col-11' : 'col-8'">
+            <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
                 <div class="container-fluid">
                     <div class="row">
                         <div v-for="it in foodData" :key="it.id" class="" :class="!isShowPanel ? 'col-2' : 'col-3'">
@@ -174,12 +173,12 @@ function JamiSummaHisobla(){
     border-color: #ffffff;  
     text-align: center;
     margin-top: 3%;
-    }
+}
 
 .menu{
     background-color:rgb(250, 250, 250);  
     /* max-height: 645px;  */
-    overflow-y: auto;
+    overflow-y: auto; 
     background-color: #f7f7f7;
 }
 
@@ -189,6 +188,17 @@ function JamiSummaHisobla(){
     overflow-y: auto; 
     scrollbar-width: thin;
 }
+
+.scc{
+    max-height: 647px;
+    overflow-y: auto;
+    scrollbar-width: inherit;
+}
+
+/* .scc{
+    overflow-y: auto;
+    scrollbar-width: thin;
+} */
 
 .parag {
     color: white;
