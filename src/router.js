@@ -25,14 +25,14 @@ const routes = [
     {
         path: '/',
         name: 'FoodList',
-        component: FoodListvue3devtool
+        component: FoodList
     },
 
     //
     
     {
         path: '/new',
-        name: 'FoodListnew4',
+        name: 'FoodList',
         component: FoodList
     },
 
@@ -40,14 +40,7 @@ const routes = [
     //
     {
         path: '/order',
-        name: 'Order5',
-        component: Order
-    },
-
-
-    {
-        path: '/order-new',
-        name: 'OrderNew',
+        name: 'Order',
         component: Order
     },
 
