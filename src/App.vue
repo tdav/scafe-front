@@ -54,10 +54,6 @@
                             <p id="output">{{ output }}</p>
                             <p id="date">{{ date }}</p>
                         </div>
-                        <div>
-                            <p id="output">{{ output }}</p>
-                            <p id="date">{{ date }}</p>
-                        </div>
                         
                         <div>
                             <p id="output">{{ output }}</p>
