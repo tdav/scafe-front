@@ -1,6 +1,6 @@
 <template >
     <div class="container-fluid p-0">
-        <div class="row mb-1 mt-1 rro">
+        <div class="row mb-1 rro">
 
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.img"
                 style="height: 80px; width: 80px; display: inline-block;">
@@ -44,10 +44,12 @@ const props = defineProps( {
 
 let jamiSumma = ref(0);
 
+
 const emit = defineEmits(['onChangeCount'])
 
 onMounted(() => {
     jamiSumma.value = props.foodData.price * props.foodData.count;
+    
 })
 
 function EtsPlus() {
@@ -63,8 +65,10 @@ function EtsMinus() {
     if (props.foodData.count > 0) {
         props.foodData.count--;
         this.jamiSumma = props.foodData.price * props.foodData.count;
-
+    
         emit('onChangeCount', props.foodData)
+        
+        
     } else {
         return;
     }
