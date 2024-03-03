@@ -50,16 +50,6 @@
                             <p id="output">{{ output }}</p>
                             <p id="date">{{ date }}</p>
                         </div>
-                        <div>
-                            <p id="output">{{ output }}</p>
-                            <p id="date">{{ date }}</p>
-                        </div>
-                        
-                        <div>
-                            <p id="output">{{ output }}</p>
-                            <p id="date">{{ date }}</p>c  \ \\\ c\c   cx zzz     z z xc\ cx xc cz cz czx\zx zxzxzx
-                        </div>q
-                         
                         <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;" :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
                             <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
                         </button>
