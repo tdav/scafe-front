@@ -43,6 +43,14 @@ const routes = [
         name: 'Order',
         component: Order
     },
+
+
+    {
+        path: '/order-new',
+        name: 'OrderNew',
+        component: Order
+    },
+
     {
         path: '/history',
         name: 'History',
