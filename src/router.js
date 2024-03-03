@@ -25,14 +25,14 @@ const routes = [
     {
         path: '/',
         name: 'FoodList',
-        component: FoodListmm
+        component: FoodList
     },
 
     //
     
     {
         path: '/new',
-        name: 'FoodListnew5',
+        name: 'FoodListnew4',
         component: FoodList
     },
 
