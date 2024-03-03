@@ -40,7 +40,7 @@ const routes = [
     //
     {
         path: '/order',
-        name: 'Order4',
+        name: 'Order5',
         component: Order
     },
 
