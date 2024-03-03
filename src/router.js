@@ -25,7 +25,7 @@ const routes = [
     {
         path: '/',
         name: 'FoodList',
-        component: FoodList
+        component: FoodListmm
     },
 
     //
