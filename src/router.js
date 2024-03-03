@@ -44,11 +44,11 @@ const routes = [
         component: Bill
     },
 
-    // {
-    //     path: '/Dashboard',
-    //     name: 'Dashboard',
-    //     component: Dashboard
-    // },
+    {
+        path: '/Dashboard',
+        name: 'Dashboard',
+        component: Dashboard
+    },
     // {
     //     path: '/PosWalkInAbsent',
     //     name: 'PosWalkInAbsent',
