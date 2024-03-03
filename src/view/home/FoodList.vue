@@ -44,7 +44,7 @@
             </div>
             <div class="col-3" v-if="isShowPanel">
                 <div class="container-fluid p-0" style="height: 10px;">
-                    <div class="row zakaz p-0" style="height: 416px;">
+                    <div class="row zakaz p-0">
                         <div class="col-12 p-0">
                             <div class="container-fluid p-0">
                                 <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
@@ -54,12 +54,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        
+                        <div class="col-12">
                             <b>
-                                <p class="pt-2 m-0 ps-0">Tax (10%): {{ tax }} so`m</p>
-                                <p class="p-0">Total: {{ jamiSumma }} so`m</p>                                  
+                                <p class="pt-2">Tax (10%): {{ tax }} so`m</p>
+                                <p class="p-0 m-0 ps-0">Sub Total: {{ jamiSumma }} so`m</p>
                             </b>
-                        
+                        </div>
                         <div class="dib p-0">
                             <button class="butt ms-2">Sotib olish</button>
                         </div>
@@ -124,8 +124,7 @@ function EtsPlus() {
 }
 
 function EtsMinus() {
-    if (this.count > 0) 
-    {
+    if (this.count > 0) {
         this.count--;
 
         JamiSummaHisobla();
@@ -147,6 +146,7 @@ function JamiSummaHisobla(){
     }
 
     tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
+    
 }
 
 </script>
@@ -183,16 +183,14 @@ function JamiSummaHisobla(){
 }
 
 .zakaz{
-    height: 300px;
-    max-height: 417px; 
-    overflow-y: auto; 
-    scrollbar-width: thin;
+    height: 495px;
+    max-height: 495px; 
+    overflow-y: auto;
 }
 
 .scc{
     max-height: 647px;
     overflow-y: auto;
-    scrollbar-width: inherit;
 }
 
 /* .scc{
