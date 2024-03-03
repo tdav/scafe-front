@@ -32,7 +32,7 @@ const routes = [
     
     {
         path: '/new',
-        name: 'FoodListnew',
+        name: 'FoodListnew2',
         component: FoodList
     },
 
