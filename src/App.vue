@@ -48,6 +48,8 @@
                     <div class="dropdown drop">
                         <div>
                             <p id="output">{{ output }}</p>
+                            <p>Azizbek Devoloper</p>
+                            <p>Jasur Dev</p>
                             <p id="date">{{ date }}</p>
                         </div>
                         <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;" :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
