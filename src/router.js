@@ -27,12 +27,30 @@ const routes = [
         name: 'FoodList',
         component: FoodListvue3
     },
+
+    //
     
     {
+        path: '/new',
+        name: 'FoodListnew4',
+        component: FoodList
+    },
+
+
+    //
+    {
         path: '/order',
-        name: 'Order',
+        name: 'Order5',
         component: Order
     },
+
+
+    {
+        path: '/order-new',
+        name: 'OrderNew',
+        component: Order
+    },
+
     {
         path: '/history',
         name: 'History',
