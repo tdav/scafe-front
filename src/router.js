@@ -27,7 +27,17 @@ const routes = [
         name: 'FoodList',
         component: FoodList
     },
+
+    //
     
+    {
+        path: '/new',
+        name: 'FoodListnew',
+        component: FoodList
+    },
+
+
+    //
     {
         path: '/order',
         name: 'Order',
