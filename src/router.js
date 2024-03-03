@@ -49,82 +49,82 @@ const routes = [
         name: 'Dashboard',
         component: Dashboard
     },
-    // {
-    //     path: '/PosWalkInAbsent',
-    //     name: 'PosWalkInAbsent',
-    //     Commenend: PosWalkInAbsent
-    // },
-    // {
-    //     path: '/WalkInLoginCashier',
-    //     name: 'WalkInLoginCashier',
-    //     Commenend: WalkInLoginCashier
-    // },
+    {
+        path: '/PosWalkInAbsent',
+        name: 'PosWalkInAbsent',
+        Commenend: PosWalkInAbsent
+    },
+    {
+        path: '/WalkInLoginCashier',
+        name: 'WalkInLoginCashier',
+        Commenend: WalkInLoginCashier
+    },
      
-    // {
-    //     path: '/AddNote',
-    //     name: 'AddNote',
-    //     Commenend: AddNote
-    // },
-    // {
-    //     path: '/DinningOption',
-    //     name: 'DinningOption',
-    //     Commenend: DinningOption
-    // },
-    // {
-    //     path: '/OrderConfirmation',
-    //     name: 'OrderConfirmation',
-    //     Commenend: OrderConfirmation
-    // },
-    // {
-    //     path: '/Payment',
-    //     name: 'Payment',
-    //     Commenend: Payment
-    // },
-    // {
-    //     path: '/SelectTable',
-    //     name: 'SelectTable',
-    //     Commenend: SelectTable
-    // },
-    // {
-    //     path: '/TipAmount',
-    //     name: 'TipAmount',
-    //     Commenend: TipAmount
-    // },
-    // {
-    //     path: '/LoginCashierOrm',
-    //     name: 'LoginCashierOrm',
-    //     Commenend: LoginCashierOrm
-    // },
-    // {
-    //     path: '/LoginCashier',
-    //     name: 'LoginCashier',
-    //     Commenend: LoginCashier
-    // },
-    // {
-    //     path: '/UpcomingOrders',
-    //     name: 'UpcomingOrders',
-    //     Commenend: UpcomingOrders
-    // },
-    // {
-    //     path: '/WalkInLoginCashier',
-    //     name: 'WalkInLoginCashier',
-    //     Commenend: WalkInLoginCashier
-    // },
-    // {
-    //     path: '/NewReservation',
-    //     name: 'NewReservation',
-    //     Component: NewReservation
-    // },
-    // {
-    //     path: '/GuestDetail',
-    //     name: 'GuestDetail',
-    //     component: GuestDetail
-    // },
-    // {
-    //     path: '/List',
-    //     name: 'List',
-    //     component: List
-    // },
+    {
+        path: '/AddNote',
+        name: 'AddNote',
+        Commenend: AddNote
+    },
+    {
+        path: '/DinningOption',
+        name: 'DinningOption',
+        Commenend: DinningOption
+    },
+    {
+        path: '/OrderConfirmation',
+        name: 'OrderConfirmation',
+        Commenend: OrderConfirmation
+    },
+    {
+        path: '/Payment',
+        name: 'Payment',
+        Commenend: Payment
+    },
+    {
+        path: '/SelectTable',
+        name: 'SelectTable',
+        Commenend: SelectTable
+    },
+    {
+        path: '/TipAmount',
+        name: 'TipAmount',
+        Commenend: TipAmount
+    },
+    {
+        path: '/LoginCashierOrm',
+        name: 'LoginCashierOrm',
+        Commenend: LoginCashierOrm
+    },
+    {
+        path: '/LoginCashier',
+        name: 'LoginCashier',
+        Commenend: LoginCashier
+    },
+    {
+        path: '/UpcomingOrders',
+        name: 'UpcomingOrders',
+        Commenend: UpcomingOrders
+    },
+    {
+        path: '/WalkInLoginCashier',
+        name: 'WalkInLoginCashier',
+        Commenend: WalkInLoginCashier
+    },
+    {
+        path: '/NewReservation',
+        name: 'NewReservation',
+        Component: NewReservation
+    },
+    {
+        path: '/GuestDetail',
+        name: 'GuestDetail',
+        component: GuestDetail
+    },
+    {
+        path: '/List',
+        name: 'List',
+        component: List
+    },
 
 ]
 
