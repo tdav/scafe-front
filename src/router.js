@@ -25,19 +25,9 @@ const routes = [
     {
         path: '/',
         name: 'FoodList',
-        component: FoodListazizbekdev
-    },
-
-    //
-    
-    {
-        path: '/new',
-        name: 'FoodList',
         component: FoodList
-    },
-
-
-    //
+    }, 
+    
     {
         path: '/order',
         name: 'Order',
@@ -49,6 +39,7 @@ const routes = [
         name: 'History',
         component: History
     },
+
     {
         path:'/Bill',
         name:  'Bill',
