@@ -22,12 +22,19 @@ import Bill from './view/Bill/list.vue'
 import FoodList from './view/home/FoodList.vue'
 
 const routes = [
+    
     {
         path: '/',
-        name: 'FoodList',
-        component: FoodList
+        name: 'Login',
+        component: Login
     }, 
     
+    {
+        path: '/home',
+        name: 'FoodList',
+        component: FoodList
+    },        
+
     {
         path: '/order',
         name: 'Order',

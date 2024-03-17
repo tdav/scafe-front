@@ -1,37 +1,40 @@
-<template >
+<template>
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-1 bg-body variant">
-            
-                    <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
-                        @click="mySetSelect(1)">
-                        <img src="../../../public/assets/images/btn/offers.png">
-                        <h3 class="h3-1">Coffee</h3>
-                    </button>
 
-                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 2 ? 'my-active' : ''"
-                        @click="mySetSelect(2)">
-                        <img src="../../../public/assets/images/btn/beverages.png">
-                        <h3 class="h3-1">Beverages</h3>
-                    </button> <br>
 
-                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 3 ? 'my-active' : ''"
-                        @click="mySetSelect(3)">
-                        <img src="../../../public/assets/images/btn/lasagna.png">
-                        <h3 class="h3-1">Bread</h3>
-                    </button> <br>
+                <button @click="loadData"> Load </button>
 
-                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 4 ? 'my-active' : ''"
-                        @click="mySetSelect(4)">
-                        <img src="../../../public/assets/images/btn/pasta.png">
-                        <h3 class="h3-1">Appetizer</h3>
-                    </button> <br>
+                <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
+                    @click="mySetSelect(1)">
+                    <img src="../../../public/assets/images/btn/offers.png">
+                    <h3 class="h3-1">Coffee</h3>
+                </button>
 
-                    <button class="btn btn-body btn-1" :class="setSelectMenuItem == 5 ? 'my-active' : ''"
-                        @click="mySetSelect(5)">
-                        <img src="../../../public/assets/images/btn/misc.png">
-                        <h3 class="h3-1">Snack</h3>
-                    </button>
+                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 2 ? 'my-active' : ''"
+                    @click="mySetSelect(2)">
+                    <img src="../../../public/assets/images/btn/beverages.png">
+                    <h3 class="h3-1">Beverages</h3>
+                </button> <br>
+
+                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 3 ? 'my-active' : ''"
+                    @click="mySetSelect(3)">
+                    <img src="../../../public/assets/images/btn/lasagna.png">
+                    <h3 class="h3-1">Bread</h3>
+                </button> <br>
+
+                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 4 ? 'my-active' : ''"
+                    @click="mySetSelect(4)">
+                    <img src="../../../public/assets/images/btn/pasta.png">
+                    <h3 class="h3-1">Appetizer</h3>
+                </button> <br>
+
+                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 5 ? 'my-active' : ''"
+                    @click="mySetSelect(5)">
+                    <img src="../../../public/assets/images/btn/misc.png">
+                    <h3 class="h3-1">Snack</h3>
+                </button>
             </div>
             <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
                 <div class="container-fluid">
@@ -47,8 +50,9 @@
                     <div class="row zakaz p-0">
                         <div class="col-12 p-0">
                             <div class="container-fluid p-0">
-                                <div v-for="it in etsList" :key="it.id" class="row p-0" style="height: 100px; margin-left: 12px; width: 93%;">
-                                    <OrderListItem  :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>              
+                                <div v-for="it in etsList" :key="it.id" class="row p-0"
+                                    style="height: 100px; margin-left: 12px; width: 93%;">
+                                    <OrderListItem :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +81,9 @@ import OrderListItem from '../../components/OrderListItem.vue';
 import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
 
+import DataService from "../../services/data.service"
+
+
 let isShowPanel = ref(false)
 let setSelectMenuItem = ref(1)
 let etsList = ref([]);
@@ -85,20 +92,28 @@ let jamiSumma = ref(0);
 let tax = ref(0);
 
 
+function loadData() {
+    DataService.getFoodList().then((response) => {
+        
+        console.log(response);
+    })
+}
+
+
 function mySetSelect(i) {
     this.setSelectMenuItem = i
 }
- 
+
 function CreateOrder(item) {
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
-        
+
         if (element.name == item.name) {
             // Agar element topilgan bo'lsa, ishni to'xtatish uchun return qilish
             return;
         }
     }
-    
+
     // Element topilmagan bo'lsa, boshqa harakatlar bajarish
     isShowPanel.value = true;
     etsList.value.push(item);
@@ -106,18 +121,18 @@ function CreateOrder(item) {
     JamiSummaHisobla();
 }
 
-function onMyChangeCount(food){
+function onMyChangeCount(food) {
 
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
-        
-       if (element.id == food.id)
-        element.count = food.count;
+
+        if (element.id == food.id)
+            element.count = food.count;
     }
 
     JamiSummaHisobla();
 }
-   
+
 function EtsPlus() {
     this.count++;
     JamiSummaHisobla()
@@ -135,18 +150,18 @@ function EtsMinus() {
 }
 
 
-function JamiSummaHisobla(){
+function JamiSummaHisobla() {
 
-    jamiSumma.value=0
+    jamiSumma.value = 0
 
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
-        
+
         jamiSumma.value = jamiSumma.value + element.price * element.count;
     }
 
     tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
-    
+
 }
 
 </script>
@@ -158,37 +173,37 @@ function JamiSummaHisobla(){
 }
 
 
-.butt{
-    border:  none;
+.butt {
+    border: none;
     background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
-    color: white; 
+    color: white;
     border-radius: 20px;
     height: 50px;
     width: 310px;
 }
 
 
-.variant{
+.variant {
     border-width: 1px;
-    border-color: #ffffff;  
+    border-color: #ffffff;
     text-align: center;
     margin-top: 3%;
 }
 
-.menu{
-    background-color:rgb(250, 250, 250);  
+.menu {
+    background-color: rgb(250, 250, 250);
     /* max-height: 645px;  */
-    overflow-y: auto; 
+    overflow-y: auto;
     background-color: #f7f7f7;
 }
 
-.zakaz{
+.zakaz {
     height: 495px;
-    max-height: 495px; 
+    max-height: 495px;
     overflow-y: auto;
 }
 
-.scc{
+.scc {
     max-height: 647px;
     overflow-y: auto;
 }
