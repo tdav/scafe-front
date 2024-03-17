@@ -1,5 +1,5 @@
 <template >
-    <div class="border-button p-3" style="padding: 0px;">
+    <div class="border-button border border-buttom-2 p-3" style="padding: 0px;">
         <!--chap menyu-->
         <div class="container-fluid">
             <div class="row">
@@ -46,18 +46,19 @@
                 </div>
                 <div class="col-2 p-0">
                     <div class="dropdown drop">
-                        <div>
-                            <p id="output">{{ output }}</p>
-                            <p>Azizbek Devoloper</p>
-                            <p>Jasur Dev</p>
-                            <p id="date">{{ date }}</p>
+                        <div style="float: right;">
+                            <div style="display: inline-block;">
+                                <p id="output">{{ output }}</p>
+                                <p style="display: inline-block;">Derektor</p>
+                                <p id="date">{{ date }}</p>
+                            </div>
+                            <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;" :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
+                                <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
                         </div>
-                        <button class="btn btn-#fff active" type="button"  data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #fff;" :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
-                            <img class="rotate" style="float: right; height: 40px; width: 40px;" src="../assets/images/nav/Nav_Profile.png" alt="rasm">
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                        </ul>
                     </div>
                 </div>
                 <!--/asosiy menyu-->
@@ -150,6 +151,7 @@ function mySetSelect(i) {
 
 .drop {
     float: right;
+    width: 210px;
 }
 
 /* Start */
