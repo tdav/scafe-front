@@ -13,7 +13,7 @@
                 <p style="display: inline-block;">Password</p>
                 <input type="password" placeholder="password"><br><br>
                 <button type="button" style="height: 40px; width: 150px; border: none; background-color: greenyellow;">
-                     <h4>Submit</h4>
+                     <h4>Submitt</h4>
                 </button>
             </div>
         </div>
