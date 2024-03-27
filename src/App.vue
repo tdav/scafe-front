@@ -1,5 +1,5 @@
 <template>
-    <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="padding: 0px;">
+    <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="height: 88px">
         <!--chap menyu-->
         <div class="container-fluid">
             <div class="row">
@@ -60,8 +60,16 @@
                                 <img class="rotate" style="float: right; height: 40px; width: 40px;"
                                     src="../assets/images/nav/Nav_Profile.png" alt="rasm">
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            <ul class="dropdown-menu" style="height: 250px; width: 210px;">
+                                <p class="p-3">cuhqwboebwiosdacboq
+                                    uiwebhjdcopvm[3wmev
+                                    ee;rkfm [olewrmkc[o
+                                    oekmv[wkermkfv[c[ie
+                                    ;k;jwfw;oefmqfrferrw
+                                    evcervcercercre3ecrf
+                                    [pemr[pvmolubhnqocu
+                                    dbynwqouibcdheouiqB
+                                    NXOUIQWBECAOUIBQW</p>
                             </ul>
                         </div>
                     </div>
