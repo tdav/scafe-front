@@ -1,10 +1,10 @@
 <template>
     <div class="container-fluid">
         <div class="row h-100">
-            <div class="col-1 bg-body variant">
+            <div class="col-1 bg-body variant border">
 
 
-                <button @click="loadData"> Load </button>
+                <button @click="loadData" style="margin-top: 60px"> Load </button>
 
                 <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                     @click="mySetSelect(1)">
@@ -78,7 +78,7 @@
 <script setup>
 import { ref } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
-import foodData from '../../../public/assets/json/foodList.json';
+//import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
 
 import DataService from "../../services/data.service"
@@ -91,10 +91,12 @@ let etsList = ref([]);
 let jamiSumma = ref(0);
 let tax = ref(0);
 
+let foodData = ref([]);
+
 
 function loadData() {
     DataService.getFoodList().then((response) => {
-        
+        foodData.value = response.data;
         console.log(response);
     })
 }
@@ -185,16 +187,13 @@ function JamiSummaHisobla() {
 
 .variant {
     border-width: 1px;
-    border-color: #ffffff;
     text-align: center;
-    margin-top: 3%;
+    background-color: #2130ff;
 }
 
 .menu {
-    background-color: rgb(250, 250, 250);
-    /* max-height: 645px;  */
     overflow-y: auto;
-    background-color: #f7f7f7;
+    background-color: white;
 }
 
 .zakaz {
