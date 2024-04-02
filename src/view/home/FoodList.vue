@@ -2,8 +2,6 @@
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-1 bg-body variant border">
-
-
                 <button @click="loadData" style="margin-top: 60px"> Load </button>
 
                 <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
