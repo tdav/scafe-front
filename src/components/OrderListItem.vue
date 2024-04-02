@@ -1,6 +1,6 @@
 <template >
     <div class="container-fluid p-0">
-        <div class="row mb-1 rro">
+        <div class="row mb-1 rro border border-1">
 
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.imgUrl"
                 style="height: 80px; width: 80px; display: inline-block;">
@@ -79,7 +79,6 @@ function EtsMinus() {
 <style >
 .rro {
     height: 100px;
-    background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
 }
 
 .pp1 {

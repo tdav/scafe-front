@@ -173,8 +173,8 @@ function JamiSummaHisobla() {
 
 
 .butt {
-    border: none;
-    background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
+        border: none;
+        background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
     color: white;
     border-radius: 20px;
     height: 50px;
