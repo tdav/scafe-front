@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-1 bg-body variant border">
-                <button @click="loadData" style="margin-top: 60px"> Load </button>
+                <button @click="loadData" style="margin-top: 30px"> Load </button>
 
                 <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
                     @click="mySetSelect(1)">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3" v-if="isShowPanel">
+            <div class="col-3" style="height: 553px;" v-if="isShowPanel">
                 <div class="container-fluid p-0" style="height: 10px;">
                     <div class="row zakaz p-0">
                         <div class="col-12 p-0">
@@ -76,7 +76,6 @@
 <script setup>
 import { ref } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
-//import foodData from '../../../public/assets/json/foodList.json';
 import Food from '../../components/Food.vue';
 
 import DataService from "../../services/data.service"
@@ -185,6 +184,7 @@ function JamiSummaHisobla() {
 
 .variant {
     border-width: 1px;
+    height: 553px;
     text-align: center;
     background-color: #2130ff;
 }
@@ -195,12 +195,13 @@ function JamiSummaHisobla() {
 }
 
 .zakaz {
-    height: 495px;
+    height: 430px;
     max-height: 495px;
     overflow-y: auto;
 }
 
 .scc {
+    height: 553px;
     max-height: 647px;
     overflow-y: auto;
 }
