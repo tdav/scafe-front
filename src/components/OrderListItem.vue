@@ -53,7 +53,7 @@ onMounted(() => {
 })
 
 function EtsPlus() {
-
+debugger
     props.foodData.count = props.foodData.count + 1;
     jamiSumma.value = props.foodData.price * props.foodData.count;
 
