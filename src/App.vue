@@ -1,9 +1,9 @@
 <template>
     <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="height: 88px">
         <!--chap menyu-->
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
             <div class="row">
-                <div class="col-1 p-0" style="border-right: 1px solid ; text-align: center; height: 46px;">
+                <div class="col-1 p-0 hhha">
                     <button type="button" class="mt-1"
                         style="border-radius: 35px; border: none; width:40px; height: 40px;">
                         <img src="../assets/images/nav/Nav_arrow-left.png" alt="">
@@ -158,6 +158,11 @@ const path = computed(() => route.path)
     padding: 8px, 6px, 8px, 6px;
     border-radius: 8px;
     gap: 8px;
+}
+
+.hhha{
+    text-align: center; 
+    height: 46px;           
 }
 
 .Nav_bold-style {
