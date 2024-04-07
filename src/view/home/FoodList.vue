@@ -4,35 +4,61 @@
             <div class="col-1 bg-body variant border">
                 <button @click="loadData" style="margin-top: 30px"> Load </button>
 
-                <button class="btn btn-body btn-1 " :class="setSelectMenuItem == 1 ? 'my-active' : ''"
-                    @click="mySetSelect(1)">
+                <button @click="OnFilter(2)" class="btn btn-body btn-1" >
                     <img src="../../../public/assets/images/btn/offers.png">
-                    <h3 class="h3-1">Coffee</h3>
+                    <h3 class="h3-1">Ичимликлар</h3>
                 </button>
 
-                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 2 ? 'my-active' : ''"
-                    @click="mySetSelect(2)">
-                    <img src="../../../public/assets/images/btn/beverages.png">
-                    <h3 class="h3-1">Beverages</h3>
+                <button @click="OnFilter(3)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-soup-5756048.png">
+                    <h3 class="h3-1">Биринчига</h3>
                 </button> <br>
 
-                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 3 ? 'my-active' : ''"
-                    @click="mySetSelect(3)">
-                    <img src="../../../public/assets/images/btn/lasagna.png">
-                    <h3 class="h3-1">Bread</h3>
+                <button @click="OnFilter(4)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-food-and-restaurant-mega-pack-color-8285335.png">
+                    <h3 class="h3-1">Икинчига</h3>
                 </button> <br>
 
-                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 4 ? 'my-active' : ''"
-                    @click="mySetSelect(4)">
+                <button @click="OnFilter(5)" class="btn btn-body btn-1">
                     <img src="../../../public/assets/images/btn/pasta.png">
-                    <h3 class="h3-1">Appetizer</h3>
+                    <h3 class="h3-1">Уйгур</h3>
                 </button> <br>
 
-                <button class="btn btn-body btn-1" :class="setSelectMenuItem == 5 ? 'my-active' : ''"
-                    @click="mySetSelect(5)">
-                    <img src="../../../public/assets/images/btn/misc.png">
-                    <h3 class="h3-1">Snack</h3>
+                <button @click="OnFilter(6)" class="btn btn-body btn-1">
+                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-steak-4829135.png">
+                    <h3 class="h3-1">Стейк</h3>
                 </button>
+                
+                <button @click="OnFilter(7)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/kebab.png">
+                    <h3 class="h3-1">Кабоблар</h3>
+                </button>
+                
+                <button @click="OnFilter(8)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-pilau-6196390.png">
+                    <h3 class="h3-1">ОШ / Сомса</h3>
+                </button>
+                
+                <button @click="OnFilter(9)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-chicken-1702778.png">
+                    <h3 class="h3-1">КФС</h3>
+                </button>
+                
+                <button @click="OnFilter(10)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/salads.png">
+                    <h3 class="h3-1">Салатлар</h3>
+                </button>
+                
+                <button @click="OnFilter(11)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/poinsettia.png">
+                    <h3 class="h3-1">Ичимликлар</h3>
+                </button>
+
+                <button @click="OnFilter(12)" class="btn btn-body btn-1" >
+                    <img class="immmm"  src="../../../public/assets/images/icon/icons8-хлеб-50.png">
+                    <h3 class="h3-1">Гарнир / Нон</h3>
+                </button>
+
             </div>
             <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
                 <div class="container-fluid">
@@ -74,13 +100,16 @@
 
 
 <script setup>
+
+debugger
+
 import { ref } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import Food from '../../components/Food.vue';
 
 import DataService from "../../services/data.service"
 
-
+let myFoodList = []
 let isShowPanel = ref(false)
 let setSelectMenuItem = ref(1)
 let etsList = ref([]);
@@ -90,10 +119,16 @@ let tax = ref(0);
 
 let foodData = ref([]);
 
+function OnFilter(id){
+    foodData.value =  myFoodList.filter(function (food) {
+        return food.catigoryId == id
+    })
+}
 
 function loadData() {
     DataService.getFoodList().then((response) => {
         foodData.value = response.data;
+        myFoodList = response.data;
         console.log(response);
     })
 }
@@ -186,6 +221,7 @@ function JamiSummaHisobla() {
     height: 553px;
     text-align: center;
     background-color: #2130ff;
+    overflow-y: auto;
 }
 
 .menu {
@@ -197,6 +233,11 @@ function JamiSummaHisobla() {
     height: 430px;
     max-height: 495px;
     overflow-y: auto;
+}
+
+.immmm{
+    height: 30px;
+    width: 30px;
 }
 
 .scc {
@@ -325,20 +366,16 @@ function JamiSummaHisobla() {
 }
 
 .btn-1 {
-    margin: 10px;
-    margin-left: 5%;
-    border-radius: 20px;
     width: 77px;
     height: 78px;
-    padding: 12px, 6px, 12px, 6px;
     border-radius: 8px;
     gap: 8px;
 }
 
 .btn-1:active {
     background: linear-gradient(218.57deg, #FFAB18 -6.67%, #FF2197 137.69%);
-    margin: 10px;
-    margin-left: 5px;
+    /* margin: 10px; */
+    /* margin-left: 1px; */
     border-radius: 8px;
     gap: 8px;
     width: 77px;
