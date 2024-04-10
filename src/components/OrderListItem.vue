@@ -6,7 +6,7 @@
                 style="height: 80px; width: 80px; display: inline-block;">
 
             <div class="col-6 p-0">
-                <p class="ms-1" style="margin: 0px; font-size: 20px;"> {{ props.foodData.name }}</p>
+                <p class="ms-1" style="margin: 0px; font-size: 13px;"> <b>{{ props.foodData.name }}</b></p>
                 <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Dona: {{ props.foodData.count }}</p>
                 <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Narxi: {{ props.foodData.price }}</p>
                 <p class="ms-3" style="margin: 0px; font-size: 15px;">Totol: {{ jamiSumma }} so'm</p>
