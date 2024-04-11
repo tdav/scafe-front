@@ -1,5 +1,4 @@
 <template>
-    
     <div class="container-fluid" style="height: 925px;">
         <div class="row" style="height: 925px;">
             <div class="col-11 p-3" style="background-color: rgb(238, 238, 238);">

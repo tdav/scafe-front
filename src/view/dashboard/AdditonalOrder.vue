@@ -1,193 +1,180 @@
 <template>
-    <div>
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl div4">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 h1-1 h1" id="exampleModalToggleLabel">Upcoming orders</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+        <p class="p1">Additional order are almost ready. Would you like to take them with you?</p>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture@2x.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
+                            <p class="m-0">John sparrow</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <p class="p1">Additional order are almost ready. Would you like to take them with you?</p>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture@2x.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
-                                        <p class="m-0">John sparrow</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture@3x.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
-                                        <p class="m-0">Chintya lin</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture-1.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
-                                        <p class="m-0">Brandon po</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture-2.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
-                                        <p class="m-0">Amanda</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture-3.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
-                                        <p class="m-0">Michael luck</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="border border-1 div2">
-                            <div class="p-2 p3">
-                                <p style="height: 10px;" class="m-0"></p>
-                                <div class="m-0 div1">
-                                    <img class="img1" src="imgs/Picture-4.png" alt="">
-                                </div>
-                                <div class="div5">
-                                    <div>
-                                        <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
-                                        <p class="m-0">Harry mclaire</p>
-                                    </div>
-                                </div>
-                                <div class="div7 ms-2 mt-2" type="button">
-                                    <p class="p5 m-1">Delivery</p>
-                                </div>
-                                <div class="div6 border border-1 mt-2" type="button">
-                                    <p class="p6 mt-1">Reject</p>
-                                </div>
-                            </div>
-                            <div class="dd1 border-top p-2">
-                                <img src="imgs/location-alt.png" alt="">
-                                <p class="p7">Test 555, Alimps Campus, Binaker</p>
-                                <p class="p8 ps-1">
-                                    <img src="imgs/clock.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add to order</button>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture@3x.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
+                            <p class="m-0">Chintya lin</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
+                </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture-1.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
+                            <p class="m-0">Brandon po</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
+                </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture-2.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
+                            <p class="m-0">Amanda</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
+                </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture-3.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-2"><p class="p9 m-0">Paid</p></div>
+                            <p class="m-0">Michael luck</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
+                </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="border border-1 div2">
+                <div class="p-2 p3">
+                    <p style="height: 10px;" class="m-0"></p>
+                    <div class="m-0 div1">
+                        <img class="img1" src="imgs/Picture-4.png" alt="">
+                    </div>
+                    <div class="div5">
+                        <div>
+                            <p class="m-0 p4">Order ID #256873</p><div class="border border-1 dd-1"><p class="p2 m-0">Unpaid</p></div>
+                            <p class="m-0">Harry mclaire</p>
+                        </div>
+                    </div>
+                    <div class="div7 ms-2 mt-2" type="button">
+                        <p class="p5 m-1">Delivery</p>
+                    </div>
+                    <div class="div6 border border-1 mt-2" type="button">
+                        <p class="p6 mt-1">Reject</p>
+                    </div>
+                </div>
+                <div class="dd1 border-top p-2">
+                    <img src="imgs/location-alt.png" alt="">
+                    <p class="p7">Test 555, Alimps Campus, Binaker</p>
+                    <p class="p8 ps-1">
+                        <img src="imgs/clock.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

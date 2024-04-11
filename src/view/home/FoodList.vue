@@ -101,8 +101,6 @@
 
 <script setup>
 
-debugger
-
 import { ref } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import Food from '../../components/Food.vue';

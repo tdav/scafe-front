@@ -29,10 +29,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
-                    <div class="mt-1" style="width: 499px; float: right;">
+                <div class="col-8">
+                    <div class="mt-2 ms-5" style="width: 499px; float: right;">
                         <!--chap menyu-->
                         <!--asosiy menyu-->
+                        <!--new-->
+                        <!--/new-->
+
+
                         <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
                         <router-link class="router-link me-3 btn-1" to="/home">Home</router-link>
                         <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
@@ -46,13 +50,11 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-1 p-0">
                     <div class="dropdown drop">
                         <div style="float: right;">
                             <div style="display: inline-block;">
-                                <p id="output">{{ output }}</p>
-                                <p style="display: inline-block;">Derektor</p>
-                                <p id="date">{{ date }}</p>
+                                <p class="mb-2" style="display: inline-block;">Derektor</p>
                             </div>
                             <button class="btn btn-#fff active" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" style="border-color: #fff;"
