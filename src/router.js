@@ -14,12 +14,19 @@ import DinningOption from './view/dashboard/DinningOption.vue'
 import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
 import Payment from './view/dashboard/Payment.vue'
 import SelectTable from './view/dashboard/SelectTable.vue'
+import afitsand from './view/dashboard/afitsand.vue'
 
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
 const routes = [
     //new
+
+    {
+        path: '/afitsand',
+        name: 'afitsand',
+        component: afitsand
+    }, 
 
     {
         path: '/UpcomingOrders',
