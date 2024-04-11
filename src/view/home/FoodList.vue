@@ -195,7 +195,6 @@ function JamiSummaHisobla() {
     }
 
     tax.value = jamiSumma.value + (jamiSumma.value * 0.1)
-
 }
 
 </script>
