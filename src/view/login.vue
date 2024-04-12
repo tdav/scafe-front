@@ -1,6 +1,6 @@
 <template>
   <section class="vh-100 jhbsdfk">
-    <div class="container py-8 ">
+    <div class="container py-8 efdhbj">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-10 col-lg-6 col-xl-5 card-1">
           <div class="card shadow-2-strong" style="border-radius: 1rem">
@@ -48,8 +48,7 @@
               <button
                 class="button button-color"
                 @click="OnLogin()"
-                type="submit"
-              >
+                type="submit">
                 Running order
               </button>
               <div class="user-agree">
@@ -85,9 +84,13 @@ function OnLogin() {
 .jhbsdfk{
     background-image: url(../../../public/assets/images/Background.png);
     background-repeat: no-repeat;
-    margin-left: 2rem;
-    margin-right: ;
+    margin-left: 3rem;
 }
+
+.efdhbj{
+    padding: 30px;
+}
+
 .password {
     color: grey;
     font-family: Poppins;
@@ -196,10 +199,6 @@ function OnLogin() {
     text-align: center;
     margin-left: -1rem;
 
-}
-
-.card-sectionqwr {
-    margin-bottom: 3 rem;
 }
 
 
