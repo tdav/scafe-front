@@ -3,12 +3,12 @@
         <!--chap menyu-->
         <div class="container-fluid p-0">
             <div class="row">
-                <div class="col-1 p-0 hhha">
+                <!-- <div class="col-1 p-0 hhha">
                     <button type="button" class="mt-1"
                         style="border-radius: 35px; border: none; width:40px; height: 40px;">
                         <img src="../assets/images/nav/Nav_arrow-left.png" alt="">
                     </button>
-                </div>
+                </div> -->
                 <div class="col-2">
                     <div class="container-fluid">
                         <div class="row">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-9">
                     <div class="mt-2 ms-5" style="width: 499px; float: right;">
                         <!--chap menyu-->
                         <!--asosiy menyu-->
@@ -133,7 +133,7 @@ const path = computed(() => route.path)
 
 .drop {
     float: right;
-    width: 210px;
+    width: 130px;
 }
 
 /* Start */

@@ -63,7 +63,7 @@
             <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
                 <div class="container-fluid">
                     <div class="row">
-                        <div v-for="it in foodData" :key="it.id" class="" :class="!isShowPanel ? 'col-2' : 'col-3'">
+                        <div v-for="it in foodData" :key="it.id" class="p-0" :class="!isShowPanel ? 'col-2' : 'col-3'">
                             <Food :foodData="it" @click="CreateOrder(it)"></Food>
                         </div>
                     </div>
