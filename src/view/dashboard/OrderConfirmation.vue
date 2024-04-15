@@ -104,9 +104,9 @@
             <p class="ddp m-0" style="color: #9C9C9C;">Payment method</p>
             <b><p class="m-0" style="font-size: 25px;">Cash</p></b>
         </div>
-        <span class="btn border border-1  m-3 mx-0"
-            style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: white; color: #FF5C00;"
-            data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>Cancel</b></span>
+        <button class="btn btn-darck mx-0 m-3 border border-1"
+            style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: #ffffff; color: black;"
+            data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Censel</button>
         <button class="btn btn-darck mx-0 m-3 border border-1"
             style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: #FF5C00; color: white;"
             data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
