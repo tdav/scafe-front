@@ -155,32 +155,17 @@ function CreateOrder(item) {
 
 function onMyChangeCount(food) {
 
+    
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
 
         if (element.id == food.id)
-            element.count = food.count;
+            element['count'] = food.count;
     }
 
     JamiSummaHisobla();
 }
-
-function EtsPlus() {
-    this.count++;
-    JamiSummaHisobla()
-}
-
-function EtsMinus() {
-    if (this.count > 0) {
-        this.count--;
-
-        JamiSummaHisobla();
-
-    } else {
-        return;
-    }
-}
-
+ 
 
 function JamiSummaHisobla() {
 

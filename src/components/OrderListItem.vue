@@ -48,12 +48,11 @@ let jamiSumma = ref(0);
 const emit = defineEmits(['onChangeCount'])
 
 onMounted(() => {
-    jamiSumma.value = props.foodData.price * props.foodData.count;
-    
+    props.foodData['count'] = 1;
+    jamiSumma.value = props.foodData.price * props.foodData.count;    
 })
 
 function EtsPlus() {
-debugger
     props.foodData.count = props.foodData.count + 1;
     jamiSumma.value = props.foodData.price * props.foodData.count;
 
