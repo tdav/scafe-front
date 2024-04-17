@@ -14,12 +14,19 @@ import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
 import Payment from './view/dashboard/Payment.vue'
 import SelectTable from './view/dashboard/SelectTable.vue'
 import afitsand from './view/dashboard/afitsand.vue'
+import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
 const routes = [
     //new
+
+    {
+        path: '/pos_walk_in_absent',
+        name: 'pos_walk_in_absent',
+        component: pos_walk_in_absent
+    }, 
 
     {
         path: '/afitsand',
