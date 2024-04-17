@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div  style="height: 109px;">
-                    <div class="px-2">
+                    <div class="px-2 pt-1">
                         <p class="uyfgs">Sub Total</p>
                         <b>
                             <p class="uyfgs" style="float: right;">{{ calculateSubTotal() }}</p>
