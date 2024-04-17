@@ -84,8 +84,7 @@
                     <div class="row">
                         <div class="col-12">
                             <b>
-                                <p class="pt-2">Tax (10%): {{ tax }} so`m</p>
-                                <p class="p-0 m-0 ps-0">Sub Total: {{ jamiSumma }} so`m</p>
+                                <p class="pb-3 m-0 ps-0 mt-3">Sub Total: {{ jamiSumma }} so`m</p>
                             </b>
                         </div>
                         <div class="dib p-0">
