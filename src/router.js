@@ -8,7 +8,6 @@ import FoodList from './view/home/FoodList.vue'
 
 //new
 import AddNote from './view/dashboard/AddNote.vue'
-import AdditonalOrder from './view/dashboard/AdditonalOrder.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
 import DinningOption from './view/dashboard/DinningOption.vue'
 import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
@@ -37,11 +36,6 @@ const routes = [
 
 
 
-    {
-        path: '/AdditonalOrder',
-        name: 'AdditonalOrder',
-        component: AdditonalOrder
-    }, 
     {
         path: '/AddNote',
         name: 'AddNote',

@@ -19,12 +19,12 @@
                                     $ 25.2</p>
                                 <div
                                     style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #9C9C9C; margin-left: -5px;">
-                                    <p style="margin-left: 40%; margin-top: 20%;" @click="changeSteakQuantity(-1)">-</p>
+                                    <p type="button"  style="margin-left: 40%; margin-top: 20%;" @click="changeSteakQuantity(-1)">-</p>
                                 </div>
                                 <p class="mx-2" style="display: inline-block;">{{ steakQuantity }}</p>
                                 <div
                                     style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #000000;">
-                                    <p style="margin-left: 35%; margin-top: 20%; color: white;" @click="changeSteakQuantity(1)">+</p>
+                                    <p type="button" style="margin-left: 35%; margin-top: 20%; color: white;" @click="changeSteakQuantity(1)">+</p>
                                 </div>
                             </div>
                         </div>

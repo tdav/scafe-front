@@ -6,7 +6,6 @@
             </button>
             <ul class="dropdown-menu" style="height: 265px; overflow-y: auto;" aria-labelledby="dropdownMenuButton1">
                 <b>Dashboard</b><hr class="m-0">
-                <li><a class="dropdown-item" href="/AdditonalOrder">AdditonalOrder</a></li>
                 <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
                 <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
                 <li><a class="dropdown-item" href="/DinningOption">DinningOption</a></li>
