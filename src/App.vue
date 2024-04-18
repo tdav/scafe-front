@@ -1,5 +1,5 @@
 <template>
-    <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="height: 88px">
+    <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="height: 100%">
         <!--chap menyu-->
         <div class="container-fluid p-0">
             <div class="row">

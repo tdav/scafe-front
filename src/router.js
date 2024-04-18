@@ -9,12 +9,15 @@ import FoodList from './view/home/FoodList.vue'
 //new
 import AddNote from './view/dashboard/AddNote.vue'
 import Dashboard from './view/dashboard/Dashboard.vue'
-import DinningOption from './view/dashboard/DinningOption.vue'
 import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
 import Payment from './view/dashboard/Payment.vue'
 import SelectTable from './view/dashboard/SelectTable.vue'
 import afitsand from './view/dashboard/afitsand.vue'
 import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
+import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
+import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
+import TipAmount from './view/dashboard/TipAmount.vue'
+import LoginCashier from './view/dashboard/LoginCashier.vue'
 
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
@@ -23,9 +26,33 @@ const routes = [
     //new
 
     {
+        path: '/POS_walk_in_login_cashier',
+        name: 'POS_walk_in_login_cashier',
+        component: POS_walk_in_login_cashier
+    }, 
+
+    {
+        path: '/LoginCashier',
+        name: 'LoginCashier',
+        component: LoginCashier
+    }, 
+
+    {
+        path: '/TipAmount',
+        name: 'TipAmount',
+        component: TipAmount
+    }, 
+
+    {
         path: '/pos_walk_in_absent',
         name: 'pos_walk_in_absent',
         component: pos_walk_in_absent
+    }, 
+
+    {
+        path: '/Dashboard_add_note',
+        name: 'Dashboard_add_note',
+        component: Dashboard_add_note
     }, 
 
     {
@@ -52,11 +79,6 @@ const routes = [
         path: '/Dashboard',
         name: 'Dashboard',
         component: Dashboard
-    }, 
-    {
-        path: '/DinningOption.vue',
-        name: 'DinningOption',
-        component: DinningOption
     }, 
     {
         path: '/OrderConfirmation',

@@ -8,13 +8,14 @@
                 <b>Dashboard</b><hr class="m-0">
                 <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
                 <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
-                <li><a class="dropdown-item" href="/DinningOption">DinningOption</a></li>
                 <li><a class="dropdown-item" href="/OrderConfirmation">OrderConfirmation</a></li>
                 <li><a class="dropdown-item" href="/Payment">Payment</a></li>
                 <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
+                <li><a class="dropdown-item" href="/Dashboard_add_note">Dashboard_add_note</a></li>
                 <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
                 <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
                 <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
+                <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
                 <b>Pos</b><hr class="m-0">
                 <li><a class="dropdown-item" href="/LoginCashier">LoginCashier</a></li>
                 <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>

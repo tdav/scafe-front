@@ -4,11 +4,11 @@
             <div class="container-fluid p-0 ihwfou border border-1">
                 <div class="p-3 pb-0">
                     <div class="input-group mb-3 mb-0">
-                        <input type="text" style="border-radius: 58px;" class="form-control" placeholder="Customer name"
+                        <input type="text" style="border-radius: 58px;" class="form-control" id="recipient-name" placeholder="Customer name"
                             aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" style="border-radius: 58px;" class="form-control" placeholder="Select table"
+                        <input type="text" style="border-radius: 58px;" class="form-control" id="recipient-name" placeholder="Select table"
                             aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
@@ -21,15 +21,15 @@
                                 <img class="erhibco col-2" src="../../../public/assets/images/Image.png" alt="">
                                 <p class="euvebuy col-4 p-0 ps-2">{{ item.price }}</p>
                                 <div class="col-5 p-0">
-                                    <div style="float: right; padding-top: 20px;">
+                                    <div style="float: right; margin-top: 20px; height: 36px; background-color: #FF5C00; border-radius: 20px;">
                                         <div
-                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #000000;">
-                                            <p type="button" style="margin-left: 44%; margin-top: 11%; color: white;"
+                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: yellow;">
+                                            <p type="button" style="margin-left: 44%; margin-top: 11%; color: black;"
                                                 @click="decreaseQuantity(index)">-</p>
                                         </div>
-                                        <p class="mx-3" style="display: inline-block;">{{ item.quantity }}</p>
+                                        <p class="mx-3" style="display: inline-block; width: 30px; text-align: center;">{{ item.quantity }}</p>
                                         <div
-                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #9C9C9C; margin-left: -5px;">
+                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; margin-left: -5px; background-color: yellow;">
                                             <p type="button" style="margin-left: 36%; margin-top: 11%;"
                                                 @click="increaseQuantity(index)">+</p>
                                         </div>
@@ -61,12 +61,13 @@ export default {
     data() {
         return {
             items: [
-                { price: "$18", quantity: 0 },
-                { price: "$18", quantity: 0 },
-                { price: "$18", quantity: 0 },
-                { price: "$18", quantity: 0 },
-                { price: "$18", quantity: 0 },
-                { price: "$18", quantity: 0 },
+                { price: "$19", quantity: 0 },
+                { price: "$6", quantity: 0 },
+                { price: "$8", quantity: 0 },
+                { price: "$12.5", quantity: 0 },
+                { price: "$10", quantity: 0 },
+                { price: "$15", quantity: 0 },
+                { price: "$17", quantity: 0 },
             ]
         };
     },
