@@ -23,14 +23,14 @@
                                 <div class="col-5 p-0">
                                     <div style="float: right; margin-top: 20px; height: 36px; background-color: #FF5C00; border-radius: 20px;">
                                         <div
-                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: yellow;">
-                                            <p type="button" style="margin-left: 44%; margin-top: 11%; color: black;"
+                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #ffff0078;">
+                                            <p type="button" style="height: 32px; text-align: center; margin-top: 12%; color: black;"
                                                 @click="decreaseQuantity(index)">-</p>
                                         </div>
                                         <p class="mx-3" style="display: inline-block; width: 30px; text-align: center; color: white;">{{ item.quantity }}</p>
                                         <div
-                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; margin-left: -5px; background-color: yellow;">
-                                            <p type="button" style="height: 32px; width: 37px; text-align: center; margin-top: 11%;"
+                                            style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; margin-left: -5px; background-color: #ffff0078;">
+                                            <p type="button" style="height: 32px; width: 37px; text-align: center; margin-top: 12%;"
                                                 @click="increaseQuantity(index)">+</p>
                                         </div>
                                     </div>
