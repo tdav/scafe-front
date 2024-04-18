@@ -1,12 +1,11 @@
 <template>
   <div class="container-fluid">
-  <div style="width: 700px; height: 130px; margin-top: 30px; display: flex;" class="p-3 ps-4">
-    <img src="../../../public/assets/images/Placeholder1.png" class="idh" alt="" @click="toggleActive(1)" :class="{ active: activeImage === 1 }" style="margin-right: 7px;">
-    <img src="../../../public/assets/images/Placeholder2.png" class="idh" alt="" @click="toggleActive(2)" :class="{ active: activeImage === 2 }" style="margin-right: 7px;">
-    <img src="../../../public/assets/images/Placeholder3.png" class="idh" alt="" @click="toggleActive(3)" :class="{ active: activeImage === 3 }" style="margin-right: 7px;">
-    <img src="../../../public/assets/images/Placeholder4.png" class="idh" alt="" @click="toggleActive(4)" :class="{ active: activeImage === 4 }" style="margin-right: 7px;">
-    <img src="../../../public/assets/images/Placeholder5.png" class="idh" alt="" @click="toggleActive(5)" :class="{ active: activeImage === 5 }" style="margin-right: 7px;">
-    <img src="../../../public/assets/images/Placeholder6.png" class="idh" alt="" @click="toggleActive(6)" :class="{ active: activeImage === 6 }">
+  <div style="width: 700px; height: 130px; margin-top: 30px; display: flex;" class="p-3 ps-4 oval-images">
+    <img src="public/assets/images/Oval.png" class="idh" alt="" @click="toggleActive(1)" :class="{ active: activeImage === 1 }" style="margin-right: 7px;">
+    <img src="public/assets/images/Oval (1).png" class="idh" alt="" @click="toggleActive(2)" :class="{ active: activeImage === 2 }" style="margin-right: 7px;">
+    <img src="public/assets/images/Oval (2).png" class="idh active qwerty" alt="" @click="toggleActive(3)" :class="{ active: activeImage === 3 }" style="margin-right: 7px;">
+    <img src="public/assets/images/Oval (3).png" class="idh" alt="" @click="toggleActive(4)" :class="{ active: activeImage === 4 }" style="margin-right: 7px;">
+    <img src="public/assets/images/Oval (4).png" class="idh" alt="" @click="toggleActive(5)" :class="{ active: activeImage === 5 }" style="margin-right: 7px;">
   </div>
 
 
@@ -14,7 +13,7 @@
 
 
     <div class="button-row">
-      <input v-model="inputValue" class="input-field" type="text" readonly>
+      <input v-model="inputValue" class="input-field enter-code__input" type="text" placeholder="Enter code" readonly>
     </div>
     <div v-for="(row, index) in buttonRows" :key="index" class="button-row">
       <div v-for="button in row" :key="button.label" @click="addToInput(button.label)" class="button">{{ button.label }}
@@ -81,8 +80,23 @@ export default {
 </script>
 
 <style scoped>
+.qwerty {
+  height: 105px;
+}
+
+.enter-code__input {
+  background-color: #FFFFFF0A;
+  border: none;
+  color: #ffff;
+}
+
+.oval-images {
+  margin-left: -20rem;
+
+}
+
 .idh.active {
-  opacity: 1;
+  opacity: 100%;
 }
 .idh {
   opacity: 0.5; /* Boshlang'ich opacity qiymati */
@@ -93,18 +107,23 @@ export default {
   opacity: 1; /* Hover bo'lganda opacity 100% */
 }
 .idh {
-  height: 100px;
+  /* height: 100px;
   width: 100px;
   opacity: 50%;
-  border-radius: 50px;
+  border-radius: 50px; */
+    opacity: 70%;
+    padding-left: 4rem;
+    font-size: 10px;
 }
 
 .container-fluid {
   display: flex;
   height: 40.07rem;
   flex-direction: column;
-  background-image: url(../../../public/assets/images/Background.png);
+  background-image: url(../../../public/assets/images/Background.absent.png);
   align-items: center;
+  background-repeat: no-repeat;
+  marginx-right: -2em;
 }
 
 .input-field {
@@ -128,9 +147,11 @@ export default {
   width: 95px;
   height: 70px;
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffff;
   border-radius: 25%;
-  background-color: white;
+  background-color: #FFFFFF0A;
+  color: white;
+  backdrop-filter: blur(7px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,5 +161,6 @@ export default {
 
 .button:hover {
   background-color: #f0f0f0;
+  color: black;
 }
 </style>
