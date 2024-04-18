@@ -27,18 +27,4 @@
         </div>
     </div>
     <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open modal</a>
-    <hr>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../../../public/assets/images/Image1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../public/assets/images/Image2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="../../../public/assets/images/Image3.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-    </div>
 </template>
