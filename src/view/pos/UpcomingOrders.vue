@@ -6,7 +6,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture@2x.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/Oval (3).png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -38,7 +38,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture@3x.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/Oval (2).png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -70,7 +70,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture-1.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/Oval (4).png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -102,7 +102,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture-2.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/Oval.png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -134,7 +134,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture-3.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/Placeholder3.png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -166,7 +166,7 @@
                 <div class="p-2 p3">
                     <p style="height: 10px;" class="m-0"></p>
                     <div class="m-0 div1">
-                        <img class="img1" src="imgs/Picture-4.png" alt="">
+                        <img class="img1" src="../../../public/assets/images/New folder/Image (1).png" alt="">
                     </div>
                     <div class="div5">
                         <div>
@@ -246,6 +246,7 @@
 .img1 {
     height: 50px;
     width: 50px;
+    border-radius: 100px;
 }
 
 .p2 {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fulid">
+  <div class="container-fluid">
     <section class="vh-100 jhbsdfk">
       <div class="container py-8 efdhbj">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -8,10 +8,7 @@
               <div class="card-body p-3 card-sectionqwr">
                 <div class="logo-section">
                   <h2 class="coca-title">
-                    <img
-                      src="public/assets/images/icon/Vector.png"
-                      alt=" coca img"
-                    />
+                    <img src="public/assets/images/icon/Vector.png" alt=" coca img" />
                     Coca
                   </h2>
                 </div>
@@ -22,49 +19,22 @@
                 </div>
                 <div class="input-section">
                   <div class="form-outline mb-3">
-                    <label class="form-label username" for="typeEmailX-2"
-                      >phonenumber</label
-                    >
-                     <img
-                      src="public/assets/images/icon/user.png"
-                      alt=""
-                    />
-                    <input
-                      type="text"
-                      v-model="phoneNumber"
-                      id="typeEmailX-2"
-                      class="form-control form-control-lg"
-                      username-wqrt
-                      placeholder="Enter phoneNumber "
-                    />
+                    <img class="mb-2" src="public/assets/images/icon/user.png" alt="" />
+                    <label class="form-label username" for="typeEmailX-2">phonenumber</label>
+                    <input type="text" v-model="phoneNumber" style="border-radius: 30px;" id="typeEmailX-2" class="form-control form-control-lg"
+                      username-wqrt placeholder="Enter phoneNumber " />
                   </div>
-
                   <div class="mb-3">
-                    <label
-                      for="exampleInputPassword1"
-                      class="form-label password"
-                      >Password</label
-                    >
-                    <img
-                      src="public/assets/images/icon/lock-close.png"
-                      alt=""
-                    />
-                    <input
-                      type="password"
-                      class="form-control pasword-adsf"
-                      id="exampleInputPassword1"
-                      placeholder="Enter password"
-                    />
+                    <img class="mb-2" src="public/assets/images/icon/lock-close.png" alt="" />
+                    <label for="exampleInputPassword1" class="form-label password">Password</label>
+                    <input type="password" class="form-control pasword-adsf" id="exampleInputPassword1"
+                      placeholder="Enter password" />
                   </div>
                   <div>
                     <a href="#" class="forgod-password">Forgot password?</a>
                   </div>
                 </div>
-                <button
-                  class="button button-color"
-                  @click="OnLogin()"
-                  type="submit"
-                >
+                <button class="button button-color" @click="OnLogin()" type="submit">
                   Running order
                 </button>
                 <div class="user-agree">End user agreement</div>
@@ -124,6 +94,7 @@ function OnLogin() {
   line-height: 42px;
   text-align: center;
 }
+
 .sub-title {
   font-size: 16px;
   font-weight: 400;

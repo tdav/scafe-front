@@ -18,7 +18,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="boredr border-1" data-bs-dismiss="modal" style="width: 229px; height: 55px; border-color: #FF5C00; border-radius: 30px; background-color: white;">Cancel</button>
+                        <button type="button" class="boredr border-1" data-bs-dismiss="modal" style="width: 229px; height: 55px; border-color: #FF5C00; border-radius: 30px; background-color: white; border: #FF5C00 solid;">Cancel</button>
                         <button type="button" style="width: 229px; background-color: #FF5C00; border: none; height: 55px; border-radius: 30px; color: white;">Add to order</button>
                     </div>
                 </div>
