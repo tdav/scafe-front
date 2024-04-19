@@ -10,7 +10,8 @@
             <p class="mx-1 pas">
             <p style="color: #828487; width: 180px; display: inline-block; float: left; font-size: 15px;">ITEM NAME</p>
             </p>
-            <p class="pas" style="width: 60px; color: #828487; width: 60px; display: inline-block;">QTY
+            <p class="pas" style="width: 60px; color: #828487; width: 60px; display: inline-block;">
+                QTY
             </p>
             <p class="pas" style="width: 90px; font-size: 19px; color: #828487; display: inline-block; float: right;">
                 PRICE</p>

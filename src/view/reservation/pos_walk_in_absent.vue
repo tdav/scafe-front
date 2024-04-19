@@ -93,6 +93,7 @@
     width: 9rem;
     border-radius: 58px;
     margin-right: 2rem;
+    border: none;
 }
 
 .Clock-out__btn {
@@ -101,11 +102,13 @@
     height: 2.5rem;
     width: 9rem;
     border-radius: 58px;
+    border: none;
 }
 
 .Login-btn {
     
     background: #FFFFFF0A;
+    backdrop-filter: blur(7px);
     color: #FF5C00;
     border-color: #FF5C00;
     height: 2.5rem;

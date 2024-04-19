@@ -25,6 +25,10 @@
                     <label class="form-label username" for="typeEmailX-2"
                       >phonenumber</label
                     >
+                     <img
+                      src="public/assets/images/icon/user.png"
+                      alt=""
+                    />
                     <input
                       type="text"
                       v-model="phoneNumber"
@@ -91,7 +95,7 @@ function OnLogin() {
 </script>
 
 
-<style>
+<style scoped>
 .jhbsdfk {
   background-image: url(../../../public/assets/images/Background.png);
   background-repeat: no-repeat;
@@ -180,7 +184,7 @@ function OnLogin() {
   height: Fixed (48px) px;
   padding: 12px 16px 12px 16px;
   gap: 10px;
-  border-radius: 58px 0px 0px 0px;
+  border-radius: 58px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
 }
