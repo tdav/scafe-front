@@ -18,12 +18,17 @@ import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
 import TipAmount from './view/dashboard/TipAmount.vue'
 import LoginCashier from './view/dashboard/LoginCashier.vue'
+import Reservation_list from './view/dashboard/Reservation_list.vue'
 
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
 const routes = [
-    //new
+    {
+        path: '/Reservation_list',
+        name: 'Reservation_list',
+        component: Reservation_list
+    }, 
 
     {
         path: '/POS_walk_in_login_cashier',

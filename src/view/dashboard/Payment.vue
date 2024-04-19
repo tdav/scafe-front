@@ -1,8 +1,8 @@
 <template>
     <form class="container" style="padding-left: 250px; padding-right: 250px">
-        <div class="container p-5">
+        <div class="container p-5" style="text-align: center;">
             <div class="row">
-                <button class="btn btn-secondary col-12 bbs-1" style="background-color: #F8F9FD; border-width: 0px;">
+                <button class="btn btn-secondary col-12 bbs-1" style="background-color: lightgray; border-width: 0px;">
                     <div class="container">
                         <div class="row mt-1">
                             <div class="col-4">
@@ -61,8 +61,8 @@
                 <input type="text" class="form-control" style="height: 50px;" aria-describedby="addon-wrapping">
             </div>
             <!-- Raqam tugmalar -->
-            <div class="row" style="padding: 10px;">
-                <div class="col-4" v-for="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]">
+            <div class="row mb-4" style="padding: 10px;">
+                <div class="col-4" style="text-align: center;" v-for="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 100]">
                     <button type="button" class="btn btn-primary bbp-1 mt-3" style="width: 110px;
                                                     height: 76px;
                                                     padding: 14px 23px 14px 23px;
@@ -77,28 +77,27 @@
             </div>
             <!-- Tugma bloklari -->
             <div class="row">
-                <div class="col-3">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; background-color: #19191C;">
+                <div class="col-3 p-0">
+                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
                         <img src="./Images/money.png" alt="">
                         <h6 class="h6-9">Tip amount</h6>
                     </button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; background-color: #19191C;">
-                        <img src="./Images/printer.png" alt="">
+                <div class="col-3 p-0">
+                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
+                        <img src="./Images/money.png" alt="">
                         <h6 class="h6-9">Gift receipt</h6>
                     </button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; background-color: #19191C;">
-                        <img src="./Images/envelope.png" alt="">
+                <div class="col-3 p-0">
+                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
+                        <img src="./Images/money.png" alt="">
                         <h6 class="h6-9">Email</h6>
                     </button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-dark bbd-11"
-                        style="border-radius: 16px;  background-color: #FFAB18; border-width: 0px;">
-                        <img src="./Images/check.png" alt="">
+                <div class="col-3 p-0">
+                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #FFAB18;">
+                        <img src="./Images/money.png" alt="">
                         <h6 class="h6-9">Done</h6>
                     </button>
                 </div>
