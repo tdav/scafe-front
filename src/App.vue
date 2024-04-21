@@ -1,6 +1,6 @@
 <template>
 
-    <div v-if="TokenService.isAutorize()" >
+    <div v-if="TokenService.isAutorize()">
 
         <header class="p-3 bg-dark text-white fixed-top bg-dark ">
             <div class="container-fluid ">
@@ -31,14 +31,32 @@
 
                     <div class="col-5 text-end">
                         <div v-if="TokenService.isAutorize()">
-                            <div class="dropdown d-inline-block ">
+                            <div class="dropdown d-inline-block">
                                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
                                     id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="/public/assets/images/person.jpg" alt="mdo" width="32" height="32"
                                         class="rounded-circle">
                                 </a>
-                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-                                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="overflow-x: auto; max-height: 300px;">
+                                    <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
+                                    <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="/OrderConfirmation">OrderConfirmation</a></li>
+                                    <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
+                                    <li><a class="dropdown-item" href="/Payment">Payment</a></li>
+                                    <li><a class="dropdown-item" href="/Dashboard_add_note">Dashboard_add_note</a></li>
+                                    <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
+                                    <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
+                                    <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
+                                    <li><a class="dropdown-item" href="/Reservation_list">Reservation_list</a></li>
+                                    <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a>
+                                    </li>
+                                    <b>Pos</b>
+                                    <hr class="m-0">
+                                    <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
+                                    <hr>
+                                    <hr>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
                                     <li>
@@ -50,7 +68,7 @@
                         </div>
 
                         <div v-if="!TokenService.isAutorize()">
-                          <button type="button" class="btn btn-outline-light me-2">Логин</button>
+                            <button type="button" class="btn btn-outline-light me-2">Логин</button>
                             <button type="button" class="btn btn-warning">Рўйхатдан ўтиш</button>
                         </div>
 
@@ -167,7 +185,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import DinningOption from './components/dinningoption.vue';
+// import DinningOption from './components/dinningoption.vue';
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import TokenService from "./services/token.service";
