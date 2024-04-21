@@ -2,7 +2,7 @@
     <div class="container-fluid p-0">
         <div class="row mb-1 rro border border-1">
 
-            <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.imgUrl"
+            <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.imgUrl"
                 style="height: 80px; width: 80px; display: inline-block;">
 
             <div class="col-6 p-0">
