@@ -73,8 +73,8 @@
             </div>
 
 
-            <div class="col-3" style="height: 553px;" v-if="isShowPanel">
-                <div class="container-fluid p-0" style="height: 10px;">
+            <div class="col-3" v-if="isShowPanel">
+                <div class="container-fluid p-0">
                     <div class="row zakaz p-0">
                         <div class="col-12 p-0">
                             <div class="container-fluid p-0">
@@ -85,14 +85,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+
+                    <div class="row  d-flex  align-items-end">
                         <div class="col-12">
                             <p class="pb-3 m-0 ps-0 mt-3">Sub Total: {{ jamiSumma }} so`m</p>
                         </div>
 
-
                         <button class="col-8 mx-auto  btn btn-lg btn-success">Sotib olish</button>
-
                     </div>
 
                 </div>
