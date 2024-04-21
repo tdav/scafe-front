@@ -1,8 +1,7 @@
 <template>
     <div class="container-fluid">
-        <div class="row h-100">
-            <div class="col-1 bg-body variant border">
-                <button @click="loadData" style="margin-top: 30px"> Load </button>
+        <div class="row">
+            <div class="col-1 bg-body variant border " style="width: min-content;">                            
 
                 <button @click="OnFilter(2)" class="btn btn-body btn-1" >
                     <img src="../../../public/assets/images/btn/offers.png">
@@ -12,17 +11,17 @@
                 <button @click="OnFilter(3)" class="btn btn-body btn-1">
                     <img class="immmm" src="../../../public/assets/images/icon/free-icon-soup-5756048.png">
                     <h3 class="h3-1">Биринчига</h3>
-                </button> <br>
+                </button>  
 
                 <button @click="OnFilter(4)" class="btn btn-body btn-1">
                     <img class="immmm" src="../../../public/assets/images/icon/free-icon-food-and-restaurant-mega-pack-color-8285335.png">
                     <h3 class="h3-1">Икинчига</h3>
-                </button> <br>
+                </button>  
 
                 <button @click="OnFilter(5)" class="btn btn-body btn-1">
                     <img src="../../../public/assets/images/btn/pasta.png">
                     <h3 class="h3-1">Уйгур</h3>
-                </button> <br>
+                </button> 
 
                 <button @click="OnFilter(6)" class="btn btn-body btn-1">
                     <img class="immmm"  src="../../../public/assets/images/icon/free-icon-steak-4829135.png">
@@ -58,9 +57,11 @@
                     <img class="immmm"  src="../../../public/assets/images/icon/icons8-хлеб-50.png">
                     <h3 class="h3-1">Гарнир / Нон</h3>
                 </button>
-
+            
             </div>
-            <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
+          
+          
+            <div class="p-0 menu scc col">
                 <div class="container-fluid">
                     <div class="row">
                         <div v-for="it in foodData" :key="it.id" class="p-0" :class="!isShowPanel ? 'col-2' : 'col-3'">
@@ -69,6 +70,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="col-3" style="height: 553px;" v-if="isShowPanel">
                 <div class="container-fluid p-0" style="height: 10px;">
                     <div class="row zakaz p-0">
@@ -100,7 +103,7 @@
 
 <script setup>
 
-import { ref } from 'vue';
+import { ref, onMounted  } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import Food from '../../components/Food.vue';
 
@@ -122,13 +125,15 @@ function OnFilter(id){
     })
 }
 
-function loadData() {
+onMounted(() => {
+  
     DataService.getFoodList().then((response) => {
         foodData.value = response.data;
         myFoodList = response.data;
         console.log(response);
     })
-}
+
+})
 
 
 function mySetSelect(i) {
@@ -198,11 +203,8 @@ function JamiSummaHisobla() {
 }
 
 
-.variant {
-    border-width: 1px;
-    height: 553px;
-    text-align: center;
-    background-color: #2130ff;
+.variant {    
+    /* height: 100vh; */    
     overflow-y: auto;
 }
 
@@ -224,8 +226,8 @@ function JamiSummaHisobla() {
 }
 
 .scc {
-    height: 553px;
-    max-height: 647px;
+    height: 100vh;
+    max-height: 100vh;
     overflow-y: auto;
 }
 

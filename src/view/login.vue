@@ -1,57 +1,54 @@
 <template>
-  <div class="container-fluid">
-    <section class="vh-100 jhbsdfk">
-      <div class="container py-8 efdhbj">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-10 col-lg-6 col-xl-5 card-1">
-            <div class="card shadow-2-strong" style="border-radius: 1rem">
-              <div class="card-body p-3 card-sectionqwr">
-                <div class="logo-section">
-                  <h2 class="coca-title">
-                    <img src="public/assets/images/icon/Vector.png" alt=" coca img" />
-                    Coca
-                  </h2>
-                </div>
-                <h3 class="login-title">Login form</h3>
-                <div class="sub-title">
-                  Lorem Ipsum has been the industry's standard dummy text
-                  <p class="subtitle-1">ever since the 1500s.</p>
-                </div>
-                <div class="input-section">
-                  <div class="form-outline mb-3">
-                    <img class="mb-2" src="public/assets/images/icon/user.png" alt="" />
-                    <label class="form-label username" for="typeEmailX-2">phonenumber</label>
-                    <input type="text" v-model="phoneNumber" style="border-radius: 30px;" id="typeEmailX-2" class="form-control form-control-lg"
-                      username-wqrt placeholder="Enter phoneNumber " />
-                  </div>
-                  <div class="mb-3">
-                    <img class="mb-2" src="public/assets/images/icon/lock-close.png" alt="" />
-                    <label for="exampleInputPassword1" class="form-label password">Password</label>
-                    <input type="password" class="form-control pasword-adsf" id="exampleInputPassword1"
-                      placeholder="Enter password" />
-                  </div>
-                  <div>
-                    <a href="#" class="forgod-password">Forgot password?</a>
-                  </div>
-                </div>
-                <button class="button button-color" @click="OnLogin()" type="submit">
-                  Running order
-                </button>
-                <div class="user-agree">End user agreement</div>
-              </div>
+  <div class="container-fluid fon">
+    <div class="row d-flex  align-items-center " style="height: 100vh;">
+      <div class="col-md-3  mx-auto">
+
+        <div class="card shadow-2-strong" style="border-radius: 1rem">
+          <div class="card-body p-3 card-sectionqwr">
+            <div class="logo-section">
+              <h2 class="coca-title">
+                <img src="public/assets/images/icon/Vector.png" alt=" coca img" class="mb-2"  />
+                <h3 class="login-title">sCafe - тизими</h3>
+              </h2>
             </div>
+
+            <div class="input-section">
+              <div class="form-outline mb-3">
+
+                <label class="ms-2 mb-1 d-flex align-items-center" for="edPhone">
+                  <i class="fa-regular fa-user fa-lg"> </i> <span class="ms-2">Телефон </span> 
+                </label>
+
+                <input type="text" v-model="phoneNumber" id="edPhone" class="form-control form-control" placeholder="Enter phoneNumber " />
+              </div>
+
+              <div class="mb-3">
+
+                <label class="ms-2 mb-1 d-flex align-items-center" for="edPassword">
+                  <i class="fa-solid fa-key fa-lg"></i>  <span class="ms-2">Парол </span> 
+                </label>
+
+                <input type="password" class="form-control form-control" id="dPassword" placeholder="Enter password" />
+              </div>
+              
+            </div>
+            <button class="button button-color" @click="OnLogin()" type="submit">
+              Тизимга кириш
+            </button>
+            <div class="user-agree">End user agreement</div>
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
 
 <script setup>
-import axios from "axios";
-import router from "../router";
+
 import { ref } from "vue";
+import router from "../router";
 import dataService from "../services/data.service.js";
 
 let phoneNumber = ref("998278960");
@@ -62,22 +59,20 @@ function OnLogin() {
     if (data.isSuccess) router.push("/home");
   });
 }
+
 </script>
 
 
 <style scoped>
-.jhbsdfk {
+.fon {
   background-image: url(../../../public/assets/images/Background.png);
   background-repeat: no-repeat;
-  margin-left: 3rem;
+  background-size: cover;
 }
 
-.efdhbj {
-  padding: 30px;
-}
 
-.password {
-  color: grey;
+.myLabel {
+ padding-left: 20px;
 }
 
 .card-1 {
@@ -90,9 +85,9 @@ function OnLogin() {
 
 .login-title {
   font-size: 28px;
-  font-weight: 600;
-  line-height: 42px;
+  font-weight: bold;  
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .sub-title {
@@ -109,9 +104,8 @@ function OnLogin() {
 
 .coca-title {
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
   font-family: monospace;
-  margin-left: -3rem;
 }
 
 .forgod-password {
@@ -161,11 +155,10 @@ function OnLogin() {
 }
 
 .user-agree {
-  margin-top: 6rem;
+  margin-top: 2rem;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  margin-left: -3.5rem;
 }
 </style>

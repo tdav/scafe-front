@@ -1,22 +1,27 @@
 class TokenService {
 
+  isAutorize() {
+    const user = JSON.parse(sessionStorage.getItem("user"));
+    if (user) return true; else return false;
+  }
+
   getLocalAccessToken() {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(sessionStorage.getItem("user"));
     return user?.accessToken;
   }
 
   updateLocalAccessToken(token) {
-    let user = JSON.parse(localStorage.getItem("user"));
+    let user = JSON.parse(sessionStorage.getItem("user"));
     user.accessToken = token;
-    localStorage.setItem("user", JSON.stringify(user));
+    sessionStorage.setItem("user", JSON.stringify(user));
   }
 
   getUser() {
-    return JSON.parse(localStorage.getItem("user"));
+    return JSON.parse(sessionStorage.getItem("user"));
   }
 
   getToken() {
-    const user = JSON.parse(localStorage.getItem("user"))
+    const user = JSON.parse(sessionStorage.getItem("user"))
  
 
     if (user==null)
@@ -28,11 +33,11 @@ class TokenService {
 
   setUser(user) {
     console.log(JSON.stringify(user));
-    localStorage.setItem("user", JSON.stringify(user));
+    sessionStorage.setItem("user", JSON.stringify(user));
   }
 
   removeUser() {
-    localStorage.removeItem("user");
+    sessionStorage.removeItem("user");
   }
 }
 
