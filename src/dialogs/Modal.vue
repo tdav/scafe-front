@@ -6,9 +6,9 @@
                     <div class="card px-0" :class="(container == null) ? 'container' : `container-${container}`"
                         :style="(maxwidth != null) ? `max-width: ${maxwidth}` : null">
                         
-                        <div class="card-header bg-dark text-white" st>
+                        <div class="card-header bg-dark text-white" style="height: 43px;">
                             {{ header }}
-                            <button v-if="closeable" @click='$emit("update:modelValue", false)' class="btn btn-text float-end text-white">X</button>
+                            <button v-if="closeable" @click='$emit("update:modelValue", false)' class="btn btn-text p-0 float-end text-white">X</button>
                         </div>
                         <div class="card-body">
                             <slot></slot>
