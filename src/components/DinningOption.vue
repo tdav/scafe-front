@@ -9,8 +9,8 @@
                 <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
                 <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
                 <li><a class="dropdown-item" href="/OrderConfirmation">OrderConfirmation</a></li>
-                <li><a class="dropdown-item" href="/Payment">Payment</a></li>
                 <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
+                <li><a class="dropdown-item" href="/Payment">Payment</a></li>
                 <li><a class="dropdown-item" href="/Dashboard_add_note">Dashboard_add_note</a></li>
                 <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
                 <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>

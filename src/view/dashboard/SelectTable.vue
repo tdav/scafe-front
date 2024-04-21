@@ -82,10 +82,12 @@
                                                             <p>T-03</p>
                                                         </div>
                                                     </div>
+                                                    <div class="p-0 mt-2">
                                                     <div class="mb-2" style="background-color: white; width: 50px; height: 14px; margin-left: 15%; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-2" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-2" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-2" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1 p-0">
                                                     <div class="" style="background-color: white; height: 50px; width: 14px; margin-top: 180%; border-radius: 10px;">
@@ -180,11 +182,13 @@
                                                             <p>T-06</p>
                                                         </div>
                                                     </div>
+                                                    <div class="p-0 mt-2">
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 11%; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1 p-0">
                                                     <div class="" style="background-color: white; height: 50px; width: 14px; margin-top: 180%; border-radius: 10px;">
@@ -218,10 +222,12 @@
                                                             <p>T-08</p>
                                                         </div>
                                                     </div>
-                                                    <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 15%; border-radius: 10px; display: inline-block;"></div>
+                                                    <div class="p-0 mt-2">
+                                                    <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 11%; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1 p-0">
                                                     <div class="" style="background-color: white; height: 50px; width: 14px; margin-top: 180%; border-radius: 10px;">
@@ -256,11 +262,13 @@
                                                             <p>T-07</p>
                                                         </div>
                                                     </div>
+                                                    <div class="p-0 mt-2">
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 11%; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1 p-0">
                                                     <div class="" style="background-color: white; height: 50px; width: 14px; margin-top: 180%; border-radius: 10px;">
@@ -354,10 +362,12 @@
                                                             <p>T-11</p>
                                                         </div>
                                                     </div>
-                                                    <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 15%; border-radius: 10px; display: inline-block;"></div>
+                                                    <div class="p-0 mt-2">
+                                                    <div class="mb-1" style="background-color: white; width: 50px; height: 14px; margin-left: 11%; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
                                                     <div class="mb-1" style="background-color: white; width: 50px; height: 14px; border-radius: 10px; display: inline-block;"></div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-1 p-0">
                                                     <div class="" style="background-color: white; height: 50px; width: 14px; margin-top: 180%; border-radius: 10px;">
