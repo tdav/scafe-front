@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 bg-body variant border " style="width: min-content;">
+            <div class="col-1 bg-body variant border " style="width: min-content; height: 100vh;">
 
                 <button @click="OnFilter(2)" class="btn btn-body btn-1">
                     <img src="../../../public/assets/images/btn/offers.png">
