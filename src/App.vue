@@ -37,7 +37,10 @@
                                     <img src="/public/assets/images/person.jpg" alt="mdo" width="32" height="32"
                                         class="rounded-circle">
                                 </a>
-                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="overflow-x: auto; max-height: 300px;">
+                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1"
+                                    style="overflow-x: auto; max-height: 300px;">
+                                    <li><a class="dropdown-item" href="#" @click="openBillModal">Bill</a></li>
+
                                     <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
                                     <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
                                     <li><a class="dropdown-item" href="/OrderConfirmation">OrderConfirmation</a></li>
@@ -47,22 +50,21 @@
                                     <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
                                     <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
                                     <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
+                                    <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
                                     <li><a class="dropdown-item" href="/Reservation_list">Reservation_list</a></li>
                                     <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a>
                                     </li>
-                                    <b>Pos</b>
-                                    <hr class="m-0">
+                                   
+                                   
                                     <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
-                                    <hr>
+                                  
                                     <hr>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                    <li><a class="dropdown-item" href="#" @click="openModal">Sign out</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -171,7 +173,16 @@
             </div>
         </div> -->
 
+        <Modal v-model="modal" closeable header="My Modal" maxwidth="300px" >
+            <p>You can close this modal using the close button on the top right corner</p>
+        </Modal>  
 
+
+        <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px" >
+            <Bill></Bill>    
+        </Modal>  
+
+      
 
         <router-view style="margin-top: 74px;"></router-view>
     </div>
@@ -185,10 +196,12 @@
 
 <script setup>
 import { ref } from 'vue';
-// import DinningOption from './components/dinningoption.vue';
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import TokenService from "./services/token.service";
+import Modal from './dialogs/Modal.vue'
+
+import Bill from './view/Bill/list.vue'
 
 let dinningOptionIsShow = ref(false);
 let myDateTime = ref(new Date())
@@ -200,6 +213,16 @@ function mySetSelect(i) {
 const route = useRoute();
 const path = computed(() => route.path)
 
+const closeableModal = ref(false);
+const modal = ref(false);
+function openModal() { 
+  modal.value = true;  
+}
+
+const modalBill = ref(false);
+function openBillModal() { 
+  modalBill.value = true;  
+}
 
 </script>
 
