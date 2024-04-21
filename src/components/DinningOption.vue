@@ -17,6 +17,7 @@
                 <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
                 <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
                 <li><a class="dropdown-item" href="/Reservation_list">Reservation_list</a></li>
+                <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a></li>
                 <b>Pos</b><hr class="m-0">
                 <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
             </ul>
