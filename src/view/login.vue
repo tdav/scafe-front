@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fulid">
+  <div class="container-fluid">
     <section class="vh-100 jhbsdfk">
       <div class="container py-8 efdhbj">
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-10 col-lg-6 col-xl-5 card-1">
+          <div class="col-12 col-md-10 col-lg-6 col-xl-5 card-1 qwertyuio">
             <div class="card shadow-2-strong" style="border-radius: 1rem">
               <div class="card-body p-3 card-sectionqwr">
                 <div class="logo-section">
@@ -99,8 +99,10 @@ function OnLogin() {
 .jhbsdfk {
   background-image: url(../../../public/assets/images/Background.png);
   background-repeat: no-repeat;
-  margin-left: 3rem;
+  /* width: 150rem; */
 }
+
+
 
 .efdhbj {
   padding: 30px;
@@ -110,9 +112,7 @@ function OnLogin() {
   color: grey;
 }
 
-.card-1 {
-  margin-left: -55rem;
-}
+
 
 .username {
   color: gray;

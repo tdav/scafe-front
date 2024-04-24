@@ -123,7 +123,7 @@ export default {
   background-image: url(../../../public/assets/images/Background.absent.png);
   align-items: center;
   background-repeat: no-repeat;
-  marginx-right: -2em;
+  margin-right: -2em;
 }
 
 .input-field {
@@ -163,4 +163,8 @@ export default {
   background-color: #f0f0f0;
   color: black;
 }
+
+
+
+
 </style>
