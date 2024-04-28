@@ -130,6 +130,10 @@
                 </div>
                 <div class="col-9">
                     <div class="mt-2 ms-5" style="width: 499px; float: right;">
+                        <!--chap menyu-->
+                        <!--asosiy menyu-->
+                        <!--new-->
+                        <!--/new-->
                         <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
                         <router-link class="router-link me-3 btn-1" to="/home">Home</router-link>
                         <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
@@ -156,15 +160,7 @@
                                     src="../assets/images/nav/Nav_Profile.png" alt="rasm">
                             </button>
                             <ul class="dropdown-menu" style="height: 250px; width: 210px;">
-                                <p class="p-3">cuhqwboebwiosdacboq
-                                    uiwebhjdcopvm[3wmev
-                                    ee;rkfm [olewrmkc[o
-                                    oekmv[wkermkfv[c[ie
-                                    ;k;jwfw;oefmqfrferrw
-                                    evcervcercercre3ecrf
-                                    [pemr[pvmolubhnqocu
-                                    dbynwqouibcdheouiqB
-                                    NXOUIQWBECAOUIBQW</p>
+                                <p class="p-3">ul</p>
                             </ul>
                         </div>
                     </div>
@@ -196,6 +192,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import DinningOption from './components/DinningOption.vue';
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import TokenService from "./services/token.service";
