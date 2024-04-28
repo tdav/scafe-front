@@ -1,49 +1,7 @@
 <template>
-<<<<<<< HEAD
-  <div class="container-fluid">
-    <section class="vh-100 jhbsdfk">
-      <div class="container py-8 efdhbj">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-10 col-lg-6 col-xl-5 card-1 qwertyuio">
-            <div class="card shadow-2-strong" style="border-radius: 1rem">
-              <div class="card-body p-3 card-sectionqwr">
-                <div class="logo-section">
-                  <h2 class="coca-title">
-                    <img
-                      src="public/assets/images/icon/Vector.png"
-                      alt=" coca img"
-                    />
-                    Coca
-                  </h2>
-                </div>
-                <h3 class="login-title">Login form</h3>
-                <div class="sub-title">
-                  Lorem Ipsum has been the industry's standard dummy text
-                  <p class="subtitle-1">ever since the 1500s.</p>
-                </div>
-                <div class="input-section">
-                  <div class="form-outline mb-3">
-                    <label class="form-label username" for="typeEmailX-2"
-                      >phonenumber</label
-                    >
-                     <img
-                      src="public/assets/images/icon/user.png"
-                      alt=""
-                    />
-                    <input
-                      type="text"
-                      v-model="phoneNumber"
-                      id="typeEmailX-2"
-                      class="form-control form-control-lg"
-                      username-wqrt
-                      placeholder="Enter phoneNumber "
-                    />
-                  </div>
-=======
-  <div class="container-fluid fon">
+  <div class="container-fluid fon m-0">
     <div class="row d-flex  align-items-center " style="height: 100vh;">
       <div class="col-md-3  mx-auto">
->>>>>>> 75f77f54782a28d23ae4f9fd0a80b505cb87bfc8
 
         <div class="card shadow-2-strong" style="border-radius: 1rem">
           <div class="card-body p-3 card-sectionqwr">
@@ -109,26 +67,17 @@ function OnLogin() {
 .fon {
   background-image: url(../../../public/assets/images/Background.png);
   background-repeat: no-repeat;
-<<<<<<< HEAD
-  /* width: 150rem; */
-}
-
-
-
-.efdhbj {
-  padding: 30px;
-}
-=======
   background-size: cover;
 }
 
->>>>>>> 75f77f54782a28d23ae4f9fd0a80b505cb87bfc8
 
 .myLabel {
  padding-left: 20px;
 }
 
-
+.card-1 {
+  margin-left: -55rem;
+}
 
 .username {
   color: gray;

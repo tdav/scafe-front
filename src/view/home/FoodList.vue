@@ -79,7 +79,7 @@
                         <div class="col-12 p-0">
                             <div class="container-fluid p-0">
                                 <div v-for="it in etsList" :key="it.id" class="row p-0"
-                                    style="height: 100px; margin-left: 12px; width: 95%;">
+                                    style="height: 100vh; margin-left: 12px; width: 95%;">
                                     <OrderListItem :foodData="it" @onChangeCount="onMyChangeCount"></OrderListItem>
                                 </div>
                             </div>

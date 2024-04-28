@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-  <div style="width: 700px; height: 130px; margin-top: 30px; display: flex;" class="p-3 ps-4 oval-images">
+  <div class="container-fluid m-0">
+  <div style="width: 700px; height: 130px; margin-top: 7%; display: flex;" class="p-3 ps-4 oval-images">
     <img src="public/assets/images/Oval.png" class="idh" alt="" @click="toggleActive(1)" :class="{ active: activeImage === 1 }" style="margin-right: 7px;">
     <img src="public/assets/images/Oval (1).png" class="idh" alt="" @click="toggleActive(2)" :class="{ active: activeImage === 2 }" style="margin-right: 7px;">
     <img src="public/assets/images/Oval (2).png" class="idh active qwerty" alt="" @click="toggleActive(3)" :class="{ active: activeImage === 3 }" style="margin-right: 7px;">
@@ -118,12 +118,13 @@ export default {
 
 .container-fluid {
   display: flex;
-  height: 40.07rem;
+  height: 100vh;
   flex-direction: column;
   background-image: url(../../../public/assets/images/Background.absent.png);
   align-items: center;
   background-repeat: no-repeat;
-  margin-right: -2em;
+  background-size: cover;
+  
 }
 
 .input-field {
