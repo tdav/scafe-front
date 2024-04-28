@@ -16,6 +16,12 @@ import afitsand from './view/dashboard/afitsand.vue'
 import ConfirmOrder from './view/Order/ConfirmOrder.vue'
 import TipAmount from './view/dashboard/TipAmount.vue'
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
+import Reservation_list from './view/dashboard/Reservation_list.vue'
+import Pos_new_reservation from './view/dashboard/Pos_new_reservation.vue'
+import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
+import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
+import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
+
 ///new
 
 const routes = [
@@ -80,12 +86,6 @@ const routes = [
         component: UpcomingOrders
     }, 
 
-
-    {
-        path: '/AdditonalOrder',
-        name: 'AdditonalOrder',
-        component: AdditonalOrder
-    }, 
     {
         path: '/AddNote',
         name: 'AddNote',

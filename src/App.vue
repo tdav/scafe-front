@@ -1,5 +1,4 @@
 <template>
-
     <div v-if="TokenService.isAutorize()">
 
         <header class="p-3 bg-dark text-white fixed-top bg-dark ">
@@ -130,10 +129,6 @@
                 </div>
                 <div class="col-9">
                     <div class="mt-2 ms-5" style="width: 499px; float: right;">
-                        <!--chap menyu-->
-                        <!--asosiy menyu-->
-                        <!--new-->
-                        <!--/new-->
                         <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
                         <router-link class="router-link me-3 btn-1" to="/home">Home</router-link>
                         <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
