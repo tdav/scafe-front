@@ -10,7 +10,8 @@
             <p class="mx-1 pas">
             <p style="color: #828487; width: 180px; display: inline-block; float: left; font-size: 15px;">ITEM NAME</p>
             </p>
-            <p class="pas" style="width: 60px; color: #828487; width: 60px; display: inline-block;">QTY
+            <p class="pas" style="width: 60px; color: #828487; width: 60px; display: inline-block;">
+                QTY
             </p>
             <p class="pas" style="width: 90px; font-size: 19px; color: #828487; display: inline-block; float: right;">
                 PRICE</p>
@@ -48,7 +49,7 @@
             <div class="container-fluid">
                 <div class="row m-0 mt-3 mb-5" style="height: 164px; width: 100%;">
                     <div class="col-7">
-                        <div class="p-3" style="height: 136px; width: 320px; background-color: #E4E4E4;">
+                        <div class="p-3" style="height: 155px; width: 390px; background-color: #E4E4E4;">
                             <h5>NOTES</h5>
                             <p class="ppp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -104,9 +105,9 @@
             <p class="ddp m-0" style="color: #9C9C9C;">Payment method</p>
             <b><p class="m-0" style="font-size: 25px;">Cash</p></b>
         </div>
-        <span class="btn border border-1  m-3 mx-0"
-            style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: white; color: #FF5C00;"
-            data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>Cancel</b></span>
+        <button class="btn btn-darck mx-0 m-3 border border-1"
+            style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: #ffffff; color: black;"
+            data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Censel</button>
         <button class="btn btn-darck mx-0 m-3 border border-1"
             style="display: inline-block; width: 50%; border-radius: 100px; height: 50px; background-color: #FF5C00; color: white;"
             data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
