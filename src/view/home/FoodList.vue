@@ -219,7 +219,7 @@ function JamiSummaHisobla() {
 }
 
 .zakaz {
-    max-height: 440px;
+    max-height: 530px;
     overflow-y: auto;
     overflow-x: hidden;
 }
