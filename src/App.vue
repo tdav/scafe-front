@@ -1,14 +1,113 @@
 <template>
-    <div v-if="path!='/'" class="border-button border border-buttom-2 p-3" style="height: 100%">
-        <!--chap menyu-->
-        <div class="container-fluid p-0">
+
+    <div v-if="TokenService.isAutorize()">
+
+        <header class="p-3 bg-dark text-white fixed-top bg-dark ">
+            <div class="container-fluid ">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+                    <a href="/" class="col-1 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../assets/images/nav/Nav_Vector.png" style="height: 40px; width: 40px;" alt="">
+                    </a>
+
+                    <ul class="nav col-4  mb-2 justify-content-start  ">
+                        <div class="mt-2" style="width: 499px; float: right;">
+                            <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
+                            <router-link class="router-link me-3 btn-1 text-white " to="/home">Home</router-link>
+                            <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
+                            <router-link class="router-link me-3 btn-1 text-white " to="/order">Order</router-link>
+                            <img src="../assets/images/nav/Nav_clock.png" class="me-1" alt="">
+                            <router-link class="router-link me-3 btn-1 text-white " to="/History">History</router-link>
+                            <img src="../assets/images/nav/Nav_receipt.png" class="me-1" alt="">
+                            <router-link class="router-link me-3 btn-1 text-white " to="/Bill">Bill</router-link>
+                        </div>
+                    </ul>
+
+                    <form class="col-2 justify-content-center">
+                        <input style="width: 300px;" type="search" class="form-control fc-dark" placeholder="Излаш..."
+                            aria-label="Search">
+                    </form>
+
+
+
+                    <div class="col-5 text-end">
+                        <div v-if="TokenService.isAutorize()">
+                            <div class="dropdown d-inline-block">
+                                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
+                                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/public/assets/images/person.jpg" alt="mdo" width="32" height="32"
+                                        class="rounded-circle">
+                                </a>
+                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1"
+                                    style="overflow-x: auto; max-height: 300px;">
+                                    <li><a class="dropdown-item" href="#" @click="openBillModal">Bill</a></li>
+
+                                    <li><a class="dropdown-item" href="/AddNote">AddNote</a></li>
+                                    <li><a class="dropdown-item" href="/Dashboard">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="/OrderConfirmation">OrderConfirmation</a></li>
+                                    <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
+                                    <li><a class="dropdown-item" href="/Payment">Payment</a></li>
+                                    <li><a class="dropdown-item" href="/Dashboard_add_note">Dashboard_add_note</a></li>
+                                    <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
+                                    <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
+                                    <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
+                                    <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
+                                    <li><a class="dropdown-item" href="/Reservation_list">Reservation_list</a></li>
+                                    <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a>
+                                    </li>
+                                   
+                                   
+                                    <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
+                                  
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" @click="openModal">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div v-if="!TokenService.isAutorize()">
+                            <button type="button" class="btn btn-outline-light me-2">Логин</button>
+                            <button type="button" class="btn btn-warning">Рўйхатдан ўтиш</button>
+                        </div>
+
+                        <!-- <div class="dropdown drop">
+                        <div style="float: right;">
+                            <div style="display: inline-block;">
+                            </div>
+                            <button class="active" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="border: white; background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;"
+                                :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
+                                <img class="rotate" style="float: right; height: 40px; width: 40px;"
+                                    src="../assets/images/nav/Nav_Profile.png" alt="rasm">
+                            </button>
+                            <ul class="dropdown-menu" style="height: 250px; width: 210px;">
+                                <p class="p-3">cuhqwboebwiosdacboq
+                                    uiwebhjdcopvm[3wmev
+                                    ee;rkfm [olewrmkc[o
+                                    oekmv[wkermkfv[c[ie
+                                    ;k;jwfw;oefmqfrferrw
+                                    evcervcercercre3ecrf
+                                    [pemr[pvmolubhnqocu
+                                    dbynwqouibcdheouiqB
+                                    NXOUIQWBECAOUIBQW</p>
+                            </ul>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <!-- <div class="container-fluid p-0">
             <div class="row">
-                <!-- <div class="col-1 p-0 hhha">
-                    <button type="button" class="mt-1"
-                        style="border-radius: 35px; border: none; width:40px; height: 40px;">
-                        <img src="../assets/images/nav/Nav_arrow-left.png" alt="">
-                    </button>
-                </div> -->
+                
                 <div class="col-2">
                     <div class="container-fluid">
                         <div class="row">
@@ -31,12 +130,6 @@
                 </div>
                 <div class="col-9">
                     <div class="mt-2 ms-5" style="width: 499px; float: right;">
-                        <!--chap menyu-->
-                        <!--asosiy menyu-->
-                        <!--new-->
-                        <!--/new-->
-
-
                         <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
                         <router-link class="router-link me-3 btn-1" to="/home">Home</router-link>
                         <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
@@ -76,23 +169,39 @@
                         </div>
                     </div>
                 </div>
-                <!--/asosiy menyu-->
+                
             </div>
-        </div>
+        </div> -->
+
+        <Modal v-model="modal" closeable header="My Modal" maxwidth="300px" >
+            <p>You can close this modal using the close button on the top right corner</p>
+        </Modal>  
+
+
+        <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px" >
+            <Bill></Bill>    
+        </Modal>  
+
+      
+
+        <router-view style="margin-top: 74px;"></router-view>
     </div>
 
-
-    <router-view></router-view>
+    <div v-if="!TokenService.isAutorize()">
+        <router-view></router-view>
+    </div>
 
 </template>
 
 
 <script setup>
 import { ref } from 'vue';
-import DinningOption from './components/dinningoption.vue';
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
+import TokenService from "./services/token.service";
+import Modal from './dialogs/Modal.vue'
 
+import Bill from './view/Bill/list.vue'
 
 let dinningOptionIsShow = ref(false);
 let myDateTime = ref(new Date())
@@ -104,10 +213,30 @@ function mySetSelect(i) {
 const route = useRoute();
 const path = computed(() => route.path)
 
+const closeableModal = ref(false);
+const modal = ref(false);
+function openModal() { 
+  modal.value = true;  
+}
+
+const modalBill = ref(false);
+function openBillModal() { 
+  modalBill.value = true;  
+}
 
 </script>
 
 <style>
+.fc-dark {
+    color: #fff !important;
+    background-color: var(--bs-dark) !important;
+    border-color: var(--bs-gray) !important;
+}
+
+.fc-dark::-webkit-input-placeholder {
+    color: rgb(108, 117, 125) !important;
+}
+
 .dis {
     display: inline-block;
     width: 210px;
@@ -162,9 +291,9 @@ const path = computed(() => route.path)
     gap: 8px;
 }
 
-.hhha{
-    text-align: center; 
-    height: 46px;           
+.hhha {
+    text-align: center;
+    height: 46px;
 }
 
 .Nav_bold-style {

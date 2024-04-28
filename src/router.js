@@ -17,24 +17,29 @@ import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
 import TipAmount from './view/dashboard/TipAmount.vue'
-import LoginCashier from './view/dashboard/LoginCashier.vue'
+import Reservation_list from './view/dashboard/Reservation_list.vue'
+import Pos_new_reservation from './view/dashboard/Pos_new_reservation.vue'
 
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
 const routes = [
-    //new
+    {
+        path: '/Reservation_list',
+        name: 'Reservation_list',
+        component: Reservation_list
+    }, 
+
+    {
+        path: '/Pos_new_reservation',
+        name: 'Pos_new_reservation',
+        component: Pos_new_reservation
+    }, 
 
     {
         path: '/POS_walk_in_login_cashier',
         name: 'POS_walk_in_login_cashier',
         component: POS_walk_in_login_cashier
-    }, 
-
-    {
-        path: '/LoginCashier',
-        name: 'LoginCashier',
-        component: LoginCashier
     }, 
 
     {

@@ -1,10 +1,9 @@
 <template>
     <div class="container-fluid">
-        <div class="row h-100">
-            <div class="col-1 bg-body variant border">
-                <button @click="loadData" style="margin-top: 30px"> Load </button>
+        <div class="row">
+            <div class="col-1 bg-body variant border " style="width: min-content; height: 100vh;">
 
-                <button @click="OnFilter(2)" class="btn btn-body btn-1" >
+                <button @click="OnFilter(2)" class="btn btn-body btn-1">
                     <img src="../../../public/assets/images/btn/offers.png">
                     <h3 class="h3-1">Ичимликлар</h3>
                 </button>
@@ -12,55 +11,58 @@
                 <button @click="OnFilter(3)" class="btn btn-body btn-1">
                     <img class="immmm" src="../../../public/assets/images/icon/free-icon-soup-5756048.png">
                     <h3 class="h3-1">Биринчига</h3>
-                </button> <br>
+                </button>
 
                 <button @click="OnFilter(4)" class="btn btn-body btn-1">
-                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-food-and-restaurant-mega-pack-color-8285335.png">
+                    <img class="immmm"
+                        src="../../../public/assets/images/icon/free-icon-food-and-restaurant-mega-pack-color-8285335.png">
                     <h3 class="h3-1">Икинчига</h3>
-                </button> <br>
+                </button>
 
                 <button @click="OnFilter(5)" class="btn btn-body btn-1">
                     <img src="../../../public/assets/images/btn/pasta.png">
                     <h3 class="h3-1">Уйгур</h3>
-                </button> <br>
+                </button>
 
                 <button @click="OnFilter(6)" class="btn btn-body btn-1">
-                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-steak-4829135.png">
+                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-steak-4829135.png">
                     <h3 class="h3-1">Стейк</h3>
                 </button>
-                
-                <button @click="OnFilter(7)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/kebab.png">
+
+                <button @click="OnFilter(7)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/kebab.png">
                     <h3 class="h3-1">Кабоблар</h3>
                 </button>
-                
-                <button @click="OnFilter(8)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-pilau-6196390.png">
+
+                <button @click="OnFilter(8)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-pilau-6196390.png">
                     <h3 class="h3-1">ОШ / Сомса</h3>
                 </button>
-                
-                <button @click="OnFilter(9)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/free-icon-chicken-1702778.png">
+
+                <button @click="OnFilter(9)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/free-icon-chicken-1702778.png">
                     <h3 class="h3-1">КФС</h3>
                 </button>
-                
-                <button @click="OnFilter(10)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/salads.png">
+
+                <button @click="OnFilter(10)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/salads.png">
                     <h3 class="h3-1">Салатлар</h3>
                 </button>
-                
-                <button @click="OnFilter(11)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/poinsettia.png">
+
+                <button @click="OnFilter(11)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/poinsettia.png">
                     <h3 class="h3-1">Ичимликлар</h3>
                 </button>
 
-                <button @click="OnFilter(12)" class="btn btn-body btn-1" >
-                    <img class="immmm"  src="../../../public/assets/images/icon/icons8-хлеб-50.png">
+                <button @click="OnFilter(12)" class="btn btn-body btn-1">
+                    <img class="immmm" src="../../../public/assets/images/icon/icons8-хлеб-50.png">
                     <h3 class="h3-1">Гарнир / Нон</h3>
                 </button>
 
             </div>
-            <div class="p-0 menu scc" :class="!isShowPanel ? 'col-11' : 'col-8'">
+
+
+            <div class="p-0 menu scc col">
                 <div class="container-fluid">
                     <div class="row">
                         <div v-for="it in foodData" :key="it.id" class="p-0" :class="!isShowPanel ? 'col-2' : 'col-3'">
@@ -69,8 +71,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3" style="height: 553px;" v-if="isShowPanel">
-                <div class="container-fluid p-0" style="height: 10px;">
+
+
+            <div class="col-3" v-if="isShowPanel">
+                <div class="container-fluid p-0" style="height: 100vh;">
                     <div class="row zakaz p-0">
                         <div class="col-12 p-0">
                             <div class="container-fluid p-0">
@@ -81,16 +85,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+
+                    <div class="row fixed-row-bottom">
                         <div class="col-12">
-                            <b>
-                                <p class="pb-3 m-0 ps-0 mt-3">Sub Total: {{ jamiSumma }} so`m</p>
-                            </b>
+                            <p class="pb-3 m-0 ps-0 mt-3">Sub Total: {{ jamiSumma }} so`m</p>
                         </div>
-                        <div class="dib p-0">
-                            <button class="butt ms-2">Sotib olish</button>
-                        </div>
+
+                        <button class="col-7 mx-auto  btn btn-lg btn-success">Sotib olish</button>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -100,7 +103,7 @@
 
 <script setup>
 
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import OrderListItem from '../../components/OrderListItem.vue';
 import Food from '../../components/Food.vue';
 
@@ -116,19 +119,21 @@ let tax = ref(0);
 
 let foodData = ref([]);
 
-function OnFilter(id){
-    foodData.value =  myFoodList.filter(function (food) {
+function OnFilter(id) {
+    foodData.value = myFoodList.filter(function (food) {
         return food.catigoryId == id
     })
 }
 
-function loadData() {
+onMounted(() => {
+
     DataService.getFoodList().then((response) => {
         foodData.value = response.data;
         myFoodList = response.data;
         console.log(response);
     })
-}
+
+})
 
 
 function mySetSelect(i) {
@@ -154,7 +159,7 @@ function CreateOrder(item) {
 
 function onMyChangeCount(food) {
 
-    
+
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
 
@@ -164,7 +169,7 @@ function onMyChangeCount(food) {
 
     JamiSummaHisobla();
 }
- 
+
 
 function JamiSummaHisobla() {
 
@@ -187,10 +192,15 @@ function JamiSummaHisobla() {
     text-align: center;
 }
 
+.fixed-row-bottom {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+}
 
 .butt {
-        border: none;
-        background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
+    border: none;
+    background: linear-gradient(218.57deg, #81ff4f -6.67%, #2130ff 137.69%);
     color: white;
     border-radius: 20px;
     height: 50px;
@@ -199,10 +209,7 @@ function JamiSummaHisobla() {
 
 
 .variant {
-    border-width: 1px;
-    height: 553px;
-    text-align: center;
-    background-color: #2130ff;
+    /* height: 100vh; */
     overflow-y: auto;
 }
 
@@ -212,20 +219,19 @@ function JamiSummaHisobla() {
 }
 
 .zakaz {
-    height: 430px;
-    max-height: 495px;
+    max-height: 440px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.immmm{
+.immmm {
     height: 30px;
     width: 30px;
 }
 
 .scc {
-    height: 553px;
-    max-height: 647px;
+    height: 100vh;
+    max-height: 100vh;
     overflow-y: auto;
 }
 

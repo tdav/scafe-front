@@ -39,10 +39,10 @@
 
             <!-- Additional items go here -->
 
-            <div class="mt-4" style="height: 44px; width: 100%;" v-for="(item, index) in additionalItems" :key="index">
-                <img src="imgs/Placeholder@3x.png" style="display: inline-block; height: 60px; margin-top: -15px;"
-                    alt="">
-                <div style="display: inline-block; width: 91%;">
+            <div class="mt-4" style="height: 55px; width: 100%;" v-for="(item, index) in additionalItems" :key="index">
+                <img class="col-1 p-0" src="../../../public/assets/images/Image1.png" alt=""
+                    style="height: 70px; width: 70px; display: inline-block;">
+                <div style="display: inline-block; width: 82%;">
                     <p class="m-0 ms-2" style="display: inline-block; width: 70%;"><b>{{ item.name }}</b>
                     </p>
                     <p style="width: 100%;">$ {{ item.price }}</p>
@@ -52,9 +52,9 @@
                     <p style="margin-left: 40%; margin-top: 20%; " @click="changeAdditionalQuantity(item, -1)">-</p>
                 </div>
                 <p class="mx-2" style="display: inline-block;">{{ item.quantity }}</p>
-                <div
+                <div class="align-items-center"
                     style="display: inline-block; height: 36px; width: 36px; background-color: #000000; border-radius: 100%;  text-align: center;">
-                    <p style="margin-top: 5px; color: #FFFFFF;" @click="changeAdditionalQuantity(item, 1)">+</p>
+                    <p style="margin-top: 8px; color: #FFFFFF;" @click="changeAdditionalQuantity(item, 1)">+</p>
                 </div>
             </div>
 
