@@ -15,7 +15,8 @@ import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
 import Payment from './view/dashboard/Payment.vue'
 import SelectTable from './view/dashboard/SelectTable.vue'
 import afitsand from './view/dashboard/afitsand.vue'
-
+import ConfirmOrder from './view/Order/ConfirmOrder.vue'
+import TipAmount from './view/dashboard/TipAmount.vue'
 import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
@@ -29,12 +30,23 @@ const routes = [
     }, 
 
     {
+        path: '/ConfirmOrder',
+        name: 'ConfirmOrder',
+        component: ConfirmOrder
+    }, 
+
+    {
+        path: '/TipAmount',
+        name: 'TipAmount',
+        component: TipAmount
+    }, 
+
+
+    {
         path: '/UpcomingOrders',
         name: 'UpcomingOrders',
         component: UpcomingOrders
     }, 
-
-
 
 
     {

@@ -15,6 +15,8 @@
                 <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
                 <li><a class="dropdown-item" href="/TipAmount">TipAmount</a></li>
                 <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
+                <li><a class="dropdown-item" href="/ConfirmOrder">ConfirmOrder</a></li>
+
                 <b>Pos</b><hr class="m-0">
                 <li><a class="dropdown-item" href="/LoginCashier">LoginCashier</a></li>
                 <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>

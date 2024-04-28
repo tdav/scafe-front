@@ -1,13 +1,9 @@
-<template lang="">
-    <div>
-        
-    </div>
+<template>
+
 </template>
-<script>
-export default {
-    gameLive
-}
+<script setup>
+
 </script>
-<style lang="">
+<style>
     
 </style>
