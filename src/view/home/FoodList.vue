@@ -196,6 +196,7 @@ function JamiSummaHisobla() {
     position: fixed;
     bottom: 0;
     padding-bottom: 10px;
+    width: 25%;
 }
 
 .butt {
