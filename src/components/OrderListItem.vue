@@ -5,23 +5,22 @@
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.imgUrl"
                 style="height: 80px; width: 80px; display: inline-block;">
 
-            <div class="col-6 p-0">
+            <div class="col-5 p-0">
                 <p class="ms-1" style="margin: 0px; font-size: 13px;"> <b>{{ props.foodData.name }}</b></p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Dona: {{ props.foodData.count }}</p>
-                <p class="p-0 ms-3" style="margin: 0px; font-size: 13px;">Narxi: {{ props.foodData.price }}</p>
+                <p class="p-0 ms-3 mt-2" style="margin: 0px; font-size: 13px;">Narxi: {{ props.foodData.price }}</p>
                 <p class="ms-3" style="margin: 0px; font-size: 15px;">Totol: {{ jamiSumma }} so'm</p>
             </div>
 
-            <div class="col-3 p-0">
-                <div style="margin-top: 30px;">
+            <div class="col-4 p-0">
+                <div style="float: right; margin-top: 30px;">
                     <button @click="EtsPlus()" class="my-btn-plus m-0"
-                        style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
-                        <p class="parag  m-0">+</p>
+                        style="width: 30px; height: 30px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
+                        <p class="parag  mb-1">+</p>
                     </button>
-
+                    <p class="ps-2" style="display: inline;">{{ props.foodData.count }}</p>
                     <button @click="EtsMinus()" class="my-btn-minus m-0 ms-2"
-                        style="width: 35px; float: left; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
-                        <p class="parag  m-0">-</p>
+                        style="width: 30px; height: 30px; float: right; display: inline-block; background: linear-gradient(218.57deg, rgb(255, 238, 0) -50%, rgba(255, 136, 0, 0.425) 137.69%);">
+                        <p class="parag  mb-1">-</p>
                     </button>
                 </div>
 
