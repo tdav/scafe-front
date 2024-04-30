@@ -1,5 +1,5 @@
 <template>
-    <div class="containe-fluid kjyfo">
+    <div class="containe-fluid kjyfo m-0">
 
         
         <div class="absent-items">
@@ -47,13 +47,13 @@
 .kjyfo{
     background-image: url(../../../public/assets/images/Background.absent.png);
     background-repeat: no-repeat;
-    height: 45rem;
-    margin-left: 3rem;
+    height: 100vh;
+    background-size: cover;
 }
 
 .absent-items{
     text-align: center;
-    padding-top: 15rem;
+    padding-top: 17%;
     margin-left: -9rem;
     
 }

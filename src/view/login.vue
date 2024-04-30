@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid fon">
+  <div class="container-fluid fon m-0">
     <div class="row d-flex  align-items-center " style="height: 100vh;">
       <div class="col-md-3  mx-auto">
 

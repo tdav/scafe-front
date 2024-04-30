@@ -1,5 +1,4 @@
 <template>
-
     <div v-if="TokenService.isAutorize()">
 
         <header class="p-3 bg-dark text-white fixed-top bg-dark ">
@@ -156,15 +155,7 @@
                                     src="../assets/images/nav/Nav_Profile.png" alt="rasm">
                             </button>
                             <ul class="dropdown-menu" style="height: 250px; width: 210px;">
-                                <p class="p-3">cuhqwboebwiosdacboq
-                                    uiwebhjdcopvm[3wmev
-                                    ee;rkfm [olewrmkc[o
-                                    oekmv[wkermkfv[c[ie
-                                    ;k;jwfw;oefmqfrferrw
-                                    evcervcercercre3ecrf
-                                    [pemr[pvmolubhnqocu
-                                    dbynwqouibcdheouiqB
-                                    NXOUIQWBECAOUIBQW</p>
+                                <p class="p-3">ul</p>
                             </ul>
                         </div>
                     </div>
@@ -196,6 +187,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import DinningOption from './components/DinningOption.vue';
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import TokenService from "./services/token.service";

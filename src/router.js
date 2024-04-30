@@ -13,14 +13,15 @@ import OrderConfirmation from './view/dashboard/OrderConfirmation.vue'
 import Payment from './view/dashboard/Payment.vue'
 import SelectTable from './view/dashboard/SelectTable.vue'
 import afitsand from './view/dashboard/afitsand.vue'
-import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
-import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
-import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
+import ConfirmOrder from './view/Order/ConfirmOrder.vue'
 import TipAmount from './view/dashboard/TipAmount.vue'
+import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 import Reservation_list from './view/dashboard/Reservation_list.vue'
 import Pos_new_reservation from './view/dashboard/Pos_new_reservation.vue'
+import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
+import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
+import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
-import UpcomingOrders from './view/pos/UpcomingOrders.vue'
 ///new
 
 const routes = [
@@ -67,13 +68,23 @@ const routes = [
     }, 
 
     {
+        path: '/ConfirmOrder',
+        name: 'ConfirmOrder',
+        component: ConfirmOrder
+    }, 
+
+    {
+        path: '/TipAmount',
+        name: 'TipAmount',
+        component: TipAmount
+    }, 
+
+
+    {
         path: '/UpcomingOrders',
         name: 'UpcomingOrders',
         component: UpcomingOrders
     }, 
-
-
-
 
     {
         path: '/AddNote',
