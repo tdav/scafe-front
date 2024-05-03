@@ -22,9 +22,7 @@ const props = defineProps( {
     }
 });
 
-const beginUrl = "https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F";
-const endUrl = "&w=640&q=75";
  
-const imgUrl = beginUrl+ props.foodData.imgUrl.replace('https://cdn.delever.uz/delever/', '')+endUrl;
+const imgUrl =  props.foodData.imgUrl;
 
 </script>

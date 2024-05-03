@@ -1,10 +1,11 @@
-<template >
+<template>
     <div class="container-fluid p-0">
         <div class="row mb-1 rro border border-1">
 
             <img class="col-4 eat1-3-11 mt-2 ms-1 p-0" :src="props.foodData.imgUrl"
                 style="height: 80px; width: 80px; display: inline-block;">
 
+            <div class="col-5 p-0">
             <div class="col-5 p-0">
                 <p class="ms-1" style="margin: 0px; font-size: 13px;"> <b>{{ props.foodData.name }}</b></p>
                 <p class="p-0 ms-3 mt-2" style="margin: 0px; font-size: 13px;">Narxi: {{ props.foodData.price }}</p>
@@ -33,10 +34,10 @@
 <script setup>
 import { ref, defineProps, defineEmits, onMounted } from 'vue';
 
-const props = defineProps( { 
+const props = defineProps({
     foodData: {
-        type:Object,
-        required:true,
+        type: Object,
+        required: true,
     }
 });
 
@@ -48,7 +49,7 @@ const emit = defineEmits(['onChangeCount'])
 
 onMounted(() => {
     props.foodData['count'] = 1;
-    jamiSumma.value = props.foodData.price * props.foodData.count;    
+    jamiSumma.value = props.foodData.price * props.foodData.count;
 })
 
 function EtsPlus() {
@@ -63,10 +64,10 @@ function EtsMinus() {
     if (props.foodData.count > 0) {
         props.foodData.count--;
         this.jamiSumma = props.foodData.price * props.foodData.count;
-    
+
         emit('onChangeCount', props.foodData)
-        
-        
+
+
     } else {
         return;
     }
@@ -74,7 +75,7 @@ function EtsMinus() {
 
 </script>
 
-<style >
+<style>
 .rro {
     height: 100px;
 }
