@@ -223,6 +223,7 @@ function JamiSummaHisobla() {
     max-height: 530px;
     overflow-y: auto;
     overflow-x: hidden;
+    height: 530px;
 }
 
 .immmm {
