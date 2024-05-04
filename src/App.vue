@@ -72,98 +72,10 @@
                             <button type="button" class="btn btn-outline-light me-2">Логин</button>
                             <button type="button" class="btn btn-warning">Рўйхатдан ўтиш</button>
                         </div>
-
-                        <!-- <div class="dropdown drop">
-                        <div style="float: right;">
-                            <div style="display: inline-block;">
-                            </div>
-                            <button class="active" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="border: white; background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;"
-                                :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
-                                <img class="rotate" style="float: right; height: 40px; width: 40px;"
-                                    src="../assets/images/nav/Nav_Profile.png" alt="rasm">
-                            </button>
-                            <ul class="dropdown-menu" style="height: 250px; width: 210px;">
-                                <p class="p-3">cuhqwboebwiosdacboq
-                                    uiwebhjdcopvm[3wmev
-                                    ee;rkfm [olewrmkc[o
-                                    oekmv[wkermkfv[c[ie
-                                    ;k;jwfw;oefmqfrferrw
-                                    evcervcercercre3ecrf
-                                    [pemr[pvmolubhnqocu
-                                    dbynwqouibcdheouiqB
-                                    NXOUIQWBECAOUIBQW</p>
-                            </ul>
-                        </div>
-                    </div> -->
                     </div>
                 </div>
             </div>
         </header>
-
-
-
-
-        <!-- <div class="container-fluid p-0">
-            <div class="row">
-                
-                <div class="col-2">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="../assets/images/nav/Nav_Vector.png" style="height: 40px; width: 40px;"
-                                    alt="">
-                            </div>
-                            <div class="col-8">
-                                <div class="container-flud">
-                                    <div class="row " style="float: left;">
-                                        <b class="Nav_bold-style">Walk-In</b><br>
-                                    </div>
-                                    <div class="row " style="width: 131px; font-size: 12px;">
-                                        <p class="Nav_Coca_coffeetalk-style">Coca coffeetalk</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div class="mt-2 ms-5" style="width: 499px; float: right;">
-                        <img src="../public/assets/images/nav/Nav_home.png" class="me-1" alt="">
-                        <router-link class="router-link me-3 btn-1" to="/home">Home</router-link>
-                        <img src="../assets/images/nav/Nav_note.png" class="me-1" alt="">
-                        <router-link class="router-link me-3 btn-1" to="/order">Order</router-link>
-                        <img src="../assets/images/nav/Nav_clock.png" class="me-1" alt="">
-                        <router-link class="router-link me-3 btn-1" to="/History">History</router-link>
-                        <img src="../assets/images/nav/Nav_receipt.png" class="me-1" alt="">
-                        <router-link class="router-link me-3 btn-1" to="/Bill">Bill</router-link>
-                        <button style="border: none; background-color: white;">
-                            <DinningOption v-bind:isShow="dinningOptionIsShow"></DinningOption>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-1 p-0">
-                    <div class="dropdown drop">
-                        <div style="float: right;">
-                            <div style="display: inline-block;">
-                                <p class="mb-2" style="display: inline-block;">Derektor</p>
-                            </div>
-                            <button class="btn btn-#fff active" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="border-color: #fff;"
-                                :class="setSelectMenuItem == 1 ? 'my-active' : ''" @click="mySetSelect(1)">
-                                <img class="rotate" style="float: right; height: 40px; width: 40px;"
-                                    src="../assets/images/nav/Nav_Profile.png" alt="rasm">
-                            </button>
-                            <ul class="dropdown-menu" style="height: 250px; width: 210px;">
-                                <p class="p-3">ul</p>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
-
         <Modal v-model="modal" closeable header="My Modal" maxwidth="300px" >
             <p>You can close this modal using the close button on the top right corner</p>
         </Modal>  
