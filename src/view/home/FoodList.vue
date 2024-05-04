@@ -128,9 +128,9 @@ function OnFilter(id) {
 onMounted(() => {
 
     DataService.getFoodList().then((response) => {
+         
         foodData.value = response.data;
-        myFoodList = response.data;
-        console.log(response);
+        myFoodList = response.data; 
     })
 
 })
@@ -141,10 +141,13 @@ function mySetSelect(i) {
 }
 
 function CreateOrder(item) {
+
+    
+
     for (let i = 0; i < etsList.value.length; i++) {
         const element = etsList.value[i];
 
-        if (element.name == item.name) {
+        if (element.nameUz == item.nameUz) {
             // Agar element topilgan bo'lsa, ishni to'xtatish uchun return qilish
             return;
         }
