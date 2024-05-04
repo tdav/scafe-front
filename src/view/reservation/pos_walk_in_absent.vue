@@ -4,24 +4,24 @@
         
         <div class="absent-items">
             <div class="absent-item">
-                <img src="public/assets/images/Oval.png" alt="">
+                <img src="public/assets/images/Oval.png" alt="profile img_1">
                 <h6 class="name-color">Sarah Merry</h6>
             </div>
             
             <div class="absent-item">
-                <img src="public/assets/images/Oval (1).png" alt="">
+                <img src="public/assets/images/Oval (1).png" alt="profile img_2">
                 <h6 class="name-color">Belly Eilsh</h6>
             </div>
             <div class="absent-item__active">
-                <img src="public/assets/images/Oval (2).png" alt="">
+                <img src="public/assets/images/Oval (2).png" alt="profile img_3">
                 <h6 class="name-color">Mia bright</h6>
             </div>
             <div class="absent-item">
-                <img src="public/assets/images/Oval (3).png" alt="">
+                <img src="public/assets/images/Oval (3).png" alt="profile img_4">
                 <h6 class="name-color"> John Bydon</h6>
             </div>
             <div class="absent-item">
-                <img src="public/assets/images/Oval (4).png" alt="">
+                <img src="public/assets/images/Oval (4).png" alt="profile img_5">
                 <h6 class="name-color">Elon Musk</h6>
             </div>
         </div>

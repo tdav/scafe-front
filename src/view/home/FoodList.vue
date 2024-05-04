@@ -196,6 +196,7 @@ function JamiSummaHisobla() {
     position: fixed;
     bottom: 0;
     padding-bottom: 10px;
+    width: 25%;
 }
 
 .butt {
@@ -219,7 +220,7 @@ function JamiSummaHisobla() {
 }
 
 .zakaz {
-    max-height: 440px;
+    max-height: 530px;
     overflow-y: auto;
     overflow-x: hidden;
 }

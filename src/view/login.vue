@@ -7,7 +7,7 @@
           <div class="card-body p-3 card-sectionqwr">
             <div class="logo-section">
               <h2 class="coca-title">
-                <img src="public/assets/images/icon/Vector.png" alt=" coca img" class="mb-2"  />
+                <img src="public/assets/images/icon/Vector.png" alt=" coca img" class="mb-2"/>
                 <h3 class="login-title">sCafe - тизими</h3>
               </h2>
             </div>
@@ -28,7 +28,7 @@
                   <i class="fa-solid fa-key fa-lg"></i>  <span class="ms-2">Парол </span> 
                 </label>
 
-                <input type="password" class="form-control form-control" id="dPassword" placeholder="Enter password" />
+                <input type="password" class="form-control form-control" id="edPassword" placeholder="Enter password" />
               </div>
               
             </div>

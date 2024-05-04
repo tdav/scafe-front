@@ -2,9 +2,9 @@
     <div class="container">
         <div class="cotainer-fluid">
             <div class="p-2 row" style="height: 106px; width: 100%; background-color: #F8F9FD; border-radius: 12px;">
-                <img class="col-1 p-0" src="../../../public/assets/images/ovqat rasm/Placeholder.png" alt=""
+                <img class="col-2 p-0" src="../../../public/assets/images/ovqat rasm/Placeholder.png" alt=""
                     style="height: 100%; display: inline-block;">
-                <div class="col-11 p-0" style="height: 100%;">
+                <div class="col-10 p-0" style="height: 100%;">
                     <div class="p-0 cotainer-fluid h-100 w-100">
                         <div class="row p-0 m-0" style="height: 100%; width: 100%;">
                             <p class="p4">
@@ -15,7 +15,7 @@
                                     style="font-size: 12px; color: #9C9C9C; line-height: 5px; width: 70%; display: inline-block;">
                                     Price</p>
                                 <p class="ppp "
-                                    style="display: inline-block; text-align: left; width: 87%; font-size: 16px; line-height: 0px; color: #FF5C00;">
+                                    style="display: inline-block; text-align: left; width: 83%; font-size: 16px; line-height: 0px; color: #FF5C00;">
                                     $ 25.2</p>
                                 <div
                                     style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #9C9C9C; margin-left: -5px;">
@@ -42,7 +42,7 @@
             <div class="mt-4" style="height: 55px; width: 100%;" v-for="(item, index) in additionalItems" :key="index">
                 <img class="col-1 p-0" src="../../../public/assets/images/Image1.png" alt=""
                     style="height: 70px; width: 70px; display: inline-block;">
-                <div style="display: inline-block; width: 82%;">
+                <div style="display: inline-block; width: 75%;">
                     <p class="m-0 ms-2" style="display: inline-block; width: 70%;"><b>{{ item.name }}</b>
                     </p>
                     <p style="width: 100%;">$ {{ item.price }}</p>

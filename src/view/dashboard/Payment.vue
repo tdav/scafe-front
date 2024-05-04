@@ -1,5 +1,5 @@
 <template>
-    <form class="container" style="padding-left: 250px; padding-right: 250px">
+    <form class="container">
         <div class="container p-5" style="text-align: center;">
             <div class="row">
                 <button class="btn btn-secondary col-12 bbs-1" style="background-color: lightgray; border-width: 0px;">
