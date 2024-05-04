@@ -10,7 +10,9 @@ class DataService {
                 {
                     "phoneNumber": phoneNumber,
                     "password": password,
-                    "deviceId": "string"
+                    "deviceId": "string",
+                    "lang":"uz"
+
                 }
 
             ).then((response) => {
