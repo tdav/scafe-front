@@ -10,6 +10,7 @@ class DataService {
                 {
                     "phoneNumber": phoneNumber,
                     "password": password,
+
                     "deviceId": "string",
                     "lang":"uz"
 
