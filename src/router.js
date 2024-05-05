@@ -39,7 +39,7 @@ const routes = [
         name: 'region',
         component: region
     }, 
-
+    {
         path: '/SmsStatus',
         name: 'SmsStatus',
         component: SmsStatus
