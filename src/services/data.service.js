@@ -34,7 +34,20 @@ class DataService {
             });
     }
 
-
+    getDistrict() {
+        return api
+            .get("/District" ).then((response) => {
+                return response.data;
+            });
+    }
+    
+    
+    getCategory() {
+        return api
+            .get("/Category" ).then((response) => {
+                return response.data;
+            });
+    }
 }
 
 export default new DataService();

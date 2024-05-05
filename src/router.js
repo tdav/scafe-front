@@ -21,10 +21,24 @@ import Pos_new_reservation from './view/dashboard/Pos_new_reservation.vue'
 import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashier.vue'
 import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
+import district from './view/spr/district.vue'
+import category from './view/spr/category.vue'
 
-///new
+// new
 
 const routes = [
+    {
+        path: '/category',
+        name: 'category',
+        component: category
+    }, 
+
+    {
+        path: '/district',
+        name: 'district',
+        component: district
+    }, 
+
     {
         path: '/Reservation_list',
         name: 'Reservation_list',
