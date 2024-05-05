@@ -40,7 +40,13 @@ class DataService {
                 return response.data;
             });
     }
-
+        
+    getSpSmsStatus() {
+        return api
+            .get("/SmsStatus" ).then((response) => {
+                return response.data;
+            });
+    }   
 
 }
 
