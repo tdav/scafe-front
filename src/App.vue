@@ -1,7 +1,9 @@
 <template>
     <div v-if="TokenService.isAutorize()">
 
-        <header class="p-3 bg-dark text-white fixed-top bg-dark ">
+
+
+        <header v-if="isShowNavBar" class="p-3 bg-dark text-white fixed-top bg-dark ">
             <div class="container-fluid ">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
                     <a href="/" class="col-1 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -36,26 +38,31 @@
                                     <img src="/public/assets/images/person.jpg" alt="mdo" width="32" height="32"
                                         class="rounded-circle">
                                 </a>
-                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="overflow-x: auto; max-height: 300px;">
+                                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1"
+                                    style="overflow-x: auto; max-height: 300px;">
                                     <li><a class="dropdown-item" href="#" @click="openBillModal">Bill</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openAddNoteModal">AddNote</a></li>
-                                    <li><a class="dropdown-item" href="#" @click="openDashboardModal" >Dashboard</a></li>
-                                    <li><a class="dropdown-item" href="#" @click="openOrderConfirmationModal">OrderConfirmation</a></li>
+                                    <li><a class="dropdown-item" href="#" @click="openDashboardModal">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            @click="openOrderConfirmationModal">OrderConfirmation</a></li>
                                     <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openPaymentModal">Payment</a></li>
-                                    <li><a class="dropdown-item" href="#" @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openTipAmountModal">TipAmount</a></li>
-                                    <li><a class="dropdown-item" href="#" @click="openReservation_listModal">Reservation_list</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            @click="openReservation_listModal">Reservation_list</a></li>
 
                                     <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
                                     <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
-                                    <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
                                     <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a>
                                     </li>
-                                   
-                                   
+
+
                                     <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
-                                  
+
                                     <hr>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -75,35 +82,37 @@
                 </div>
             </div>
         </header>
-        <Modal v-model="modal" closeable header="My Modal" maxwidth="300px" >
-            <p>You can close this modal using the close button on the top right corner</p>
-        </Modal>  
-        <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px" >
-            <Bill></Bill>    
-        </Modal>  
-        <Modal v-model="modalAddNote" closeable header="My Modal" maxwidth="800px" >
-            <AddNote></AddNote>    
-        </Modal>  
-        <Modal v-model="modalDashboard" closeable header="My Modal" maxwidth="800px" >
-            <Dashboard></Dashboard>    
-        </Modal>  
-        <Modal v-model="modalOrderConfirmation" closeable header="My Modal" maxwidth="800px" >
-            <OrderConfirmation></OrderConfirmation>    
-        </Modal>  
-        <Modal v-model="modalPayment" closeable header="My Modal" maxwidth="800px" >
-            <Payment></Payment>    
-        </Modal>  
-        <Modal v-model="modalDashboard_add_note" closeable header="My Modal" maxwidth="800px" >
-            <Dashboard_add_note></Dashboard_add_note>    
-        </Modal>  
-        <Modal v-model="modalTipAmount" closeable header="My Modal" maxwidth="800px" >
-            <TipAmount></TipAmount>    
-        </Modal>  
-        <Modal v-model="modalReservation_list" closeable header="My Modal" maxwidth="800px" >
-            <Reservation_list></Reservation_list>    
-        </Modal>  
 
-      
+
+        <Modal v-model="modal" closeable header="My Modal" maxwidth="300px">
+            <p>You can close this modal using the close button on the top right corner</p>
+        </Modal>
+        <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px">
+            <Bill></Bill>
+        </Modal>
+        <Modal v-model="modalAddNote" closeable header="My Modal" maxwidth="800px">
+            <AddNote></AddNote>
+        </Modal>
+        <Modal v-model="modalDashboard" closeable header="My Modal" maxwidth="800px">
+            <Dashboard></Dashboard>
+        </Modal>
+        <Modal v-model="modalOrderConfirmation" closeable header="My Modal" maxwidth="800px">
+            <OrderConfirmation></OrderConfirmation>
+        </Modal>
+        <Modal v-model="modalPayment" closeable header="My Modal" maxwidth="800px">
+            <Payment></Payment>
+        </Modal>
+        <Modal v-model="modalDashboard_add_note" closeable header="My Modal" maxwidth="800px">
+            <Dashboard_add_note></Dashboard_add_note>
+        </Modal>
+        <Modal v-model="modalTipAmount" closeable header="My Modal" maxwidth="800px">
+            <TipAmount></TipAmount>
+        </Modal>
+        <Modal v-model="modalReservation_list" closeable header="My Modal" maxwidth="800px">
+            <Reservation_list></Reservation_list>
+        </Modal>
+
+
 
         <router-view style="margin-top: 74px;"></router-view>
     </div>
@@ -134,6 +143,7 @@ import Reservation_list from './view/dashboard/Reservation_list.vue'
 
 let dinningOptionIsShow = ref(false);
 let myDateTime = ref(new Date())
+let isShowNavBar = ref(true)
 
 function mySetSelect(i) {
     this.setSelectMenuItem = i
@@ -142,52 +152,59 @@ function mySetSelect(i) {
 const route = useRoute();
 const path = computed(() => route.path)
 
+if (path == "afitsand" || path == "home")
+    isShowNavBar = false
+else
+    isShowNavBar = true
+
+
+
 const closeableModal = ref(false);
 
 //
 const modal = ref(false);
-function openModal() { 
-  modal.value = true;  
+function openModal() {
+    modal.value = true;
 }
 
 const modalReservation_list = ref(false);
-function openReservation_listModal() { 
-  modalReservation_list.value = true;  
+function openReservation_listModal() {
+    modalReservation_list.value = true;
 }
 
 const modalBill = ref(false);
-function openBillModal() { 
-  modalBill.value = true;  
+function openBillModal() {
+    modalBill.value = true;
 }
 
 const modalTipAmount = ref(false);
-function openTipAmountModal() { 
-  modalTipAmount.value = true;  
+function openTipAmountModal() {
+    modalTipAmount.value = true;
 }
 
 const modalDashboard_add_note = ref(false);
-function openDashboard_add_noteModal() { 
-  modalDashboard_add_note.value = true;  
+function openDashboard_add_noteModal() {
+    modalDashboard_add_note.value = true;
 }
 
 const modalAddNote = ref(false);
-function openAddNoteModal() { 
-  modalAddNote.value = true;  
+function openAddNoteModal() {
+    modalAddNote.value = true;
 }
 
 const modalDashboard = ref(false);
-function openDashboardModal() { 
-  modalDashboard.value = true;  
+function openDashboardModal() {
+    modalDashboard.value = true;
 }
 
 const modalOrderConfirmation = ref(false);
-function openOrderConfirmationModal() { 
-  modalOrderConfirmation.value = true;  
+function openOrderConfirmationModal() {
+    modalOrderConfirmation.value = true;
 }
 
 const modalPayment = ref(false);
-function openPaymentModal() { 
-  modalPayment.value = true;  
+function openPaymentModal() {
+    modalPayment.value = true;
 }
 
 

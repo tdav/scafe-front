@@ -1,7 +1,7 @@
 <template>
   <div class="positsion background-png m-0">
     <div id="clock">{{ currentTime }}</div>
-    <div class="text">pm</div>
+    <div class="text">am</div>
     <div>
     <div class="iformatsia">
       <img src="public/assets/images/Profile pict.png" alt="profile-img" class="img-1">
@@ -21,21 +21,16 @@ export default {
       currentTime: ''
     }
   },
+
   mounted() {
     this.updateClock();
     setInterval(this.updateClock, 1000);
   },
+
   methods: {
     updateClock() {
       var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
-      hours = hours < 10 ? '0' + hours : hours;
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      seconds = seconds < 10 ? '0' + seconds : seconds;
-      var timeString = hours + ':' + minutes;
-      this.currentTime = timeString;
+      this.currentTime = now.toLocaleTimeString();
     }
   }
 }

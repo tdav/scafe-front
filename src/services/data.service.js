@@ -33,6 +33,42 @@ class DataService {
                 return response.data;
             });
     }
+    
+    getSpPromoCodeTypeList() {
+        return api
+            .get("/PromoCodeType" ).then((response) => {
+                return response.data;
+            });
+    }
+
+    getregion() {
+        return api
+            .get("/region" ).then((response) => {
+                return response.data;
+            });
+    }
+
+        
+    getSpSmsStatus() {
+        return api
+            .get("/SmsStatus" ).then((response) => {
+                return response.data;
+            });
+    }   
+
+    getMobileAppVersion() {
+        return api
+            .get("/MobileAppVersion" ).then((response) => {
+                return response.data;
+            });
+    }
+
+    insertMobileAppVersion(data) {
+        return api
+            .post("/MobileAppVersion/Insert", data ).then((response) => {
+                return response.data;
+            });
+    }
 
     getDistrict() {
         return api
