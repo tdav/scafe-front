@@ -48,6 +48,20 @@ class DataService {
             });
     }
 
+    getMobileAppVersion() {
+        return api
+            .get("/MobileAppVersion" ).then((response) => {
+                return response.data;
+            });
+    }
+
+    insertMobileAppVersion(data) {
+        return api
+            .post("/MobileAppVersion/Insert", data ).then((response) => {
+                return response.data;
+            });
+    }
+
 
 }
 

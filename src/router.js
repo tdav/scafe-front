@@ -24,10 +24,17 @@ import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
 import PromoCodeType from './view/spr/promoCodeType.vue'
 import region from './view/new/region.vue'
+import Appversion from './view/spr/Appversion.vue'
 
 ///new
 
 const routes = [
+    {
+        path: '/Appversion',
+        name: 'Appversion',
+        component: Appversion
+    }, 
+
     {
         path: '/promoCodeType',
         name: 'promoCodeType',
