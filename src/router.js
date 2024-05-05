@@ -23,6 +23,7 @@ import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
 import PromoCodeType from './view/spr/promoCodeType.vue'
+import region from './view/new/region.vue'
 
 ///new
 
@@ -32,6 +33,12 @@ const routes = [
         name: 'promoCodeType',
         component: PromoCodeType
     }, 
+    {
+        path: '/region',
+        name: 'region',
+        component: region
+    }, 
+
     {
         path: '/Reservation_list',
         name: 'Reservation_list',

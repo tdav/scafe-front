@@ -41,6 +41,13 @@ class DataService {
             });
     }
 
+    getregion() {
+        return api
+            .get("/region" ).then((response) => {
+                return response.data;
+            });
+    }
+
 
 }
 
