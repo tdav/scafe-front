@@ -23,12 +23,23 @@ import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
 import PromoCodeType from './view/spr/promoCodeType.vue'
+import region from './view/new/region.vue'
 import SmsStatus from './view/dashboard/SmsStatus.vue'
 
 ///new
 
 const routes = [
     {
+        path: '/promoCodeType',
+        name: 'promoCodeType',
+        component: PromoCodeType
+    }, 
+    {
+        path: '/region',
+        name: 'region',
+        component: region
+    }, 
+
         path: '/SmsStatus',
         name: 'SmsStatus',
         component: SmsStatus

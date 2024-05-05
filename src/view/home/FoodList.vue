@@ -124,7 +124,7 @@ function OnFilter(id) {
         return food.catigoryId == id
     })
 }
-
+            
 onMounted(() => {
 
     DataService.getFoodList().then((response) => {
@@ -200,6 +200,7 @@ function JamiSummaHisobla() {
     bottom: 0;
     padding-bottom: 10px;
     width: 25%;
+    height: 15vh;
 }
 
 .butt {
@@ -223,10 +224,10 @@ function JamiSummaHisobla() {
 }
 
 .zakaz {
-    max-height: 530px;
+    max-height: 82vh;
     overflow-y: auto;
     overflow-x: hidden;
-    height: 530px;
+    height: 75vh;
 }
 
 .immmm {

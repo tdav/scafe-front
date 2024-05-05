@@ -40,6 +40,14 @@ class DataService {
                 return response.data;
             });
     }
+
+    getregion() {
+        return api
+            .get("/region" ).then((response) => {
+                return response.data;
+            });
+    }
+
         
     getSpSmsStatus() {
         return api
