@@ -22,6 +22,7 @@ import POS_walk_in_login_cashier from './view/dashboard/POS_walk_in_login_cashie
 import pos_walk_in_absent from './view/reservation/pos_walk_in_absent.vue'
 import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
+
 import PromoCodeType from './view/spr/promoCodeType.vue'
 import region from './view/new/region.vue'
 import SmsStatus from './view/dashboard/SmsStatus.vue'
