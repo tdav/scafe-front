@@ -1,7 +1,9 @@
 <template>
     <div v-if="TokenService.isAutorize()">
 
-        <header class="p-3 bg-dark text-white fixed-top bg-dark ">
+
+
+        <header v-if="isShowNavBar" class="p-3 bg-dark text-white fixed-top bg-dark ">
             <div class="container-fluid ">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
                     <a href="/" class="col-1 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -75,6 +77,8 @@
                 </div>
             </div>
         </header>
+
+
         <Modal v-model="modal" closeable header="My Modal" maxwidth="300px" >
             <p>You can close this modal using the close button on the top right corner</p>
         </Modal>  
@@ -134,6 +138,7 @@ import Reservation_list from './view/dashboard/Reservation_list.vue'
 
 let dinningOptionIsShow = ref(false);
 let myDateTime = ref(new Date())
+let isShowNavBar = ref(true)
 
 function mySetSelect(i) {
     this.setSelectMenuItem = i
@@ -141,6 +146,10 @@ function mySetSelect(i) {
 
 const route = useRoute();
 const path = computed(() => route.path)
+
+if (path == "afitsand" || path == "home" )
+ isShowNavBar = false
+
 
 const closeableModal = ref(false);
 
