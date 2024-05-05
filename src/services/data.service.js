@@ -48,6 +48,14 @@ class DataService {
             });
     }
 
+        
+    getSpSmsStatus() {
+        return api
+            .get("/SmsStatus" ).then((response) => {
+                return response.data;
+            });
+    }   
+
     getMobileAppVersion() {
         return api
             .get("/MobileAppVersion" ).then((response) => {

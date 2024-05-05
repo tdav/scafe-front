@@ -25,6 +25,7 @@ import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 import PromoCodeType from './view/spr/promoCodeType.vue'
 import region from './view/new/region.vue'
 import Appversion from './view/spr/Appversion.vue'
+import SmsStatus from './view/dashboard/SmsStatus.vue'
 
 ///new
 
@@ -45,7 +46,13 @@ const routes = [
         name: 'region',
         component: region
     }, 
+    {
+        path: '/SmsStatus',
+        name: 'SmsStatus',
+        component: SmsStatus
+    },
 
+   
     {
         path: '/Reservation_list',
         name: 'Reservation_list',
