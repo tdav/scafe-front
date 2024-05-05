@@ -33,6 +33,13 @@ class DataService {
                 return response.data;
             });
     }
+    
+    getSpPromoCodeTypeList() {
+        return api
+            .get("/PromoCodeType" ).then((response) => {
+                return response.data;
+            });
+    }
 
 
 }
