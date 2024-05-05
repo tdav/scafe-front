@@ -4,9 +4,9 @@
         <button @click="OnLoad"> Load Data</button>
         <table class="table  table-dark table-striped">
             <thead>
-                <tr class="row">
-                    <th class="col-2">#</th>
-                    <th class="col-10" style="text-align: center;">NameUz</th>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" style="text-align: center;">NameUz</th>
                 </tr>
             </thead>
             <tbody>
