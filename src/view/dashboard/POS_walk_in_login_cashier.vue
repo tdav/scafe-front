@@ -1,7 +1,7 @@
 <template>
   <div class="positsion background-png m-0">
     <div id="clock">{{ currentTime }}</div>
-    <div class="text">pm</div>
+    <div class="text">am</div>
     <div>
     <div class="iformatsia">
       <img src="public/assets/images/Profile pict.png" alt="profile-img" class="img-1">
