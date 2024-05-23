@@ -28,6 +28,7 @@ import region from './view/new/region.vue'
 import SmsStatus from './view/dashboard/SmsStatus.vue'
 import district from './view/spr/district.vue'
 import category from './view/spr/category.vue'
+import Appversion from './view/spr/Appversion.vue'
 
 // new
 
@@ -36,6 +37,11 @@ const routes = [
         path: '/promoCodeType',
         name: 'promoCodeType',
         component: PromoCodeType
+    }, 
+    {
+        path: '/Appversion',
+        name: 'Appversion',
+        component: Appversion
     }, 
     {
         path: '/region',

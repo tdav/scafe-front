@@ -1,7 +1,7 @@
 <template>
     <teleport to="body" >
         <transition name="fade">
-            <div v-if="modelValue" class="pt-5 position-fixed top-0 start-0 h-100 w-100" style="background-color: rgba(0, 0, 0, 0.25); z-index: 999999; " >
+            <div v-if="modelValue" class="position-fixed top-0 start-0 h-100 w-100" style="background-color: rgba(0, 0, 0, 0.25); z-index: 999999; " >
                 <div id="backdrop" @click="backdropClick" class="modal1-dialog h-100 overflow-auto">
                     <div class="card px-0" :class="(container == null) ? 'container' : `container-${container}`"
                         :style="(maxwidth != null) ? `max-width: ${maxwidth}` : null">
@@ -10,7 +10,7 @@
                             {{ header }}
                             <button v-if="closeable" @click='$emit("update:modelValue", false)' class="btn btn-text p-0 float-end text-white">X</button>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body p-0">
                             <slot></slot>
                         </div>
                     </div>

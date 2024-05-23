@@ -32,37 +32,39 @@
                 <div class="col-8"></div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-2"></div>
+                <div class="col-2">
                     <button class="btn btn-body bbd2" style="background-color: #fff; border-color: #FF5C00; border-width: 2px;  border-radius: 16px; border-color: #E4E4E4; width: 110px;
                                                     height: 96px;">
                         <img src="../../../public/assets/images/dropdaun/pul.png" alt="" class="img-2">
                     </button>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <button class="btn btn-body bbd2" style="background-color: #fff; border-color: #FF5C00; border-width: 2px;  border-radius: 16px; border-color: #E4E4E4; width: 110px;
                                                     height: 96px;">
                         <img src="../../../public/assets/images/dropdaun/dumolokarta.png" alt="" class="img-2">
                     </button>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <button class="btn btn-body bbd2" style="background-color: #fff; border-color: #FF5C00; border-width: 2px;  border-radius: 16px; border-color: #E4E4E4; width: 110px;
                                                     height: 96px;">
                         <img src="../../../public/assets/images/dropdaun/viza.png" alt="" class="img-2">
                     </button>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <button class="btn btn-body bbd2" style="background-color: #fff; border-color: #FF5C00; border-width: 2px;  border-radius: 16px; border-color: #E4E4E4; width: 110px;
                                                     height: 96px;">
                         <img src="../../../public/assets/images/dropdaun/4.png" alt="" class="img-2">
                     </button>
                 </div>
+                <div class="col-2"></div>
             </div>
             <div class="input-group flex-nowrap mt-3 mb-3">
-                <input type="text" class="form-control" style="height: 50px;" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control" style="height: 60px;" aria-describedby="addon-wrapping">
             </div>
             <!-- Raqam tugmalar -->
-            <div class="row mb-4" style="padding: 10px;">
-                <div class="col-4" style="text-align: center;" v-for="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 100]">
+            <div class="row mb-4 px-5" style="padding: 10px; text-align: center;">
+                <div class="col-3 m-2" style="text-align: center;" v-for="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 100]">
                     <button type="button" class="btn btn-primary bbp-1 mt-3" style="width: 110px;
                                                     height: 76px;
                                                     padding: 14px 23px 14px 23px;
@@ -77,30 +79,28 @@
             </div>
             <!-- Tugma bloklari -->
             <div class="row">
-                <div class="col-3 p-0">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
-                        <img src="./Images/money.png" alt="">
-                        <h6 class="h6-9">Tip amount</h6>
+                <div class="col-2"></div>
+                <div class="col-2 p-0">
+                    <button class="btn btn-dark bbd p-3" style="border-radius: 16px; width: 90%; background-color: #19191C;">
+                        <h6 class="h6-9" style="font-size: 12px;">Tip amount</h6>
                     </button>
                 </div>
-                <div class="col-3 p-0">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
-                        <img src="./Images/money.png" alt="">
-                        <h6 class="h6-9">Gift receipt</h6>
+                <div class="col-2 p-0">
+                    <button class="btn btn-dark bbd p-3" style="border-radius: 16px; width: 90%; background-color: #19191C;">
+                        <h6 class="h6-9" style="font-size: 12px;">Gift receipt</h6>
                     </button>
                 </div>
-                <div class="col-3 p-0">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #19191C;">
-                        <img src="./Images/money.png" alt="">
-                        <h6 class="h6-9">Email</h6>
+                <div class="col-2 p-0">
+                    <button class="btn btn-dark bbd p-3" style="border-radius: 16px; width: 90%; background-color: #19191C;">
+                        <h6 class="h6-9" style="font-size: 12px;">Email</h6>
                     </button>
                 </div>
-                <div class="col-3 p-0">
-                    <button class="btn btn-dark bbd" style="border-radius: 16px; width: 110px; background-color: #FFAB18;">
-                        <img src="./Images/money.png" alt="">
-                        <h6 class="h6-9">Done</h6>
+                <div class="col-2 p-0">
+                    <button class="btn btn-dark bbd p-3" style="border-radius: 16px; width: 90%; background-color: #FFAB18;">
+                        <h6 class="h6-9" style="font-size: 12px;">Done</h6>
                     </button>
                 </div>
+                <div class="col-2"></div>
             </div>
         </div>
     </form>

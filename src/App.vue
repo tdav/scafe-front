@@ -47,7 +47,7 @@
                                             @click="openOrderConfirmationModal">OrderConfirmation</a></li>
                                     <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openPaymentModal">Payment</a></li>
-                                    <li><a class="dropdown-item" href="#"
+                                    <li><a class="dropdown-item p-0" href="#"
                                             @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openTipAmountModal">TipAmount</a></li>
                                     <li><a class="dropdown-item" href="#"
