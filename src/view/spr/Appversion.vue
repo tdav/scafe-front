@@ -83,8 +83,6 @@ function OnLoad() {
 
     DataService.getMobileAppVersion().then((response) => {
         myApp.value = response.data;
-
-        console.log(response.data);
     })
 
 }

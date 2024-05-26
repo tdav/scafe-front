@@ -57,7 +57,6 @@ function OnLoad(){
     color: #ffffff;
 }
 .btn_123:active {
-    background-color: ;
     color: black;
     border: black;
 }

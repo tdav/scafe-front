@@ -3,7 +3,7 @@
         <div class="cotainer-fluid">
             <div class="p-2 row" style="height: 106px; width: 100%; background-color: #F8F9FD; border-radius: 12px;">
                 <img class="col-2 p-0" src="../../../public/assets/images/ovqat rasm/Placeholder.png" alt=""
-                    style="height: 100%; display: inline-block;">
+                    style="height: 100%; display: inline-block; width: 12%;">
                 <div class="col-10 p-0" style="height: 100%;">
                     <div class="p-0 cotainer-fluid h-100 w-100">
                         <div class="row p-0 m-0" style="height: 100%; width: 100%;">
@@ -41,7 +41,7 @@
 
             <div class="mt-4" style="height: 55px; width: 100%;" v-for="(item, index) in additionalItems" :key="index">
                 <img class="col-1 p-0" src="../../../public/assets/images/Image1.png" alt=""
-                    style="height: 70px; width: 70px; display: inline-block;">
+                    style="height: 70px; width: 98px; display: inline-block;">
                 <div style="display: inline-block; width: 75%;">
                     <p class="m-0 ms-2" style="display: inline-block; width: 70%;"><b>{{ item.name }}</b>
                     </p>
@@ -51,10 +51,12 @@
                     style="display: inline-block; height: 36px; width: 36px; border-radius: 100px; background-color: #9C9C9C; margin-left: -5px;">
                     <p style="margin-left: 40%; margin-top: 20%; " @click="changeAdditionalQuantity(item, -1)">-</p>
                 </div>
+                <div>
                 <p class="mx-2" style="display: inline-block;">{{ item.quantity }}</p>
                 <div class="align-items-center"
                     style="display: inline-block; height: 36px; width: 36px; background-color: #000000; border-radius: 100%;  text-align: center;">
                     <p style="margin-top: 8px; color: #FFFFFF;" @click="changeAdditionalQuantity(item, 1)">+</p>
+                </div>
                 </div>
             </div>
 

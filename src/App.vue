@@ -1,8 +1,5 @@
 <template>
-    <div v-if="TokenService.isAutorize()">
-
-
-
+    <div v-if="TokenService.isAutorize()" style="max-height: 100vh;">
         <header v-if="isShowNavBar" class="p-3 bg-dark text-white fixed-top bg-dark ">
             <div class="container-fluid ">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
@@ -47,7 +44,7 @@
                                             @click="openOrderConfirmationModal">OrderConfirmation</a></li>
                                     <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openPaymentModal">Payment</a></li>
-                                    <li><a class="dropdown-item" href="#"
+                                    <li><a class="dropdown-item p-0" href="#"
                                             @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openTipAmountModal">TipAmount</a></li>
                                     <li><a class="dropdown-item" href="#"
@@ -89,6 +86,7 @@
         </Modal>
         <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px">
             <Bill></Bill>
+
         </Modal>
         <Modal v-model="modalAddNote" closeable header="My Modal" maxwidth="800px">
             <AddNote></AddNote>
