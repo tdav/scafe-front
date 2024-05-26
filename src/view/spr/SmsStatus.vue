@@ -15,7 +15,7 @@
             </thead>
             <tbody>
                 <tr v-for="it in myList" :key="it.id">
-                    <td class="table-primary">{{it.id}}</td>
+                     <td class="table-primary">{{it.id}}</td>
                     <td class="table-primary">{{ it.nameUz }}</td>
                     <td class="table-primary">{{ it.nameLt }}</td>
                     <td class="table-primary">{{ it.nameRu }}</td>
