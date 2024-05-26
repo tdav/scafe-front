@@ -120,17 +120,25 @@ let tax = ref(0);
 let foodData = ref([]);
 
 function OnFilter(id) {
-    foodData.value = myFoodList.filter(function (food) {
-        return food.catigoryId == id
-    })
+    
+    
+    DataService.getFoodList(id).then((response) => {
+         
+         foodData.value = response.items;
+         myFoodList = response.items; 
+     })
+    
+    // foodData.value = myFoodList.filter(function (food) {
+    //     return food.catigoryId == id
+    // })
 }
             
 onMounted(() => {
 
-    DataService.getFoodList().then((response) => {
-         
-        foodData.value = response.data;
-        myFoodList = response.data; 
+    DataService.getFoodList(1).then((response) => {
+         debugger
+        foodData.value = response.items;
+        myFoodList = response.items; 
     })
 
 })

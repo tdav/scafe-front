@@ -27,9 +27,11 @@ class DataService {
     }
 
 
-    getFoodList() {
+    getFoodList(id) {
+        //https://scafe.uz/api/Food/Paging?$top=100&$skip=0&$orderby=id+desc&$filter=catigoryId+eq+3+and+status+eq+1
         return api
-            .get("/Food" ).then((response) => {
+            .get("/Food/Paging?$top=100&$skip=0&$orderby=id+desc&$filter=catigoryId+eq+"+id+"+and+status+eq+1" ).then((response) => {
+                
                 return response.data;
             });
     }
