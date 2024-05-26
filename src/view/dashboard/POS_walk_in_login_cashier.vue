@@ -1,7 +1,6 @@
 <template>
   <div class="positsion background-png m-0">
     <div id="clock">{{ currentTime }}</div>
-    <div class="text">am</div>
     <div>
     <div class="iformatsia">
       <img src="public/assets/images/Profile pict.png" alt="profile-img" class="img-1">
@@ -45,13 +44,6 @@ export default {
   font-weight: 275;
   line-height: 160px;
   display: inline-block;
-}
-.text {
-  color: white;
-  display: inline-block;
-  text-align: center;
-  font-size: 70px;
-  margin-left: 15px;
 }
 .positsion {
   text-align: center;

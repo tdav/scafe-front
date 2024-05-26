@@ -25,7 +25,7 @@ import Dashboard_add_note from './view/dashboard/Dashboard_add_note.vue'
 
 import PromoCodeType from './view/spr/promoCodeType.vue'
 import region from './view/new/region.vue'
-import SmsStatus from './view/dashboard/SmsStatus.vue'
+import SmsStatus from './view/spr/SmsStatus.vue'
 import district from './view/spr/district.vue'
 import category from './view/spr/category.vue'
 

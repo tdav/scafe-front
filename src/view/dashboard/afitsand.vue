@@ -107,10 +107,6 @@ export default {
   opacity: 1; /* Hover bo'lganda opacity 100% */
 }
 .idh {
-  /* height: 100px;
-  width: 100px;
-  opacity: 50%;
-  border-radius: 50px; */
     opacity: 70%;
     padding-left: 4rem;
     font-size: 10px;
