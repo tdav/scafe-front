@@ -1,8 +1,5 @@
 <template>
-    <div v-if="TokenService.isAutorize()">
-
-
-
+    <div v-if="TokenService.isAutorize()" style="max-height: 100vh;">
         <header v-if="isShowNavBar" class="p-3 bg-dark text-white fixed-top bg-dark ">
             <div class="container-fluid ">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
@@ -89,6 +86,7 @@
         </Modal>
         <Modal v-model="modalBill" closeable header="My Modal" maxwidth="500px">
             <Bill></Bill>
+
         </Modal>
         <Modal v-model="modalAddNote" closeable header="My Modal" maxwidth="800px">
             <AddNote></AddNote>
