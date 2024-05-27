@@ -25,7 +25,7 @@
                 <tr v-for="it in myList" :key="it.id">
                     <td class="table-primary">{{ it.id }}</td>
                     <td class="table-primary">{{ it.imgUrl }}</td>
-                    <td class="table-primary">{{ it.sulug }}</td>
+                     <td class="table-primary">{{ it.sulug }}</td>
                     <td class="table-primary">{{ it.orderIndex }}</td>
                     <td class="table-primary">{{ it.parentId }}</td>
                     <td class="table-primary">{{ it.parent }}</td>
