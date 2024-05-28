@@ -40,26 +40,18 @@
                                     <li><a class="dropdown-item" href="#" @click="openBillModal">Bill</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openAddNoteModal">AddNote</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openDashboardModal">Dashboard</a></li>
-                                    <li><a class="dropdown-item" href="#"
-                                            @click="openOrderConfirmationModal">OrderConfirmation</a></li>
+                                    <li><a class="dropdown-item" href="#" @click="openOrderConfirmationModal">OrderConfirmation</a></li>
                                     <li><a class="dropdown-item" href="/SelectTable">SelectTable</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openPaymentModal">Payment</a></li>
-                                    <li><a class="dropdown-item p-0" href="#"
-                                            @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
+                                    <li><a class="dropdown-item" href="#" @click="openDashboard_add_noteModal">Dashboard_add_note</a></li>
                                     <li><a class="dropdown-item" href="#" @click="openTipAmountModal">TipAmount</a></li>
-                                    <li><a class="dropdown-item" href="#"
-                                            @click="openReservation_listModal">Reservation_list</a></li>
-
+                                    <li><a class="dropdown-item" href="#" @click="openReservation_listModal">Reservation_list</a></li>
                                     <li><a class="dropdown-item" href="/afitsand">afitsand</a></li>
                                     <li><a class="dropdown-item" href="/pos_walk_in_absent">pos_walk_in_absent</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
+                                    <li><a class="dropdown-item" href="/POS_walk_in_login_cashier">POS_walk_in_login_cashier</a></li>
                                     <li><a class="dropdown-item" href="/Pos_new_reservation">Pos_new_reservation</a>
                                     </li>
-
-
                                     <li><a class="dropdown-item" href="/UpcomingOrders">UpcomingOrders</a></li>
-
                                     <hr>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
